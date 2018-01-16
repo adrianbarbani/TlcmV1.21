@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Brand_Opportunities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Brand Opportunities</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Brand_Strengths__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Brand Strengths</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Brand_Threats__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Brand Threats</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Brand_Weakness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Brand Weakness</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Buying_Criteria_Last_Update__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Política de Compras Last Update</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Buying_Criteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Política de Compras</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CSAT_Current_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CSAT Current Year</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSAT_Last_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CSAT Last Year</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSAT_Second_To_Last_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CSAT Second To Last Year</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSAT_Unit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CSAT Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CUIT_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(LEN(TEXT(CUIT__c)) = 11, 
+(LEFT(TEXT(CUIT__c),2) + &apos;-&apos; + MID(TEXT(CUIT__c), 3,8) + &apos;-&apos; + RIGHT(TEXT(CUIT__c),1)),
+TEXT(CUIT__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CUIT</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CUIT__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CUIT</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Categoria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Categoría WH</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>OP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>TT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ST</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ET</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>OO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cuenta_Para_Los_Graficos__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Cuenta Para Los Graficos</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DomicilioRecepcionNotificaciones__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Domicilio de recepción de notificaciones</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Analysts_vision__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>External Analysts vision</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Holding_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(Numero_de_Holding__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Holding</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ID_Cliente__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ID Cliente</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Micro_Industry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Subsector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Industry</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Centros Comerciales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores y Camiones</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Droguerías</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tienda Departamental</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Otros Comercios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Supermercados</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Alimentos y Bebidas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Textil y Calzado</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Combustibles y Lubricantes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Call Centers</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Grupo Telefonica</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardware Tecnológico</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contenido Multimedia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telcos e Internet</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Banca</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Instituciones financieras no bancarias</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medios de Pago</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seguros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agro, Pesca y Forestación</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Construccion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Alimentos</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Automotriz y Autopartes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Ligera y Manufacturas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Metalurgica y Pesada</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Química</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Textil y Calzado</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Laboratorios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mineria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Petroleo y Gas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Otros Industria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Defensa y Seguridad Pública</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Municipal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Nacional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Provincial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Organizaciones No Gubernamentales (ONGs)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Otros Administracion publica</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Alquiler de bienes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Educacion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gastronomía</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hotelería</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Otros Servicios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Desarrollo de Sistemas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seguridad Privada</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Profesionales y Consultoría</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Inmobiliario</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Esparcimiento Cultural y Deportivo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Turismo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cooperativa</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agua y Saneamientos</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Electricas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Residuos y Reciclaje</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Almacenamiento</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mensajería y Paquetería</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aéreo de Pasajeros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aéreo de Carga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ferroviario de Pasajeros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ferroviario de Carga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotor de Pasajeros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotor de Carga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fluvial / Marítimo de Pasajeros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fluvial / Marítimo de Carga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Todos</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Manufacturing</controllingFieldValue>
+                <controllingFieldValue>Media</controllingFieldValue>
+                <controllingFieldValue>Not For Profit</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Recreation</controllingFieldValue>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <controllingFieldValue>Shipping</controllingFieldValue>
+                <controllingFieldValue>Technology</controllingFieldValue>
+                <controllingFieldValue>Telecommunications</controllingFieldValue>
+                <controllingFieldValue>Transportation</controllingFieldValue>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <controllingFieldValue>Utilities</controllingFieldValue>
+                <controllingFieldValue>Energy</controllingFieldValue>
+                <controllingFieldValue>Engineering</controllingFieldValue>
+                <controllingFieldValue>Entertainment</controllingFieldValue>
+                <controllingFieldValue>Environmental</controllingFieldValue>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+                <controllingFieldValue>Government</controllingFieldValue>
+                <controllingFieldValue>Healthcare</controllingFieldValue>
+                <controllingFieldValue>Hospitality</controllingFieldValue>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <controllingFieldValue>Communications</controllingFieldValue>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <controllingFieldValue>Consulting</controllingFieldValue>
+                <controllingFieldValue>Education</controllingFieldValue>
+                <controllingFieldValue>Insurance</controllingFieldValue>
+                <controllingFieldValue>Machinery</controllingFieldValue>
+                <valueName>Todos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Centros Comerciales</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Automotores y Camiones</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Droguerías</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Tienda Departamental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Otros Comercios</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Supermercados</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Alimentos y Bebidas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Textil y Calzado</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Combustibles y Lubricantes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <valueName>Call Centers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Grupo Telefonica</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Hardware Tecnológico</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Software</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Contenido Multimedia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Telcos e Internet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Banca</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Instituciones financieras no bancarias</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <valueName>Medios de Pago</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Seguros</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Agro, Pesca y Forestación</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Construccion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Industria Alimentos</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Industria Automotriz y Autopartes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <valueName>Industria Ligera y Manufacturas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Industria Metalurgica y Pesada</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Industria Química</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Industria Textil y Calzado</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Laboratorios</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Mineria</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Petroleo y Gas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <valueName>Otros Industria</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Defensa y Seguridad Pública</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Gobierno Municipal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Gobierno Nacional</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Numero_de_Cliente__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Numero de Cliente</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Numero_de_Holding__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Numero de Holding</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Opportunities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Opportunities</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Strengths__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Strengths</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Threats__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Threats</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Weakness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Weakness</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>People_Opportunities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>People Opportunities</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>People_Strengths__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>People Strengths</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>People_Threats__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>People Threats</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>People_Weakness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>People Weakness</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PicklistSegmento__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Segmento</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Negocio Corporativo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wholesale</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Products_Services_Opportunities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Products/Services Opportunities</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Products_Services_Strengths__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Products/Services Strengths</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Products_Services_Threats__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Products/Services Threats</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Products_Services_Weakness__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Products/Services Weakness</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Razon_Social__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Razón Social</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region_WH__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Region WH</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grandes Operadores</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Interior</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Internacional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telefonía</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Región SCP</label>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Cuentas</relationshipLabel>
+        <relationshipName>Cuentas</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region_delta__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Privado</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pymes</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sector__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ámbito</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Privado</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Público</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Segmento_Vertical__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Segmento Vertical</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Administración Pública, Defensa y Seguridad Social</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agricultura, Ganadería, Caza y Silvicultura</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asociaciones e Instituciones</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Autopartistas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Concesionarios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Industria Automotriz</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Construcción</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consultoras</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Educación</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Entretenimiento</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Explotación de Minas y Canteras</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Extranjero</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Municipal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Nacional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Provincial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Alimenticia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Química</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industrias - Otro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Logística</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manufactura</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medios de Comunicación</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Petróleo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Agua</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Correos</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Energía</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - GAS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Transporte</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Clínicas, Sanatorios y Hospitales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Laboratorios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Medicina Prepaga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seguros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios de Hotelería y Restaurantes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros - Banca</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros - Tarjetas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Inmobiliarios, Empresariales y de Alquiler</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios - Otro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios-Otros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Siderurgia / Metalurgia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tecnología</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telecomunicaciones</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transporte</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Turismo</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Strategic_Context_Last_Update__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ultima Actualización</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Context__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contexto Estratégico</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sub_region_delta__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Territorio</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Region_delta__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gobierno amba 1</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno amba 2</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno litoral</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno mediterraneo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Financias</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Privado litoral</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Privado mediterraneo</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Privado</controllingFieldValue>
+                <valueName>Industria</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Privado</controllingFieldValue>
+                <valueName>Financias</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Privado</controllingFieldValue>
+                <valueName>Servicios</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Privado</controllingFieldValue>
+                <valueName>Privado litoral</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Privado</controllingFieldValue>
+                <valueName>Privado mediterraneo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gobierno</controllingFieldValue>
+                <valueName>Gobierno amba 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gobierno</controllingFieldValue>
+                <valueName>Gobierno amba 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gobierno</controllingFieldValue>
+                <valueName>Gobierno litoral</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Gobierno</controllingFieldValue>
+                <valueName>Gobierno mediterraneo</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cliente_formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(Numero_de_Cliente__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Numero de Cliente</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>idClienteLegado__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Id Cliente Legado</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Mis_cuentas_SCP</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Team</filterScope>
+        <label>Mis cuentas SCP</label>
+        <language>es</language>
+    </listViews>
+    <validationRules>
+        <fullName>CuentaGestion_DebeTener_CPrincipal</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(ISPICKVAL(Type,&quot;Cuenta de Gestion&quot;) &amp;&amp; ParentId == null, true, false)</errorConditionFormula>
+        <errorMessage>Las cuentas de tipo gestión deben tener una cuenta principal asociada.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CuentasCabeceras_sinCuentaPrincipal</fullName>
+        <active>true</active>
+        <description>Las cuentas cabecera no pueden tener asociada una cuenta principal.</description>
+        <errorConditionFormula>IF(ISPICKVAL(Type,&quot;Cuenta Cabecera&quot;) &amp;&amp; ParentId != null, true, false)</errorConditionFormula>
+        <errorMessage>Las cuentas cabecera no pueden tener asociada una cuenta principal.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Id_cliente_legado_diez_caracteres</fullName>
+        <active>true</active>
+        <description>El campo id cliente legado debe tener 10 caracteres.</description>
+        <errorConditionFormula>IF(AND(LEN(idClienteLegado__c)!= 10, idClienteLegado__c != null), true, false)</errorConditionFormula>
+        <errorMessage>El campo Id Cliente Legado debe tener 10 caracteres.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>campo_telefono_solo_puede_ser_numero</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( ISBLANK(Phone) , false, NOT(ISNUMBER( Phone )))</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>El telefono solo puede tener caracteres numericos</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Billing</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>salesforce</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://www.salesforce.com</url>
+    </webLinks>
+</CustomObject>

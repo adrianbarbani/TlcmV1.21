@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SCP Dep --></label>
+        <name>BIG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Big Deal --></label>
+        <name>BigDeals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buying Cycle --></label>
+        <name>Buying_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>Achievements of Results</masterLabel>
+            <translation><!-- Achievements of Results --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alleviation of Risks</masterLabel>
+            <translation><!-- Alleviation of Risks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assessments of Alternatives</masterLabel>
+            <translation><!-- Assessments of Alternatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awareness of Needs</masterLabel>
+            <translation><!-- Awareness of Needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision</masterLabel>
+            <translation><!-- Decision --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- = S (FCV * win probability) / S Calculated FCV
+Is the probability considered for commercial dashboard and reporting
+Possible Values: Calculated field, depending on the opportunity status and sub status, in %
+Filled in by: Calculated Automatically --></help>
+        <label><!-- SCP Dep --></label>
+        <name>Calculated_Win_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competidor con el que perdió --></label>
+        <name>CompetidorConElQuePerdio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacto --></label>
+        <name>Contacto__c</name>
+        <relationshipLabel><!-- Oportunidades --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dolar Budget --></label>
+        <name>Dolar_Buget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estado de la oportunidad --></label>
+        <name>Estado_de_la_oportunidad__c</name>
+        <picklistValues>
+            <masterLabel>Cancelado</masterLabel>
+            <translation><!-- Cancelado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>En Curso</masterLabel>
+            <translation><!-- En Curso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firmado</masterLabel>
+            <translation><!-- Firmado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instalado</masterLabel>
+            <translation><!-- Instalado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perdida</masterLabel>
+            <translation><!-- Perdida --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inicio Facturación --></label>
+        <name>Estimated_Billing_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Adding up the estimated FCV of the sub opportunities win or in progress (not loss or cancelled)
+Is the FCV considered for commercial dashboard and reporting
+Posible Values: Calculated field in €.
+Filled in by: Calculated automatically. --></help>
+        <label><!-- SCP Dep --></label>
+        <name>Estimated_FCV_Calculated__c</name>
+    </fields>
+    <fields>
+        <help><!-- The account manager indicates an estimation of the total value of the project.
+Posible Values: Free field in €
+Filled in by: The account manager. --></help>
+        <label><!-- SCP Dep --></label>
+        <name>Estimated_FCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ingresos Totales año fiscal --></label>
+        <name>Estimated_Year_End_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monto Contrato (ARG) --></label>
+        <name>FCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP Dep --></label>
+        <name>Fecha_comprometida_instalaci_n__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha comprometida instalación --></label>
+        <name>Fecha_comprometida_instalaci_n_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha probable de instalación --></label>
+        <name>Fecha_probable_de_instalacion__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP Dep --></label>
+        <name>Full_Contract_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impacto ejercicio actual (ARG) --></label>
+        <name>Impacto_ejercicio_actual_ARG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Licitación --></label>
+        <name>Licitacion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Big Deal --></label>
+        <name>Manual_Big_Deal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Moneda --></label>
+        <name>Moneda__c</name>
+        <picklistValues>
+            <masterLabel>ARG</masterLabel>
+            <translation><!-- ARG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ingreso recurrente mensual --></label>
+        <name>Monthly_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monto Contrato (USD) --></label>
+        <name>Monto_Contrato_Dolar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monto total Contrato (ARG) --></label>
+        <name>Monto_total_Contrato_ARG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Observación razón perdida --></label>
+        <name>ObservacionRazonPerdida__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Probabilidad --></label>
+        <name>Probabilidad__c</name>
+        <picklistValues>
+            <masterLabel>Alta</masterLabel>
+            <translation><!-- Alta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baja</masterLabel>
+            <translation><!-- Baja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Razón perdida --></label>
+        <name>Razon_perdida__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retroactiva --></label>
+        <name>Retroactiva__c</name>
+    </fields>
+    <fields>
+        <label><!-- TMI --></label>
+        <name>TMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Abono (ARG) --></label>
+        <name>Total_Abono_ARG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Abono (USD) --></label>
+        <name>Total_Abono_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP dep --></label>
+        <name>Total_CUV_ARG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total CUV (ARG) --></label>
+        <name>Total_CUV_ARG_resumen__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP Dep --></label>
+        <name>Total_CUV_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total CUV (USD) --></label>
+        <name>Total_CUV_USD_resumen__c</name>
+    </fields>
+    <fields>
+        <help><!-- = Calculated FCV * calculated win probability
+Possible Values: Calculated field in €.
+Filled in by: Calculated automatically. --></help>
+        <label><!-- SCP Dep --></label>
+        <name>Total_Forecasted_FCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>TrackingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ingreso por única vez --></label>
+        <name>Unique_Charges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valor total del Contrato (FCV) (pond.) --></label>
+        <name>Unsold_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valor total del Contrato (FCV) --></label>
+        <name>Valor_Total_del_Contrato_calculado__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Proposition --></label>
+        <name>Value_Proposition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ingresos Totales año fiscal (pond.) --></label>
+        <name>Weighted_Estimated_Year_End_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duración del contrato (meses) --></label>
+        <name>contract_duration_months__c</name>
+    </fields>
+    <fields>
+        <label><!-- fecha probable de venta --></label>
+        <name>fecha_probable_de_venta__c</name>
+    </fields>
+    <fields>
+        <label><!-- id --></label>
+        <name>id__c</name>
+    </fields>
+    <layouts>
+        <layout>SCP Oportunidad</layout>
+        <sections>
+            <label><!-- Estados Proyectos en DELTA --></label>
+            <section>Estados Proyectos en DELTA</section>
+        </sections>
+        <sections>
+            <label><!-- Información Adicional de Ventas --></label>
+            <section>Información Adicional de Ventas</section>
+        </sections>
+        <sections>
+            <label><!-- Valorizado de la Oportunidad --></label>
+            <section>Valorizado de la Oportunidad</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- El valor del TMI debe ser un número positivo. --></errorMessage>
+        <name>TMI_Positivo</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Asignar_Value_Drivers --></label>
+        <name>Asignar_Value_Drivers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DeliveryStatus --></label>
+        <name>DeliveryStatus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Matriz_de_Decisi_n --></label>
+        <name>Matriz_de_Decisi_n</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mosaico_de_Relacionamiento --></label>
+        <name>Mosaico_de_Relacionamiento</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Snapshot --></label>
+        <name>Snapshot</name>
+    </webLinks>
+</CustomObjectTranslation>

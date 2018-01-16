@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Big Deal Resource --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Big Deal Resource --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number --></label>
+        <name>Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>Resource__c</name>
+        <relationshipLabel><!-- Big Deal Resource --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cuestionario Big deals --></label>
+        <name>Survey__c</name>
+        <relationshipLabel><!-- Big Deal Resource --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Text --></label>
+        <name>Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- currency --></label>
+        <name>currency__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

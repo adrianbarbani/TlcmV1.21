@@ -1,0 +1,681 @@
+<apex:component controller="MosaicController">
+	
+	<apex:stylesheet value="{!URLFOR($Resource.bootstrapSF, 'css/mosaico.css')}"/>
+	
+	<style>
+	
+		.ContactPlacer {
+			text-align: left;
+			/*text-transform: uppercase;*/			
+			margin-left: 5px;
+			margin-top: 6px;			
+			font-size: 12px;
+			padding-right: 6px;			
+		}
+		
+		.RelationshipNegative {
+			color: #D00A0A;
+		}
+		
+		.RelationshipPositive {
+			color: #00cc33;
+		}
+		
+		.ContactMenu {
+			z-index: 1;
+		}
+		
+		.tablaUser {
+		    /*background-color: #4eb1cb;*/
+		    background-color: #C1D6D6;
+		}
+		
+		.tablaTecnico {
+		    /*background-color: #777;*/
+		    background-color: #ffcc99;
+		}
+		
+		.tablaController {
+		    /*background-color: #cf5c60;*/
+		    /*background-color: rgb(80,146,185);*/
+		    /*background-color: rgb(100,119,154);*/
+		    /*background-color: rgb(140,146,156);*/
+		    background-color: rgb(238,233,233);
+		}
+		
+		.tablaSponsor {
+		    /*background-color: #717ecd;*/
+		    background-color: #cccccc;
+		}
+		
+		.contenedorTabla td {
+			/*font-weight:bold;*/
+			color: black;
+			border-color: white;
+		}
+		
+        
+        .DivHorizontalArrow {
+        
+
+        background-image: url(/resource/1425652550000/rdmarrowbodyhorizontal) !important;
+
+
+        }
+        
+        .DivHorizontalArrowHead {
+
+
+
+
+        background-image: url(/resource/1425652550000/rdmarrowleft) !important;
+
+        }
+        
+	</style>
+		   
+	<script>
+        $j = jQuery.noConflict();
+        
+        function addBorder(add, remove1, remove2) {
+            $j("."+remove1).removeClass(remove1+"border");            
+            $j("."+remove2).removeClass(remove2+"border");
+            $j("."+add).addClass(add+"border");
+            for (var i=1;i<=6;i++) {                
+                $j("."+remove1).removeClass("COXborder"+i);
+                $j("."+remove2).removeClass("COXborder"+i);    
+                $j("."+add+i).addClass("COXborder"+i);
+            }
+            $j(".COXItem").css("display","none");
+            $j("." + add + " ." + add + "Item").css("display","block");
+        }
+      
+        
+        $j(document).ready(function() {
+            $j(".ContactPlacer").mouseover(function(){
+                $j($j(this).children(".ContactMenu")).show();
+            });
+            $j(".ContactPlacer").mouseout(function(){
+                $j($j(this).children(".ContactMenu")).hide();
+            });
+            $j(".ShowEvaluation").tooltip({ 
+                bodyHandler: function() { 
+                    return $j($j(this).parent().parent().children(".EvaluationData")).html(); 
+                }, 
+                showURL: false 
+            });
+            $j(".CODItem").tooltip({ 
+                bodyHandler: function() { 
+                    return $j(".CODData").html(); 
+                }, 
+                showURL: false 
+            });
+            $j(".CORItem").tooltip({ 
+                bodyHandler: function() { 
+                    return $j(".CORData").html(); 
+                }, 
+                showURL: false 
+            });
+            $j(".COPItem").tooltip({ 
+                bodyHandler: function() { 
+                    return $j(".COPData").html(); 
+                }, 
+                showURL: false 
+            });
+            $j(".ShowInfluences").mouseover(function(){
+            
+                 var inf = $j(this).parent().parent().children(".InfluencesData").text();
+                 var myArray = inf.split(",");
+                 
+                 var curr = $j(this).parent().parent().attr("id");
+                 
+                 $j(".ContactPlacer").each(function(){
+                     if($j(this).attr("id") != curr)
+                         $j(this).addClass("notselected");
+                  });
+                 
+                 for(var i = 0; i < myArray.length; i++){
+                     if(myArray[i])
+                          $j("#"+myArray[i]).removeClass("notselected").addClass("selected");
+                }
+    
+            
+            }).mouseout(function(){
+            
+                $j(".selected").removeClass("selected");
+                $j(".notselected").removeClass("notselected");
+            
+            });
+            $j(".ShowInfluenced").mouseover(function(){
+            
+                 var inf = $j(this).parent().parent().children(".InfluencedData").text();
+                 var myArray = inf.split(",");
+                 
+                 var curr = $j(this).parent().parent().attr("id");
+                 
+                 $j(".ContactPlacer").each(function(){
+                     if($j(this).attr("id") != curr)
+                         $j(this).addClass("notselected");
+                  });
+                 
+                 for(var i = 0; i < myArray.length; i++){
+                     if(myArray[i])
+                          $j("#"+myArray[i]).removeClass("notselected").addClass("selected");
+                }
+            }).mouseout(function(){
+            
+                $j(".selected").removeClass("selected");
+                $j(".notselected").removeClass("notselected");
+                
+            });
+
+            $j(".celdaContenedoraDeActitud").tooltip({ 
+                bodyHandler: function() { 
+                    return $j($j(this).children(".info")).html(); 
+                }, 
+                showURL: false 
+            });
+            $j(".celdaContenedoraDeRol").tooltip({ 
+                bodyHandler: function() { 
+                    return $j($j(this).children(".info")).html(); 
+                }, 
+                showURL: false 
+            });            $j(".contactRow").click(function(){
+            
+                //ContactPlacer
+            });
+            
+            var padding = 10;
+            var cellsize = $j(".celdaContenedoraDeNombre").outerWidth();
+            var smallcell = $j(".celdaContenedoraDeActitud").outerWidth();
+            var borders =  $j(".celdaContenedoraDeNombre").css("border-top-width").substr(0,1);
+            
+            var pagewidth = $j(".divContenedor").parent().width();
+            $j(".divContenedor").width(pagewidth);
+            var authImg = 40;
+            
+            var celdaWidth =  Math.floor((pagewidth-(padding*4 + smallcell*6 + borders*16 + authImg*2))/8);
+            $j(".celdaContenedoraDeNombre").width(celdaWidth);
+            
+            //$j(".toRotate").rotate({angle: -90});
+            $j(".toRotate").addClass("rotate");
+            $j(".toRotate").css("width","19px");
+            $j(".toRotate").css("display","block");
+            
+            $j("#COD").click(function() {
+                addBorder("COD","COR","COP");                
+            });
+            $j("#COR").click(function() {
+                addBorder("COR","COD","COP");
+            });
+            $j("#COP").click(function() {
+                addBorder("COP","COR","COD");
+            });
+					       
+        });
+        
+        function saveImage() {	
+	     	
+	     	var chartArea = $j('#divToImg');
+			html2canvas(chartArea, {
+			  onrendered: function(canvas) {		    			    
+			    var img = canvas.toDataURL("image/png");			    
+   				var ua = window.navigator.userAgent;
+   	            if (ua.indexOf("Chrome") > 0) {
+	                var link = document.createElement('a');
+					link.download = "{!$Label.RDM_role}.png";
+					link.href = img.replace('image/png', 'image/octet-stream');
+					link.click();
+				} else {
+					window.location.href = img.replace('image/png', 'image/octet-stream');
+				}
+			  }
+			});
+	     }
+    </script>   
+    
+    <apex:includeScript value="{!$Resource.JQuery}"  />
+    <apex:includeScript value="{!$Resource.JQueryUI}"  />
+    <apex:includeScript value="{!$Resource.JQueryTooltip}"  />
+    <apex:includeScript value="{!$Resource.JQueryDimensions}"  />   
+    <apex:stylesheet value="{!$Resource.JQueryUICSS}"  />
+    <apex:includeScript value="{!$Resource.html2canvas}"/>
+    <apex:includeScript value="{!$Resource.jspdf}"  />
+    
+    <div id="divToImg"> 
+    <div class="divContenedor"> 
+      <!--  
+      <table cellspacing="0" cellpaddng="0">
+        <tr>
+          <td>
+          -->                
+          <table cellspacing="0" cellpaddng="0">
+          
+          <tr>
+          <td colspan="2">
+           
+          <div class="contenedorTabla">
+              <table class="tablaMosaico" cellspacing="0">
+                  <tr>
+                      <td></td>
+                      <td colspan="2"><div class="DivInfluence">-    {!$Label.AUTHORITY}    +</div><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="2"><div class="DivInfluence">- {!$Label.AUTHORITY} +</div><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div></td>
+                      <td style="padding: 10px;"></td>
+                      <td colspan="2"><div class="DivInfluence">- {!$Label.AUTHORITY} +</div><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="2"><div class="DivInfluence">- {!$Label.AUTHORITY} +</div><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityleft}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                            </tr>
+                        </table>
+                      </td> 
+                      <td class="tablaUser celdaContenedoraDeNombre COP COP5"><c:MosaicCell list="{!EndUserStatuQuoPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COP COP6"><c:MosaicCell list="{!EndUserStatuQuoPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD1 COP COP5"><c:MosaicCell list="{!EndUserDeveloperPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD2 COP COP6"><c:MosaicCell list="{!EndUserDeveloperPositiveInfluencePositiveAuthority}"/></td>
+                  	  <td></td>
+                  	  <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalStatuQuoPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalStatuQuoPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR1"><c:MosaicCell list="{!TechnicalDeveloperPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR2"><c:MosaicCell list="{!TechnicalDeveloperPositiveInfluencePositiveAuthority}"/></td>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityright}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>                           
+                            </tr>
+                        </table>
+                      </td>	
+                  </tr>
+                  <tr>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserStatuQuoNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserStatuQuoNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD3"><c:MosaicCell list="{!EndUserDeveloperNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD4"><c:MosaicCell list="{!EndUserDeveloperNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalStatuQuoNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalStatuQuoNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!TechnicalDeveloperNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!TechnicalDeveloperNegativeInfluencePositiveAuthority}"/></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeActitud">{!$Label.Statu_quo}<div class="info">{!$Label.Statu_quo_help}</div></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeActitud">{!$label.developer}<div class="info">{!$label.developer_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeActitud">{!$Label.Statu_quo}<div class="info">{!$Label.Statu_quo_help}</div></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeActitud">{!$label.developer}<div class="info">{!$label.developer_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeRol">{!$label.user}<div class="info">{!$label.end_user}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeRol">{!$label.technical}<div class="info">{!$label.technical_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeActitud">{!$label.burning_platform}<div class="info">{!$label.burning_platform_help}</div></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeActitud">{!$label.negative}<div class="info">{!$label.negative_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeActitud">{!$label.burning_platform}<div class="info">{!$label.burning_platform_help}</div></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeActitud">{!$label.negative}<div class="info">{!$label.negative_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityleft}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                            </tr>
+                        </table>
+                      </td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD1"><c:MosaicCell list="{!EndUserBurningPlatformPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD2"><c:MosaicCell list="{!EndUserBurningPlatformPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserNegativePositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserNegativePositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR1"><c:MosaicCell list="{!TechnicalBurningPlatformPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR2"><c:MosaicCell list="{!TechnicalBurningPlatformPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalNegativePositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalNegativePositiveInfluencePositiveAuthority}"/></td>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityright}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>                           
+                            </tr>
+                        </table>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD3"><c:MosaicCell list="{!EndUserBurningPlatformNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre COD COD4"><c:MosaicCell list="{!EndUserBurningPlatformNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserNegativeNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaUser celdaContenedoraDeNombre"><c:MosaicCell list="{!EndUserNegativeNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!TechnicalBurningPlatformNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!TechnicalBurningPlatformNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalNegativeNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaTecnico celdaContenedoraDeNombre"><c:MosaicCell list="{!TechnicalNegativeNegativeInfluencePositiveAuthority}"/></td>
+                  </tr>
+              </table>
+          </div>
+        
+                  
+             </td>
+             </tr>
+             <tr>
+             <td>
+        
+             <div class="contenedorTabla" style="clear:left;">
+              <table class="tablaMosaico" cellspacing="0">
+                  <tr>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityleft}"/></td>-->
+                     <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                            </tr>
+                        </table>
+                      </td>
+                      <td class="tablaController celdaContenedoraDeNombre COP COP5"><c:MosaicCell list="{!ControllerStatuQuoPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre COP COP6"><c:MosaicCell list="{!ControllerStatuQuoPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR1 COP COP5"><c:MosaicCell list="{!ControllerDeveloperPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR2 COP COP6"><c:MosaicCell list="{!ControllerDeveloperPositiveInfluencePositiveAuthority}"/></td>
+                      <td style="padding: 10px;"></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorStatuQuoPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorStatuQuoPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR1"><c:MosaicCell list="{!SponsorDeveloperPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR2"><c:MosaicCell list="{!SponsorDeveloperPositiveInfluencePositiveAuthority}"/></td>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityright}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>                           
+                            </tr>
+                        </table>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerStatuQuoNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerStatuQuoNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!ControllerDeveloperNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!ControllerDeveloperNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorStatuQuoNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorStatuQuoNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!SponsorDeveloperNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!SponsorDeveloperNegativeInfluencePositiveAuthority}"/></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeActitud">{!$Label.Statu_quo}<div class="info">{!$Label.Statu_quo_help}</div></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeActitud">{!$label.developer}<div class="info">{!$label.developer_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeActitud">{!$Label.Statu_quo}<div class="info">{!$Label.Statu_quo_help}</div></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeActitud">{!$label.developer}<div class="info">{!$label.developer_help}</div></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeRol">{!$label.controller}<div class="info">{!$label.controller_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeRol">{!$label.sponsor}<div class="info">{!$label.sponsor_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeActitud">{!$label.burning_platform}<div class="info">{!$label.burning_platform_help}</div></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeActitud">{!$label.negative}<div class="info">{!$label.negative_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeActitud">{!$label.burning_platform}<div class="info">{!$label.burning_platform_help}</div></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeActitud">{!$label.negative}<div class="info">{!$label.negative_help}</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityleft}"/></td>-->
+                     <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                            </tr>
+                        </table>
+                      </td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR1"><c:MosaicCell list="{!ControllerBurningPlatformPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR2"><c:MosaicCell list="{!ControllerBurningPlatformPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerNegativePositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerNegativePositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR1"><c:MosaicCell list="{!SponsorBurningPlatformPositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR2"><c:MosaicCell list="{!SponsorBurningPlatformPositiveInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorNegativePositiveInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorNegativePositiveInfluencePositiveAuthority}"/></td>
+<!--                      <td rowspan="2"><img src="{!$Resource.rdmauthorityright}"/></td>-->
+                      <td rowspan="2" class="tdToRotate">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="padding:0px">
+                                    <apex:image value="{!$Resource.verticalArrow}" />
+                                </td>
+                                <td style="padding:0px">
+                                    <div class="toRotate"> - {!$Label.Influence} +</div>
+                                </td>                           
+                            </tr>
+                        </table>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!ControllerBurningPlatformNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!ControllerBurningPlatformNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerNegativeNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaController celdaContenedoraDeNombre"><c:MosaicCell list="{!ControllerNegativeNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR3"><c:MosaicCell list="{!SponsorBurningPlatformNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre COR COR4"><c:MosaicCell list="{!SponsorBurningPlatformNegativeInfluencePositiveAuthority}"/></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorNegativeNegativeInfluenceNegativeAuthority}"/></td>
+                      <td class="tablaSponsor celdaContenedoraDeNombre"><c:MosaicCell list="{!SponsorNegativeNegativeInfluencePositiveAuthority}"/></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="2"><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div><div class="DivInfluence">- {!$Label.AUTHORITY} +</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="2"><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div><div class="DivInfluence">- {!$Label.AUTHORITY} +</div></td>
+                      <td></td>
+                      <td colspan="2"><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div><div class="DivInfluence">- {!$Label.AUTHORITY} +</div></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td colspan="2"><div class="DivHorizontalArrow"><div class="DivHorizontalArrowHead"></div></div><div class="DivInfluence">- {!$Label.AUTHORITY} +</div></td>
+                      <td></td>
+                  </tr>
+              </table>
+          </div>
+    
+          </td>
+          </tr>
+          </table>
+      <!-- 
+          </td>       
+          <td>
+              <ul class="ulCOX" style="font-size: 18px;">
+                  <li id="COD"><span id="CODspan" />COD</li>
+                  <li id="COR"><span id="CORspan" />COR</li>
+                  <li id="COP"><span id="COPspan" />COP</li>
+              </ul>
+          </td>
+        </tr>
+      </table>
+    -->
+           <div style="clear:both;"></div>
+    </div>
+    </div>
+    <!-- 
+    <div class="COXData CODData ToolTipData"><apex:outputText escape="false" value="{!$Label.CODdo}" /><apex:outputText escape="false" value="{!$Label.CODdont}" /></div>
+    <div class="COXData CORData ToolTipData"><apex:outputText escape="false" value="{!$Label.CORdo}" /><apex:outputText escape="false" value="{!$Label.CORdont}" /></div>
+    <div class="COXData COPData ToolTipData"><apex:outputText escape="false" value="{!$Label.COPdo}" /><apex:outputText escape="false" value="{!$Label.COPdont}" /></div>
+    <div style="clear:both;"></div>
+     -->
+
+</apex:component>

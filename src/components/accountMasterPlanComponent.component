@@ -1,0 +1,71 @@
+<apex:component controller="accountMasterPlan">
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        }
+    </style>
+    <table class="table table-striped table-bordered table-condensed">
+		<thead>
+			<tr class="headerRow">
+	            <th scope="col" class="deemphasize">
+	               <apex:outputText value="{!$Label.scp_certa_gc__created_date}"/>
+	            </th>
+				<th scope="col" class="deemphasize">
+				   <apex:outputText value="{!$Label.scp_certa_gc__subject}"/>
+				</th>
+				<th scope="col" class="deemphasize">{!$label.description}</th>
+				<th scope="col" class="deemphasize">
+				    <apex:outputText value="{!$Label.scp_certa_gc__due_date}"/>
+                </th>
+                <th scope="col" class="deemphasize">
+	                <apex:outputText value="{!$Label.scp_certa_gc__completed}"/>
+				</th>
+                <th scope="col" class="deemphasize HeadFilter">
+     	           <apex:outputText value="{!$Label.scp_certa_gc__task_status}"/>
+                </th>
+                <th scope="col" class="deemphasize HeadFilter">
+	                <apex:outputText value="{!$Label.scp_certa_gc__priority}"/>
+                </th>
+                <th scope="col" class="deemphasize HeadFilter">
+	                <apex:outputText value="{!$Label.scp_certa_gc__assigned_to}"/>
+                </th>
+			</tr>
+		</thead>
+		<tbody>           
+			<apex:repeat value="{!tasks}" var="item">
+                <tr class="dataRow even first">
+                    <td class="dataCell">                    
+                        <apex:outputField value="{!item.task.CreatedDate}"/>
+                    </td>
+                    <td class="dataCell"> 
+                        <apex:outputField value="{!item.task.Subject}"/>
+                    </td>
+                    <td class="dataCell">                    
+                        <apex:outputField value="{!item.task.Description}"/>
+                    </td>
+                    <td class="dataCell">                    
+                        <apex:outputField value="{!item.task.ActivityDate}"/>
+                    </td>     
+                    <td  class="dataCell">             
+                        <apex:outputField value="{!item.task.End_Date__c}">
+                        </apex:outputField>
+                    </td>
+                    <td class="dataCell">                    
+                        <apex:outputField value="{!item.task.Status}"/>
+                    </td>
+                    <td class="dataCell">                    
+                        <apex:outputField value="{!item.task.Priority}"/>
+                    </td>
+                    <td class="dataCell">                    
+                        <apex:outputText styleClass="AssignedToName" value="{!item.task.Owner.name}"/>
+                    </td>
+                </tr>
+			</apex:repeat>
+		</tbody>
+	</table>
+</apex:component>

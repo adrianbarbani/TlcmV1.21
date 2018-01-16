@@ -1,0 +1,279 @@
+<apex:component controller="MenuSCPEnCuentaController">
+    
+    <apex:includeScript value="{!URLFOR($Resource.bootstrapSF, 'js/JQueryToBS.js')}"/>
+    
+    <style>
+        #menuContainer {
+        	background-color: #F3F3EC;
+        	padding-top: 20px;
+        }
+        
+        .menu {
+        width: 100%;
+        height: 110px;
+        position: relative;
+        font-family: inherit;
+        font-size: 11px;
+        font-style: initial;
+        font-weight: bold;
+        margin-left: 15px;        
+        }
+        
+        .links{
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 11px;
+        font-style: initial;
+        }
+        
+        .cursorDefault{
+        cursor: default !important;
+        }
+        
+        .item{
+        position:relative;
+        background-color:#f0f0f0;
+        background-color:#EAEAEA;        
+        float:left;
+        width:90px;
+        margin:0px 0px;
+        height:90px;
+        border:2px solid #ddd;
+        -moz-border-radius:47px;
+        -webkit-border-radius:47px;
+        border-radius:47px;
+        -moz-box-shadow:1px 1px 3px #555;
+        -webkit-box-shadow:1px 1px 3px #555;
+        box-shadow:1px 1px 3px #555;
+        cursor:pointer;
+        overflow:hidden;
+        }
+        
+        .item-first {
+        width:400px;
+        }
+        
+        .item-last {
+        /*float:right;*/
+        }
+        
+        .link{
+        left:1px;
+        top:1px;
+        position:absolute;
+        width:90px;
+        height:90px;
+        }
+        
+        .icon_home{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/unlock-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;
+        }
+        .icon_mail{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/system-settings-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;
+        }
+        .icon_help{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/mobile-statistics-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;
+        }
+        .icon_find{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/diamond-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;
+        }
+        .icon_photos{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/settings-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;
+        }
+        
+        .icon_lock{
+        background:transparent url("{!URLFOR($Resource.Iconos, '256/lock-icon.png')}") no-repeat top left;
+        background-size: 90px, 90px;        
+        }
+        
+        .item_content{
+        position:absolute;
+        height:90px;
+        width:320px;
+        overflow:hidden;
+        left:70px;
+        top:0px;
+        background:transparent;		
+        }
+        
+        .centerVertical {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        }
+        
+        .panelTitulos{
+        width: 100%;
+        height: 14px;
+        position: relative;
+        font-family: inherit;
+        font-size: 11px;
+        font-style: initial;
+        font-weight: bold;
+        margin-left: 15px;
+        }
+        
+        .titulo{
+        float:left;
+        width:95px;
+        text-align: center !important;
+        margin:0px 0px;
+        }
+        
+        .primerTitulo{
+        width:404px;
+        }
+    </style>
+    
+    <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+        
+        $j(window).on("resize", function () {
+                ajustarTamanioMenu();
+            }).resize();      
+        
+        $j('.item').hover(
+            function(){
+                $j('.item').stop().animate({width:'90px'}, 1000);                
+                $j(this).stop().animate({width:'400px'}, 1000);
+                
+                
+                $j('.titulo').stop().animate({width:'95px'}, 1000);
+                $j("."+$j(this).attr("id")).stop().animate({width:'404px'}, 1000);
+            },
+            function(){}
+        );
+             
+    })
+    
+    function ajustarTamanioMenu(){
+        var menuWidth = $j('.menu').width();
+        var margin = (menuWidth - 94*5 - 400) / 12;			
+        $j('.item').css("margin","0px " + margin + "px");
+        $j('.item-first').css("margin-left",margin*2 + "px");
+        $j('.item-last').css("margin-right",margin*2 + "px");
+        
+        $j('.titulo').css("margin","0px " + margin + "px");
+        $j('.primerTitulo').css("margin-left",margin*2 + "px");
+        $j('.quintoTitulo').css("margin-right",margin*2 + "px");    
+    }
+    </script>
+    <div id="menuContainer">    
+    
+        <div class="menu">
+            <div class="item item-first" id = "primerTitulo">        	
+                <a class="link icon_mail"></a>
+                <div class="item_content">
+                    <ul class = "centerVertical">
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountIndustryTrends}?id={!AcctId}">{!$Label.scp_certa_gc__trend}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountStrategicContextWindow}?id={!AcctId}">{!$Label.scp_certa_gc__client_context}</apex:outputLink></li>
+                        <!--<li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountKPIWindow}?id={!AcctId}">{!$Label.KPI}</apex:outputLink></li>-->
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountOrganizationChart}?id={!AcctId}">{!$Label.scp_certa_gc__influence_org}</apex:outputLink></li>                    
+                    </ul> 
+                </div>
+            </div>
+            
+            
+            <div class="item" id = "segundoTitulo">
+                <a class="link icon_help"></a>
+                <div class="item_content">
+                    <ul class = "centerVertical">
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountHistoricalBusinessWindow}?id={!AcctId}">{!$Label.scp_certa_gc__net_activity}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountBusinessLandscape}?id={!AcctId}">{!$Label.scp_certa_gc__parque_de_servicios}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.HitosRelevantes}?id={!AcctId}">{!$Label.scp_certa_gc__hitos_relevantes}</apex:outputLink></li>
+                        <!--<li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountPastProvenValueNew}?id={!AcctId}">{!$Label.account_past_proven_value}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountOverallRelationshipWindow}?id={!AcctId}">{!$Label.Overall_Relationship}</apex:outputLink></li>-->
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountRDMWindow}?id={!AcctId}">{!$Label.scp_certa_gc__rdmgeneral}</apex:outputLink></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item" id = "tercerTitulo">
+                <a class="link icon_find"></a>            
+                <div class="item_content">
+                    <ul class = "centerVertical">
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountIndustryTrendsWindowNew}?id={!AcctId}">{!$Label.scp_certa_gc__opportunities_value_proposition}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountOpportunityListCriteria}?id={!AcctId}">{!$Label.scp_certa_gc__dcm}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountOpportunityList}?id={!AcctId}">{!$Label.scp_certa_gc__rdm}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountOpportunityListSnapshot}?id={!AcctId}">{!$Label.scp_certa_gc__snapshot}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountGrowthStrategy}?id={!AcctId}">{!$Label.scp_certa_gc__gap_growth_strategy}</apex:outputLink></li>
+                        <!-- <li><apex:outputLink target="_parent" value="{!$Page.AccountOutlookSales}?id={!AcctId}">{!$Label.SCP_OutlookSales}</apex:outputLink></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="item" id = "cuartoTitulo">
+                <a class="link icon_photos" ></a>
+                <div class="item_content">
+                    <ul class = "centerVertical">
+                        <!--
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.AreasDeTrabajo}?id={!AcctId}">{!$Label.Areas_de_Trabajo}</apex:outputLink></li>
+						-->                        
+						<li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.LineaDeTiempo}?id={!AcctId}">{!$Label.scp_certa_gc__cronograma_de_cuenta}</apex:outputLink></li>
+                        <!--
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.EjesDeTrabajo}?id={!AcctId}">{!$Label.Ejes_de_Trabajo}</apex:outputLink></li>
+						-->                        
+						<li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountMasterPlan}?id={!AcctId}">{!$Label.scp_certa_gc__action_plan_builder}</apex:outputLink></li>
+                        <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.accountCustomReport}?id={!AcctId}">{!$Label.scp_certa_gc__custom_report}</apex:outputLink></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- si no tiene permisos de admin se muestra solo las opciones a las que puede llegar a acceder si lo fuera -->
+            <apex:outputPanel layout="block" rendered="{! !hasPermission }" >	        
+                <div class = "item item-last cursorDefault" id = "quintoTitulo">
+                    
+                    <a class="link icon_lock"></a>
+                    <div class="item_content">
+                            <ul style="margin-top:10%" >                        
+                                <li><apex:outputLabel styleClass="links">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__trend}</apex:outputLabel></li>
+                                <li><apex:outputLabel styleClass="links">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__servicios}</apex:outputLabel></li>
+                            </ul>
+                    </div>
+                </div>   
+            </apex:outputPanel>
+            
+            
+            <!-- con permisos de admin -->
+            <apex:outputPanel layout="block" rendered="{!hasPermission}" >	        
+                <div class = "item item-last" id = "quintoTitulo">
+                    
+                    <a class="link icon_home"></a>
+                    <div class="item_content">
+                        <apex:outputPanel rendered="{!hasPermission}">
+                            <ul style="margin-top:10%" >                        
+                                <apex:outputPanel rendered="{!hasPermissionRegion}">
+                                   <!-- <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.adminRegions}">{!$Label.Administration_Trends} {!$Label.Region}</apex:outputLink></li>-->
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{! !hasPermissionRegion }">
+									<!--<li><apex:outputLabel styleClass="links cursorDefault">{!$Label.Administration_Trends} {!$Label.Region}</apex:outputLabel></li>-->
+                                </apex:outputPanel>
+                                
+                                <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.adminIndustryTrends}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__trend}</apex:outputLink></li>
+                                <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.AdministrarServicios}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__servicios}</apex:outputLink></li>
+                            <!--<li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.adminKPI}">{!$Label.Administration_Trends} {!$Label.KPI}</apex:outputLink></li>
+                                <li><apex:outputLink styleClass="links" target="_parent" value="{!$Page.adminProvenValue}">{!$Label.Administration_Trends} {!$Label.account_past_proven_value}</apex:outputLink></li>-->	
+                            </ul>
+                        </apex:outputPanel>
+                    </div>
+                </div>   
+            </apex:outputPanel>
+        </div>
+        
+        
+        <div class = "panelTitulos">
+            
+            <div class="titulo primerTitulo ">{!$Label.Client_Basics}</div>
+            <div class="titulo segundoTitulo">{!$Label.Value_Proposition}</div>
+            <div class="titulo tercerTitulo ">{!$Label.Commercial_Plan}</div>
+            <div class="titulo cuartoTitulo ">{!$Label.Execution}</div>
+            <div class="titulo quintoTitulo ">{!$Label.Administracion}</div>    
+        </div>          
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+</apex:component>

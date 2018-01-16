@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SCP Past Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SCP Past Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- SCP Past Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trade Balance --></label>
+        <name>Net_Activity_With_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share of Wallet --></label>
+        <name>Share_of_Wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Client ICT Expenditure --></label>
+        <name>a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Our Total Revenue from Client --></label>
+        <name>b__c</name>
+    </fields>
+    <fields>
+        <label><!-- Our Expenditures with Client --></label>
+        <name>cc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha de Cierre --></label>
+        <name>endDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha de Inicio --></label>
+        <name>initDate__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

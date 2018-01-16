@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- SCP Potential_New_Business - Strategic I --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- SCP Potential_New_Business - Strategic I --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Potential New Business --></label>
+        <name>Potential_New_Business__c</name>
+        <relationshipLabel>Potential New Business -  Strategic Initiative</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Strategic Initiatives</label>
+        <name>Strategic_Initiative__c</name>
+        <relationshipLabel>Potential New Business -  Strategic Initiative</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Potential New Business - Strategic Ini N --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

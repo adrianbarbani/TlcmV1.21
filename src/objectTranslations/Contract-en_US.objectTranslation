@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Our competitors´ name</label>
+        <name>competitorName__c</name>
+    </fields>
+    <fields>
+        <label>Full Contract Value</label>
+        <name>fcv__c</name>
+    </fields>
+    <fields>
+        <label>Contract with our competitors</label>
+        <name>isCompetitorContract__c</name>
+    </fields>
+    <fields>
+        <label>Monthly charge</label>
+        <name>mrc__c</name>
+    </fields>
+</CustomObjectTranslation>

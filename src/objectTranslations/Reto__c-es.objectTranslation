@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Retos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area de trabajo --></label>
+        <name>Area_de_trabajo__c</name>
+        <relationshipLabel><!-- Retos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competidor --></label>
+        <name>Competidor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Etapa del Reto --></label>
+        <name>Etapa_del_Reto__c</name>
+        <picklistValues>
+            <masterLabel>Cerrar</masterLabel>
+            <translation><!-- Cerrar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compras</masterLabel>
+            <translation><!-- Compras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diseño</masterLabel>
+            <translation><!-- Diseño --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implementación</masterLabel>
+            <translation><!-- Implementación --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospección</masterLabel>
+            <translation><!-- Prospección --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFI</masterLabel>
+            <translation><!-- RFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fecha Compromiso --></label>
+        <name>Fecha_Compromiso__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre del Reto --></label>
+        <name>Nombre_del_Reto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nota --></label>
+        <name>Nota__c</name>
+    </fields>
+    <gender>Masculine</gender>
+</CustomObjectTranslation>

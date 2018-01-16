@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Activo --></label>
+        <name>Activo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Account Team Member --></label>
+        <name>Closest_Account_Team_Member__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domicilio --></label>
+        <name>Domicilio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ejecutivo de Cuenta --></label>
+        <name>Ejecutivo_de_Cuenta__c</name>
+        <relationshipLabel><!-- Contactos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Oportunidad --></label>
+        <name>Oportunidad__c</name>
+        <relationshipLabel><!-- Contactos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PictureUrl --></label>
+        <name>PictureUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picture --></label>
+        <name>Picture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tipo de Relacionamiento --></label>
+        <name>TipoDeRelacionamiento__c</name>
+        <picklistValues>
+            <masterLabel>Alta</masterLabel>
+            <translation><!-- Alta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baja</masterLabel>
+            <translation><!-- Baja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Activo --></label>
+        <name>active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Área de especialidad --></label>
+        <name>areadeespecialidad__c</name>
+        <picklistValues>
+            <masterLabel>Abastecimiento</masterLabel>
+            <translation><!-- Abastecimiento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administración</masterLabel>
+            <translation><!-- Administración --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aplicaciones</masterLabel>
+            <translation><!-- Aplicaciones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bases de Datos</masterLabel>
+            <translation><!-- Bases de Datos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Busisness Inteligent</masterLabel>
+            <translation><!-- Busisness Inteligent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Datacenter</masterLabel>
+            <translation><!-- Datacenter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finanzas</masterLabel>
+            <translation><!-- Finanzas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infraestructura</masterLabel>
+            <translation><!-- Infraestructura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RRHH</masterLabel>
+            <translation><!-- RRHH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redes</masterLabel>
+            <translation><!-- Redes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seguridad Informática</masterLabel>
+            <translation><!-- Seguridad Informática --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soluciones Móviles</masterLabel>
+            <translation><!-- Soluciones Móviles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventas</masterLabel>
+            <translation><!-- Ventas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incluir al Organigrama --></label>
+        <name>inOrg__c</name>
+    </fields>
+    <layouts>
+        <layout>SCP Contacto</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- El telefono solo puede poseer caracteres numericos --></errorMessage>
+        <name>Movil_solo_numeros</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- La fecha de nacimiento debe ser un valor menor a hoy --></errorMessage>
+        <name>fecha_de_nacimiento_menor_a_hoy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- El telefono solo puede poseer caracteres numericos --></errorMessage>
+        <name>telefono_solo_numerico</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mosaico_de_Relacionamiento_General --></label>
+        <name>Mosaico_de_Relacionamiento_General</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Organigrama --></label>
+        <name>Organigrama</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Update Project Opportunity --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Update Project Opportunity --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Accion --></label>
+        <name>Accion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cantidad --></label>
+        <name>Cantidad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descr_Servicio --></label>
+        <name>Descr_Servicio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descripción proyecto --></label>
+        <name>Descripci_n_proyecto__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descripcion del error --></label>
+        <name>Descripcion_del_error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha Accion --></label>
+        <name>Fecha_Accion__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID_Oportunidad --></label>
+        <name>ID_Oportunidad__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID_Proyecto --></label>
+        <name>ID_Proyecto__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID_Servicio --></label>
+        <name>ID_Servicio__c</name>
+    </fields>
+    <fields>
+        <label><!-- hayError --></label>
+        <name>hayError__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre de Update Project Opportunity --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

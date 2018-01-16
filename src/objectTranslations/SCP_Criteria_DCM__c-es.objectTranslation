@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SCP Criteria DCM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SCP Criteria DCM</value>
+    </caseValues>
+    <fields>
+        <label>Enfoque</label>
+        <name>Approach__c</name>
+    </fields>
+    <fields>
+        <label>Comentarios</label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor&apos;s Standing --></label>
+        <name>Competitor_Standing__c</name>
+    </fields>
+    <fields>
+        <label>Posición Competitiva de la Competencia</label>
+        <name>Competitors_Competitive_Standing__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Baja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Criterio</label>
+        <name>Criteria__c</name>
+    </fields>
+    <fields>
+        <label>Importancia para el Cliente</label>
+        <name>Customer_Consideration__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Baja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nuestra Posición Competitiva</label>
+        <name>Our_Competitive_Standing__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Baja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nuestra Posicion</label>
+        <name>Our_Standing__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP Oportunidad --></label>
+        <name>SCP_Oportunidad__c</name>
+        <relationshipLabel><!-- SCP Criteria DCM --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Formato SCP Criteria DCM</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

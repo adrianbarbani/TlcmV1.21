@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- SCP --></label>
+        <name>SCP</name>
+    </customApplications>
+    <customLabels>
+        <label>&quot;&gt; Identify possible internal enemies” &lt;br/&gt; 
+&gt; Build a personal agenda with him and a longterm relationship &lt;br/&gt; 
+&gt; Identify his &quot;&quot;cirle of trust&quot;&quot; &lt;br/&gt; 
+&gt; &lt;br/&gt;&quot;</label>
+        <name>AHIH</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Listen to their advice, but validate its effectiveness over time &lt;br/&gt; &gt; They don&apos;t have influence buy may know who&apos;s who &lt;br/&gt; &gt; Narrow your political bias: arrived where they are making friends. And enemies &lt;br/&gt;</label>
+        <name>AHIL</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Invest time and resources in developing the relationship. He may become a decision maker soon &lt;br/&gt; 
+&gt; Identify his political alignement within the organization &lt;br/&gt; 
+&gt; Cuidado de “no tomar partido”, puede haber grupos antagónicos, igualmente influyentes &lt;br/&gt;</label>
+        <name>ALIH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ALIL --></label>
+        <name>ALIL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AND --></label>
+        <name>AND</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Account_Business_Landscape --></label>
+        <name>Account_Business_Landscape</name>
+    </customLabels>
+    <customLabels>
+        <label>Customer Name</label>
+        <name>Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Accept</label>
+        <name>Aceptar</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Consider a Try &amp; Buy approach	&lt;br/&gt; &gt;	Do not stress technological aspects. Instead, find a temporary solution	&lt;br/&gt; &gt;	Focus on timing and delivery	&lt;br/&gt; &gt;	This contact probably eager to share information with you	&lt;br/&gt;</label>
+        <name>Action_Burning_Platform</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Understand customer´s trade off for the OpEx/CapEx involved	&lt;br/&gt; &gt;	Focus on your proposal´s ROI for the customer	&lt;br/&gt; &gt;	Consider individual political consequences	&lt;br/&gt; &gt;	Explain the global impact in customer´s competitiveness	&lt;br/&gt;</label>
+        <name>Action_Controller</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; This individual is pushing for a solution. Take advantage of this impulse (Aikido) &lt;br/&gt; &gt;	Keep close to this contact. His is eager to receive information from you AND from your competition	&lt;br/&gt; &gt;	Be carefull with your strategy. This contact is probably talking frecuently with your competitors	&lt;br/&gt;</label>
+        <name>Action_Developer</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Stress on your contact´s personal political benefit from your proposal	&lt;br/&gt; &gt;	Develop trust and confidence. Make him feel you and your company will be available for help	&lt;br/&gt; &gt;	This contact may be worried about his career if things don´t go well &lt;br/&gt; &gt; Never ignore people in this role, regardless of their political power during the decision process	&lt;br/&gt;</label>
+        <name>Action_End_User</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Adopt a low profile relationship strategy. Do not fight.	&lt;br/&gt; &gt;	Find your way to this contact using the Influence Map	&lt;br/&gt; &gt;	Be always available but do not pressure him for meetings	&lt;br/&gt; &gt;	Understand why he is in this mood (political implications ?, previous experiences ?, etc)	&lt;br/&gt;</label>
+        <name>Action_Negative</name>
+    </customLabels>
+    <customLabels>
+        <label>Action Plan and Account Review</label>
+        <name>Action_Plan_Builder</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; This contact is willing to provide help and information, not to ACT	&lt;br/&gt; &gt;	Ask him for advise not recommendations	&lt;br/&gt; &gt;	Make him fell all the accountability is OURS and any achievement is HIS &lt;br/&gt;</label>
+        <name>Action_Sponsor</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Help him to see the gap between actual and future situation	&lt;br/&gt; &gt;	Do NOT threaten him	&lt;br/&gt; &gt;	Find your way through the Influence Map &lt;br/&gt; &gt;	Make him feel that you (and your company) will help if any difficulties arise	&lt;br/&gt;</label>
+        <name>Action_Statu_Quo</name>
+    </customLabels>
+    <customLabels>
+        <label>&gt; Help him develop confidence in your thecnical team	&lt;br/&gt; &gt;	We will be highly influenced by any of this peers in other companies	&lt;br/&gt; &gt;	Make him feel very important, even if he is not	&lt;br/&gt; &gt;	Show him what´s in the project for his own career	&lt;br/&gt;</label>
+        <name>Action_Technical</name>
+    </customLabels>
+    <customLabels>
+        <label>Actions</label>
+        <name>Actions</name>
+    </customLabels>
+    <customLabels>
+        <label>Activities</label>
+        <name>Activities</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actual State --></label>
+        <name>Actual_State</name>
+    </customLabels>
+    <customLabels>
+        <label>Add Filter</label>
+        <name>Add_Filter_Logic</name>
+    </customLabels>
+    <customLabels>
+        <label>Add</label>
+        <name>Add_Share</name>
+    </customLabels>
+    <customLabels>
+        <label>Add New Service</label>
+        <name>Add_new_service</name>
+    </customLabels>
+    <customLabels>
+        <label>Add to Action Plan</label>
+        <name>Add_to_Action_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label>Administration</label>
+        <name>Administracion</name>
+    </customLabels>
+    <customLabels>
+        <label>Administration</label>
+        <name>Administration</name>
+    </customLabels>
+    <customLabels>
+        <label>Administration of</label>
+        <name>Administration_Trends</name>
+    </customLabels>
+    <customLabels>
+        <label>Previous</label>
+        <name>Anterior</name>
+    </customLabels>
+    <customLabels>
+        <label>Add Filter</label>
+        <name>Apply_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label>Which are the customer areas with which we currently relate?</label>
+        <name>Areas_Nos_Relacionamos</name>
+    </customLabels>
+    <customLabels>
+        <label>Work Areas</label>
+        <name>Areas_de_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label>Events Assignment</label>
+        <name>Asignacion_de_Eventos</name>
+    </customLabels>
+    <customLabels>
+        <label>Value Drivers Assignment:</label>
+        <name>Asignacion_value_drivers</name>
+    </customLabels>
+    <customLabels>
+        <label>Has been assigned to at least one existing opportunity.</label>
+        <name>Asignado_al_menos_una</name>
+    </customLabels>
+    <customLabels>
+        <label>Assigned to</label>
+        <name>Assigned_to</name>
+    </customLabels>
+    <customLabels>
+        <label>Attitude</label>
+        <name>Attitude</name>
+    </customLabels>
+    <customLabels>
+        <label>Authority</label>
+        <name>Authority</name>
+    </customLabels>
+    <customLabels>
+        <label>Back to Opportunity list</label>
+        <name>Back_to_Opportunitiy_List</name>
+    </customLabels>
+    <customLabels>
+        <label>Is there any alternative ?</label>
+        <name>Big_Deals_Amount_of_resources_black</name>
+    </customLabels>
+    <customLabels>
+        <label>Gather detailed information to develop this proposal</label>
+        <name>Big_Deals_enough_formal_information_alert</name>
+    </customLabels>
+    <customLabels>
+        <label>Review Telefonica Group resources to be assigned</label>
+        <name>Big_Deals_review_external_resources</name>
+    </customLabels>
+    <customLabels>
+        <label>Assign at least a local 3 FTEs team</label>
+        <name>Big_Deals_size_a_three_FTE_team</name>
+    </customLabels>
+    <customLabels>
+        <label>In order to see the result, you must complete de full questionnarie</label>
+        <name>Big_deals_incomplete_survey</name>
+    </customLabels>
+    <customLabels>
+        <label>In order to access the Scorecard, the questionnaire must be bloked</label>
+        <name>Big_deals_unblocked_survey</name>
+    </customLabels>
+    <customLabels>
+        <label>Brand</label>
+        <name>Brand</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Burning Platform --></label>
+        <name>Burning_Platform</name>
+    </customLabels>
+    <customLabels>
+        <label>Problems</label>
+        <name>Burning_Platform_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Value Chain and Processes</label>
+        <name>Cadena_valor_procesos</name>
+    </customLabels>
+    <customLabels>
+        <label>Calendar</label>
+        <name>Calendar</name>
+    </customLabels>
+    <customLabels>
+        <label>Sectoral Success Cases</label>
+        <name>Casos_exito_sectorial</name>
+    </customLabels>
+    <customLabels>
+        <label>Category</label>
+        <name>Categoria</name>
+    </customLabels>
+    <customLabels>
+        <label>Service Category</label>
+        <name>Categoria_de_los_servicios</name>
+    </customLabels>
+    <customLabels>
+        <label>Level of Commitment ?</label>
+        <name>Clarify_the_degree_of_compromise</name>
+    </customLabels>
+    <customLabels>
+        <label>Client</label>
+        <name>Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Professional Account Management</label>
+        <name>Client_Basics</name>
+    </customLabels>
+    <customLabels>
+        <label>Customer Context</label>
+        <name>Client_Context</name>
+    </customLabels>
+    <customLabels>
+        <label>Client´s</label>
+        <name>Client_s</name>
+    </customLabels>
+    <customLabels>
+        <label>Comments</label>
+        <name>Comments</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity Plan</label>
+        <name>Commercial_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label>OB´s Comercial anbd Engineering Responsibles</label>
+        <name>Commercial_and_engineering_responsibles</name>
+    </customLabels>
+    <customLabels>
+        <label>Competitor</label>
+        <name>Competitor</name>
+    </customLabels>
+    <customLabels>
+        <label>Competitor Standing</label>
+        <name>Competitor_Standing</name>
+    </customLabels>
+    <customLabels>
+        <label>Completed</label>
+        <name>Completed</name>
+    </customLabels>
+    <customLabels>
+        <label>Area Knowledge</label>
+        <name>Conocimiento_del_Area</name>
+    </customLabels>
+    <customLabels>
+        <label>Territorial Knowledge</label>
+        <name>Conocimiento_del_Territorio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>This contact is INFLUENCED by:</label>
+        <name>Contact_Influenced_By</name>
+    </customLabels>
+    <customLabels>
+        <label>Contact Name</label>
+        <name>Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>This contact INFLUENCES on:</label>
+        <name>Contact_influences_over</name>
+    </customLabels>
+    <customLabels>
+        <label>Customer Contacts Who Decide or Influence the Project</label>
+        <name>Contactos_Cliente_Deciden_Influyen</name>
+    </customLabels>
+    <customLabels>
+        <label>Account Contacts</label>
+        <name>Contacts_from_account</name>
+    </customLabels>
+    <customLabels>
+        <label>Parent Accounts Contacts</label>
+        <name>Contacts_from_parent_account</name>
+    </customLabels>
+    <customLabels>
+        <label>General Industry Context</label>
+        <name>Contexto_General</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Si el campo &quot;&quot;Contrato con la Competencia&quot;&quot; esta seleccionado, el campo &quot;&quot;Nombre de la Competencia&quot;&quot; no puede estar vacío. Si el campo &quot;&quot;Contrato con la Competencia&quot;&quot; no esta seleccionado el campo &quot;&quot;Nombre de la Competencia&quot;&quot;  debe estar vacío.&quot;</label>
+        <name>ContractError</name>
+    </customLabels>
+    <customLabels>
+        <label>Use General Mosaic as Template</label>
+        <name>CopyRDM</name>
+    </customLabels>
+    <customLabels>
+        <label>Country</label>
+        <name>Country</name>
+    </customLabels>
+    <customLabels>
+        <label>Create Service Category</label>
+        <name>Crear_Categoria_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Created Date</label>
+        <name>Created_Date</name>
+    </customLabels>
+    <customLabels>
+        <label>Account Schedule</label>
+        <name>Cronograma_de_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>What are the annual revenues of the client?</label>
+        <name>Cuales_son_ingresos_anuales</name>
+    </customLabels>
+    <customLabels>
+        <label>How many vehicles does the park have?</label>
+        <name>Cuantos_vehiculos_parque</name>
+    </customLabels>
+    <customLabels>
+        <label>Accounts</label>
+        <name>Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label>Local Account</label>
+        <name>Current_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>SCP Report</label>
+        <name>Custom_Report</name>
+    </customLabels>
+    <customLabels>
+        <label>Choose the sections you want to be part of the report</label>
+        <name>Custom_Report_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label>Decision Criteria Matrix</label>
+        <name>DCM</name>
+    </customLabels>
+    <customLabels>
+        <label>HIGH</label>
+        <name>DCM_HIGH</name>
+    </customLabels>
+    <customLabels>
+        <label>STRONG</label>
+        <name>DCM_HIGH_1</name>
+    </customLabels>
+    <customLabels>
+        <label>LOW</label>
+        <name>DCM_LOW</name>
+    </customLabels>
+    <customLabels>
+        <label>WEAK</label>
+        <name>DCM_LOW_1</name>
+    </customLabels>
+    <customLabels>
+        <label>of</label>
+        <name>De</name>
+    </customLabels>
+    <customLabels>
+        <label>Delete</label>
+        <name>Del_buttom</name>
+    </customLabels>
+    <customLabels>
+        <label>Delete Tasks</label>
+        <name>Delete_tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Description of the different deliverables</label>
+        <name>Deliberables_description</name>
+    </customLabels>
+    <customLabels>
+        <label>Customer Description</label>
+        <name>Descripcion_del_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label>Description</label>
+        <name>Description</name>
+    </customLabels>
+    <customLabels>
+        <label>Scope Detail</label>
+        <name>Detail_of_reach</name>
+    </customLabels>
+    <customLabels>
+        <label>Account Details</label>
+        <name>Detalle_de_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Developer --></label>
+        <name>Developer</name>
+    </customLabels>
+    <customLabels>
+        <label>Advances</label>
+        <name>Developer_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Does the customer have a Automotive park?</label>
+        <name>Dispone_parque_automotor</name>
+    </customLabels>
+    <customLabels>
+        <label>Double click to edit</label>
+        <name>Double_click</name>
+    </customLabels>
+    <customLabels>
+        <label>Due date</label>
+        <name>Due_Date</name>
+    </customLabels>
+    <customLabels>
+        <label>Economics</label>
+        <name>Economical_data</name>
+    </customLabels>
+    <customLabels>
+        <label>Economical Information</label>
+        <name>Economical_information</name>
+    </customLabels>
+    <customLabels>
+        <label>Number of central and / or administrative buildings</label>
+        <name>Edificios_centrales_administrativos</name>
+    </customLabels>
+    <customLabels>
+        <label>Influences</label>
+        <name>Edit_Influences</name>
+    </customLabels>
+    <customLabels>
+        <label>Work Axes</label>
+        <name>Ejes_de_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label>Delete Marked</label>
+        <name>Eliminar_Marcados</name>
+    </customLabels>
+    <customLabels>
+        <label>Final User</label>
+        <name>End_user</name>
+    </customLabels>
+    <customLabels>
+        <label>One of the selected tasks is assigned to other user</label>
+        <name>ErrorDeleteTask</name>
+    </customLabels>
+    <customLabels>
+        <label>Service Status</label>
+        <name>Estado_del_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Estimated FCV</label>
+        <name>Estimated_FCV</name>
+    </customLabels>
+    <customLabels>
+        <label>Project Stage</label>
+        <name>Etapa_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Evaluate</label>
+        <name>Evaluate</name>
+    </customLabels>
+    <customLabels>
+        <label>Event for our Clients</label>
+        <name>Evento_Clientes</name>
+    </customLabels>
+    <customLabels>
+        <label>Relevant Industry Event</label>
+        <name>Evento_Relevante_de_la_industria</name>
+    </customLabels>
+    <customLabels>
+        <label>Take out the Graphics</label>
+        <name>Excluir_del_gr_fico</name>
+    </customLabels>
+    <customLabels>
+        <label>Reporting</label>
+        <name>Execution</name>
+    </customLabels>
+    <customLabels>
+        <label>Why are the penalties so high ?</label>
+        <name>Explain_reason_for_high_indemnizations</name>
+    </customLabels>
+    <customLabels>
+        <label>Why is the pre-sales cycle so long ?</label>
+        <name>Explain_strategic_reasons_for_long_presale</name>
+    </customLabels>
+    <customLabels>
+        <label>Export to Excel</label>
+        <name>Export_to_Excel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export_to_Word --></label>
+        <name>Export_to_Word</name>
+    </customLabels>
+    <customLabels>
+        <label>Increase the lead time to present the offer to 5 weeks</label>
+        <name>Extend_the_period_to_present_the_offer_to_five_weeks</name>
+    </customLabels>
+    <customLabels>
+        <label>Increase the start date to 3 weeks minimun</label>
+        <name>Extend_the_start_date_to_three_weeks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Falta completar --></label>
+        <name>Falta_completar</name>
+    </customLabels>
+    <customLabels>
+        <label>Date</label>
+        <name>Fecha</name>
+    </customLabels>
+    <customLabels>
+        <label>Estimated Closing Date</label>
+        <name>Fecha_Estimada_de_Cierre</name>
+    </customLabels>
+    <customLabels>
+        <label>Due Date</label>
+        <name>Fecha_Vencimiento</name>
+    </customLabels>
+    <customLabels>
+        <label>Filter</label>
+        <name>Filter</name>
+    </customLabels>
+    <customLabels>
+        <label>Filter Logic</label>
+        <name>Filter_Logic</name>
+    </customLabels>
+    <customLabels>
+        <label>Filter by User</label>
+        <name>Filtrar_por_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label>Finnancials</label>
+        <name>Financial</name>
+    </customLabels>
+    <customLabels>
+        <label>Explain the overdue</label>
+        <name>Find_out_why_the_client_had_previous_debts</name>
+    </customLabels>
+    <customLabels>
+        <label>For the Organization</label>
+        <name>From_the_organization</name>
+    </customLabels>
+    <customLabels>
+        <label>For the Deployment and Operation</label>
+        <name>From_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label>For the Technical Solution</label>
+        <name>From_the_technical_solution</name>
+    </customLabels>
+    <customLabels>
+        <label>For the third parties (if any)</label>
+        <name>From_third_parties</name>
+    </customLabels>
+    <customLabels>
+        <label>Increase Telefonica´s portfolio in the solution</label>
+        <name>Fully_use_TEF_portfolio</name>
+    </customLabels>
+    <customLabels>
+        <label>Potential New Business</label>
+        <name>GAP_Growth_Strategy</name>
+    </customLabels>
+    <customLabels>
+        <label>General Information</label>
+        <name>General_information</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunities Management</label>
+        <name>Gestion_de_Oportunidades</name>
+    </customLabels>
+    <customLabels>
+        <label>Get the SLAs definition</label>
+        <name>Get_SLA_definitions</name>
+    </customLabels>
+    <customLabels>
+        <label>Acquire more knowledge on the client</label>
+        <name>Get_information_about_the_client</name>
+    </customLabels>
+    <customLabels>
+        <label>Describe the scope with the maximun detail possible</label>
+        <name>Get_reach_with_maximum_possible_detail</name>
+    </customLabels>
+    <customLabels>
+        <label>Detailed description of the technical solution</label>
+        <name>Get_technical_description_with_maximum_detail</name>
+    </customLabels>
+    <customLabels>
+        <label>Buying Criteria</label>
+        <name>Global_Buying_Criteria</name>
+    </customLabels>
+    <customLabels>
+        <label>Strategic Context</label>
+        <name>Global_Strategic_Context</name>
+    </customLabels>
+    <customLabels>
+        <label>Strategic Initiatives</label>
+        <name>Global_Strategic_Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Greater than --></label>
+        <name>Greater_than</name>
+    </customLabels>
+    <customLabels>
+        <label>Hide Filters</label>
+        <name>Hide_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label>Main Account Milestones</label>
+        <name>Hitos_Relevantes</name>
+    </customLabels>
+    <customLabels>
+        <label>Identify Client´s Key Players</label>
+        <name>Identify_Client_s_key_players_and_their_availability</name>
+    </customLabels>
+    <customLabels>
+        <label>Identify alternative platforms</label>
+        <name>Identify_alternative_platforms</name>
+    </customLabels>
+    <customLabels>
+        <label>Identify Client Decision Makers</label>
+        <name>Identify_decision_makers</name>
+    </customLabels>
+    <customLabels>
+        <label>Identify Key Partners for the Project</label>
+        <name>Identify_key_partners_for_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label>Identify main project risks</label>
+        <name>Identify_posible_negative_impacts_of_project_on_the_client</name>
+    </customLabels>
+    <customLabels>
+        <label>Importance to the Client</label>
+        <name>Importance_to_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Put in the Graphics</label>
+        <name>Incluir_al_gr_fico</name>
+    </customLabels>
+    <customLabels>
+        <label>Indicate the number of branches</label>
+        <name>Indica_cant_sucursales</name>
+    </customLabels>
+    <customLabels>
+        <label>If you know the exact number, indicate number of employees</label>
+        <name>Indica_cantidad_empleados</name>
+    </customLabels>
+    <customLabels>
+        <label>Activity Index</label>
+        <name>Indice_de_actividad</name>
+    </customLabels>
+    <customLabels>
+        <label>Industry Competitive Differenciators</label>
+        <name>Industry_Competitive_Differenciators</name>
+    </customLabels>
+    <customLabels>
+        <label>Vertical Industry Offering</label>
+        <name>Industry_Offering</name>
+    </customLabels>
+    <customLabels>
+        <label>Industry Success Stories</label>
+        <name>Industry_Success_Stories</name>
+    </customLabels>
+    <customLabels>
+        <label>Influence</label>
+        <name>Influence</name>
+    </customLabels>
+    <customLabels>
+        <label>Org Chart and Influence Map</label>
+        <name>Influence_Org</name>
+    </customLabels>
+    <customLabels>
+        <label>Contacts should be of the same Account</label>
+        <name>Influence_Same_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>Influences ON</label>
+        <name>Influences_Over</name>
+    </customLabels>
+    <customLabels>
+        <label>Strategic Initiative</label>
+        <name>Iniciativa</name>
+    </customLabels>
+    <customLabels>
+        <label>Iniciative</label>
+        <name>Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label>Go to Account Details</label>
+        <name>Ir_Detalle_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>Why are penalties so high ?</label>
+        <name>Justify_the_high_level_of_penalties</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Justify the high working liabilities of the project --></label>
+        <name>Justify_the_high_working_liabilities_of_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label>KPIs (Key Performance Indicators)</label>
+        <name>KPI</name>
+    </customLabels>
+    <customLabels>
+        <label>Last Update</label>
+        <name>LastModifiedDate</name>
+    </customLabels>
+    <customLabels>
+        <label>Last Year</label>
+        <name>Last_Year</name>
+    </customLabels>
+    <customLabels>
+        <label>Last Year - 1</label>
+        <name>Last_Year_1</name>
+    </customLabels>
+    <customLabels>
+        <label>Last Year - 2</label>
+        <name>Last_Year_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Less than --></label>
+        <name>Less_than</name>
+    </customLabels>
+    <customLabels>
+        <label>Related Opportunity</label>
+        <name>Linked_Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label>Merge Tasks</label>
+        <name>Merge_tasks</name>
+    </customLabels>
+    <customLabels>
+        <label>Market Metrics and Analysis</label>
+        <name>Metricas_analisis_mercado</name>
+    </customLabels>
+    <customLabels>
+        <label>The field is mandatory</label>
+        <name>Missing_field_error_base</name>
+    </customLabels>
+    <customLabels>
+        <label>Modify Mosaic</label>
+        <name>Modify_RDM</name>
+    </customLabels>
+    <customLabels>
+        <label>Months to Contract expiration</label>
+        <name>Months_to_go</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negative --></label>
+        <name>Negative</name>
+    </customLabels>
+    <customLabels>
+        <label>Negative</label>
+        <name>Negative_Help</name>
+    </customLabels>
+    <customLabels>
+        <label>Dangerous Relationship</label>
+        <name>Negative_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Ask for extension in the proposal delivery</label>
+        <name>Negotiate_submission_period_extension</name>
+    </customLabels>
+    <customLabels>
+        <label>Neutral Relationship</label>
+        <name>Neutral_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>New</label>
+        <name>New</name>
+    </customLabels>
+    <customLabels>
+        <label>New Contact</label>
+        <name>New_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>New Initiative</label>
+        <name>New_Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label>Level of Development</label>
+        <name>Nivel_de_Desarrollo</name>
+    </customLabels>
+    <customLabels>
+        <label>Relationship level</label>
+        <name>Nivel_de_Relacion</name>
+    </customLabels>
+    <customLabels>
+        <label>No events for selected accounts</label>
+        <name>No_Eventos_Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label>Has not been assigned to any existing or potential opportunity.</label>
+        <name>No_asignado_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>: No data loaded</label>
+        <name>No_hay_Datos_Cargados</name>
+    </customLabels>
+    <customLabels>
+        <label>No accounts loaded</label>
+        <name>No_hay_cuentas_cargadas</name>
+    </customLabels>
+    <customLabels>
+        <label>No accounts match the search criteria</label>
+        <name>No_hay_cuentas_criterio</name>
+    </customLabels>
+    <customLabels>
+        <label>Service Category Name</label>
+        <name>Nombre_Categoria_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Account Name</label>
+        <name>Nombre_de_la_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label>Name of the opportunity</label>
+        <name>Nombre_de_la_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>Competitor Name</label>
+        <name>Nombre_del_Competidor_del_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label>Proyect Name</label>
+        <name>Nombre_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Service Name</label>
+        <name>Nombre_del_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Not contain --></label>
+        <name>Not_contain</name>
+    </customLabels>
+    <customLabels>
+        <label>Notes and attached files</label>
+        <name>Notes_Attachments</name>
+    </customLabels>
+    <customLabels>
+        <label>New Area</label>
+        <name>Nueva_Area</name>
+    </customLabels>
+    <customLabels>
+        <label>New Technology</label>
+        <name>Nueva_Tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label>New Contact</label>
+        <name>Nuevo_Contacto</name>
+    </customLabels>
+    <customLabels>
+        <label>New Milestone</label>
+        <name>Nuevo_Hito</name>
+    </customLabels>
+    <customLabels>
+        <label>New Service</label>
+        <name>Nuevo_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Numero de identificacion --></label>
+        <name>Numero_de_la_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>OB Commercial Responsible</label>
+        <name>OB_commercial_responsible</name>
+    </customLabels>
+    <customLabels>
+        <label>Observations</label>
+        <name>Observaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>Get Accounts</label>
+        <name>Obtener_Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunities</label>
+        <name>Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label>Value Management</label>
+        <name>Opportunities_Value_Proposition</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity fields</label>
+        <name>Opportunity_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>Date when the opportunity arrived</label>
+        <name>Opportunity_arrival_date</name>
+    </customLabels>
+    <customLabels>
+        <label>Other</label>
+        <name>Other</name>
+    </customLabels>
+    <customLabels>
+        <label>Other Technology</label>
+        <name>Otra_tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label>Other</label>
+        <name>Otro</name>
+    </customLabels>
+    <customLabels>
+        <label>Others</label>
+        <name>Otros</name>
+    </customLabels>
+    <customLabels>
+        <label>Our relationship</label>
+        <name>Our_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Our Standing</label>
+        <name>Our_Standing</name>
+    </customLabels>
+    <customLabels>
+        <label>Competitive Environment</label>
+        <name>Overall_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>OUR Current Contracts with the Customer</label>
+        <name>Own_installed_base</name>
+    </customLabels>
+    <customLabels>
+        <label>Page</label>
+        <name>Pagina</name>
+    </customLabels>
+    <customLabels>
+        <label>Main Accounts</label>
+        <name>Parent_Account</name>
+    </customLabels>
+    <customLabels>
+        <label>Owned or Managed Automotive Park</label>
+        <name>Parque_automotor_propio_gestionado</name>
+    </customLabels>
+    <customLabels>
+        <label>Account Business Landscape</label>
+        <name>Parque_de_servicios</name>
+    </customLabels>
+    <customLabels>
+        <label>How does the client see us?</label>
+        <name>Perceived_Performance_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Personal Relationship</label>
+        <name>Personal_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Advantageous Relationship</label>
+        <name>Positive_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Potential Business</label>
+        <name>Potential_New_Business</name>
+    </customLabels>
+    <customLabels>
+        <label>Prepare the organization to meet the SLA</label>
+        <name>Preapare_organization_to_accomplish_SLAs</name>
+    </customLabels>
+    <customLabels>
+        <label>Presale and offering</label>
+        <name>Presale_and_offer</name>
+    </customLabels>
+    <customLabels>
+        <label>Top 3 Deals Estimated Closing Date</label>
+        <name>Previsi_n_Cierre_TOP_3_deals</name>
+    </customLabels>
+    <customLabels>
+        <label>First</label>
+        <name>Primera</name>
+    </customLabels>
+    <customLabels>
+        <label>Who is our main competitor in this solution?</label>
+        <name>Principal_Competidor_Solucion</name>
+    </customLabels>
+    <customLabels>
+        <label>Main Players</label>
+        <name>Principales_players</name>
+    </customLabels>
+    <customLabels>
+        <label>Priority</label>
+        <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label>Products/Services</label>
+        <name>Product_Services</name>
+    </customLabels>
+    <customLabels>
+        <label>Project</label>
+        <name>Project</name>
+    </customLabels>
+    <customLabels>
+        <label>Project Description</label>
+        <name>Project_description</name>
+    </customLabels>
+    <customLabels>
+        <label>Owner</label>
+        <name>Propietario</name>
+    </customLabels>
+    <customLabels>
+        <label>Proyect</label>
+        <name>Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Communications RFP</label>
+        <name>Publicaci_n_RFP_Comunicaciones</name>
+    </customLabels>
+    <customLabels>
+        <label>TI RFP</label>
+        <name>Publicaci_n_RFP_TI</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunities Relationship Mosaic</label>
+        <name>RDM</name>
+    </customLabels>
+    <customLabels>
+        <label>Overall Relationship Development Mosaic</label>
+        <name>RDMGeneral</name>
+    </customLabels>
+    <customLabels>
+        <label>RDM sorted by Attitude</label>
+        <name>RDM_attitude</name>
+    </customLabels>
+    <customLabels>
+        <label>RDM sorted by Focus</label>
+        <name>RDM_role</name>
+    </customLabels>
+    <customLabels>
+        <label>Scope</label>
+        <name>Reach</name>
+    </customLabels>
+    <customLabels>
+        <label>Recommendations</label>
+        <name>Recommendations</name>
+    </customLabels>
+    <customLabels>
+        <label>Reduce guarantees ammount</label>
+        <name>Reduce_bails_study_alternative_warranties</name>
+    </customLabels>
+    <customLabels>
+        <label>Region/Country</label>
+        <name>Region</name>
+    </customLabels>
+    <customLabels>
+        <label>Related Potential Business</label>
+        <name>Related_PNB</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related Value Drivers --></label>
+        <name>Related_Value_Drivers</name>
+    </customLabels>
+    <customLabels>
+        <label>Delete</label>
+        <name>Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Renegociate indemnizations --></label>
+        <name>Renegociate_indemnizations</name>
+    </customLabels>
+    <customLabels>
+        <label>Reports to</label>
+        <name>Reports_To</name>
+    </customLabels>
+    <customLabels>
+        <label>Responsible</label>
+        <name>Responsible</name>
+    </customLabels>
+    <customLabels>
+        <label>Challenge</label>
+        <name>Reto</name>
+    </customLabels>
+    <customLabels>
+        <label>Risks</label>
+        <name>Risks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SCP_Total --></label>
+        <name>SCP_Total</name>
+    </customLabels>
+    <customLabels>
+        <label>The evaluated contact cannot be selected</label>
+        <name>SCP_noMismoContacto</name>
+    </customLabels>
+    <customLabels>
+        <label>Selected</label>
+        <name>Seleccionado</name>
+    </customLabels>
+    <customLabels>
+        <label>If the customer has a presence outside the country, select in which of the following countries they have business</label>
+        <name>Seleccionar_paises_presencia</name>
+    </customLabels>
+    <customLabels>
+        <label>Select</label>
+        <name>Select</name>
+    </customLabels>
+    <customLabels>
+        <label>Send</label>
+        <name>Send</name>
+    </customLabels>
+    <customLabels>
+        <label>Service</label>
+        <name>Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Services</label>
+        <name>Servicios</name>
+    </customLabels>
+    <customLabels>
+        <label>Services currently provided by the competence</label>
+        <name>Servicios_Actualmente_Competencia</name>
+    </customLabels>
+    <customLabels>
+        <label>Services currently provided by us</label>
+        <name>Servicios_Actualmente_Nosotros</name>
+    </customLabels>
+    <customLabels>
+        <label>Services we plan to sell in the future</label>
+        <name>Servicios_Planeamos_Futuro</name>
+    </customLabels>
+    <customLabels>
+        <label>Show filters</label>
+        <name>Show_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label>Has been assigned at least one potential opportunity.</label>
+        <name>Si_asignado_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label>Next</label>
+        <name>Siguiente</name>
+    </customLabels>
+    <customLabels>
+        <label>Source</label>
+        <name>Source</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Statu Quo --></label>
+        <name>Statu_Quo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Statu Quo help --></label>
+        <name>Statu_Quo_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>Status</name>
+    </customLabels>
+    <customLabels>
+        <label>Review current Opportunities</label>
+        <name>Step1</name>
+    </customLabels>
+    <customLabels>
+        <label>Step 2:  Review current Contracts</label>
+        <name>Step2</name>
+    </customLabels>
+    <customLabels>
+        <label>Analyse how to reduce the term</label>
+        <name>Study_a_way_to_reduce_the_times</name>
+    </customLabels>
+    <customLabels>
+        <label>See how to reduce relaying on third parties</label>
+        <name>Study_a_way_to_reduce_third_party_dependence_below_50</name>
+    </customLabels>
+    <customLabels>
+        <label>See how to reduce relaying on third parties</label>
+        <name>Study_a_way_to_reduce_third_party_dependence_below_80</name>
+    </customLabels>
+    <customLabels>
+        <label>See if you can match the opportunity using Telefonica catalog</label>
+        <name>Study_posibility_to_fit_offer_with_existent_products_in_the_portfolio</name>
+    </customLabels>
+    <customLabels>
+        <label>See how to assign Telefonica existing headcount</label>
+        <name>Study_the_posibility_to_fit_offer_with_existent_profiles</name>
+    </customLabels>
+    <customLabels>
+        <label>Replace third parties</label>
+        <name>Study_the_way_to_substitute_key_partners</name>
+    </customLabels>
+    <customLabels>
+        <label>Subject</label>
+        <name>Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>Is the number of branches growing, decreasing or maintaining?</label>
+        <name>Sucursales_crece_decrece</name>
+    </customLabels>
+    <customLabels>
+        <label>Suggested Approach</label>
+        <name>Suggested_approach</name>
+    </customLabels>
+    <customLabels>
+        <label>Task Status</label>
+        <name>Task_status</name>
+    </customLabels>
+    <customLabels>
+        <label>Presales an sales Team</label>
+        <name>Team_for_offer_and_presale</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Technical --></label>
+        <name>Technical</name>
+    </customLabels>
+    <customLabels>
+        <label>Technical</label>
+        <name>Technical_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Technology</label>
+        <name>Tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label>Technologies that respond to the Project</label>
+        <name>Tecnologias_Responden_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>Trends</label>
+        <name>Tendencias</name>
+    </customLabels>
+    <customLabels>
+        <label>Area Type</label>
+        <name>Tipo_de_Area</name>
+    </customLabels>
+    <customLabels>
+        <label>Contact Type</label>
+        <name>Tipo_de_Contacto</name>
+    </customLabels>
+    <customLabels>
+        <label>Position</label>
+        <name>Title</name>
+    </customLabels>
+    <customLabels>
+        <label>All</label>
+        <name>Todos</name>
+    </customLabels>
+    <customLabels>
+        <label>Industry Trends</label>
+        <name>Trend</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Try to exclude or minimize the human resource requirement --></label>
+        <name>Try_to_exclude_or_minimize_the_human_resource_requirement</name>
+    </customLabels>
+    <customLabels>
+        <label>URL/Attached document</label>
+        <name>URL_Attachment</name>
+    </customLabels>
+    <customLabels>
+        <label>Last</label>
+        <name>Ultima</name>
+    </customLabels>
+    <customLabels>
+        <label>Unlink</label>
+        <name>Unlink</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- User --></label>
+        <name>User</name>
+    </customLabels>
+    <customLabels>
+        <label>User</label>
+        <name>User_Region</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value_Arguments --></label>
+        <name>Value_Arguments</name>
+    </customLabels>
+    <customLabels>
+        <label>About our Business with the Client</label>
+        <name>Value_Proposition</name>
+    </customLabels>
+    <customLabels>
+        <label>Expiration</label>
+        <name>Vencimiento</name>
+    </customLabels>
+    <customLabels>
+        <label>Due date active contract with Telefonica</label>
+        <name>Vencimiento_Contrato_Activo_con_Telef_nica</name>
+    </customLabels>
+    <customLabels>
+        <label>Due Date active contract with the Competency</label>
+        <name>Vencimiento_Contrato_Activo_con_la_Competencia</name>
+    </customLabels>
+    <customLabels>
+        <label>Service Contract Expiration</label>
+        <name>Vencimiento_Contrato_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label>Contract Expirations, Important Events, etc.</label>
+        <name>Vencimientos_Eventos_Etc</name>
+    </customLabels>
+    <customLabels>
+        <label>Due Date active contract with us</label>
+        <name>Venicmiento_Contrato_Nosotros</name>
+    </customLabels>
+    <customLabels>
+        <label>See RDM sorted by Attitude</label>
+        <name>View_Mosaic_order_by_Attitude</name>
+    </customLabels>
+    <customLabels>
+        <label>See Org Chart</label>
+        <name>View_Org_Chart</name>
+    </customLabels>
+    <customLabels>
+        <label>Success stories</label>
+        <name>account_past_proven_value</name>
+    </customLabels>
+    <customLabels>
+        <label>Add</label>
+        <name>add</name>
+    </customLabels>
+    <customLabels>
+        <label>Add</label>
+        <name>add_buttom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- add_kpi --></label>
+        <name>add_kpi</name>
+    </customLabels>
+    <customLabels>
+        <label>Evaluated Contacts</label>
+        <name>already</name>
+    </customLabels>
+    <customLabels>
+        <label>Back to Contacts Table</label>
+        <name>back_to_contact</name>
+    </customLabels>
+    <customLabels>
+        <label>Wrong Filter</label>
+        <name>badFilter</name>
+    </customLabels>
+    <customLabels>
+        <label>Buying Cycle Stage</label>
+        <name>buying_cycle</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;La casilla seleccionada indica &quot;&quot;SI&quot;&quot; por respuesta&quot;</label>
+        <name>checkbox_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Close</label>
+        <name>close</name>
+    </customLabels>
+    <customLabels>
+        <label>If out of page, the not saved data will be lost</label>
+        <name>close_without_save</name>
+    </customLabels>
+    <customLabels>
+        <label>Closest contact from our team</label>
+        <name>closest</name>
+    </customLabels>
+    <customLabels>
+        <label>Relationship with our Competitors</label>
+        <name>competition_relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Contacts to Visualize in Org. Chart</label>
+        <name>contact_to_view</name>
+    </customLabels>
+    <customLabels>
+        <label>Includes</label>
+        <name>contain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- controller --></label>
+        <name>controller</name>
+    </customLabels>
+    <customLabels>
+        <label>Controller</label>
+        <name>controller_help</name>
+    </customLabels>
+    <customLabels>
+        <label>Client Satisfaction Evolution</label>
+        <name>csat</name>
+    </customLabels>
+    <customLabels>
+        <label>Double Click to add a Capability</label>
+        <name>dblClickToAddCapability</name>
+    </customLabels>
+    <customLabels>
+        <label>Double Click to Add a Value Objective</label>
+        <name>dblClickToAddValue</name>
+    </customLabels>
+    <customLabels>
+        <label>Delete</label>
+        <name>delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Finishes in ..</label>
+        <name>end_with</name>
+    </customLabels>
+    <customLabels>
+        <label>Equal to</label>
+        <name>equals</name>
+    </customLabels>
+    <customLabels>
+        <label>Criteria Evaluation</label>
+        <name>eval_criteria</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Actividades a realizar durante la preventa&quot;&quot; en la seccion &quot;&quot;Equipo de preventa y oferta&quot;&quot;.&quot;</label>
+        <name>falta_Actividades_a_realizar_durante</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Calcular el nº de jornadas&quot;&quot; en la seccion &quot;&quot;Equipo de preventa y oferta&quot;&quot;.&quot;</label>
+        <name>falta_Calcular_el_n_de_jornadas</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Concretar el número FTEs que la OB está dispuesta a aportar en preventa y propuesta&quot;&quot; en la seccion &quot;&quot;Equipo de preventa y oferta&quot;&quot;.&quot;</label>
+        <name>falta_Concretar_el_n_mero_FTEs</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Concretar el número de FTEs de terceros que se requieren&quot;&quot; en la seccion &quot;&quot;Equipo de preventa y oferta&quot;&quot;.&quot;</label>
+        <name>falta_Concretar_el_n_mero_de_FTEs_de_terceros</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el grado de exigencia de los SLAs que pide el cliente respecto a los estándar de Telefonica?&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_grado_de_exigencia</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el grado de fiabilidad sobre la continuidad en el tiempo...&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_grado_de_fiabilidad_sobre</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el grado de interrelación de TEF con los principales decisores?&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_grado_de_interrelaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el impacto del proyecto en el negocio del cliente?&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_impacto_del_proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el nivel de conocimiento del Cliente:&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_nivel_de_conocimiento</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuál es el plazo de ejecución del proyecto?&quot;&quot; en la seccion &quot;&quot;Detalle del alcance&quot;&quot;.&quot;</label>
+        <name>falta_Cu_l_es_el_plazo_de_ejecuci_n</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Cuánta es la facilidad para TEF de cumplir los SLAs solicitados?&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cu_nta_es_la_facilidad_para_TEF</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Cuantificar el importe de las Fianzas a depositar&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Cuantificar_el_importe_de_las_Fianzas</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Detallar el % de la solución que puede aportar TEF con su portfolio&quot;&quot; en la seccion &quot;&quot;Detalle del alcance&quot;&quot;.&quot;</label>
+        <name>falta_Detallar_el_de_la_soluci_n</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Detallar el importe de las penalizaciones / indemnizaciones&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Detallar_el_importe</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Duración estimada de la Preventa y Oferta&quot;&quot; en la seccion &quot;&quot;Equipo de preventa y oferta&quot;&quot;.&quot;</label>
+        <name>falta_Duraci_n_estimada</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;Duración total del proyecto&quot;&quot; en la seccion &quot;&quot;Detalle del alcance&quot;&quot;.&quot;</label>
+        <name>falta_Duraci_n_total_del_proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Es el volumen de pasivo laboral máximo significativo respecto al...&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Es_el_volumen_de_pasivo_laboral_m_ximo_significativo_respecto</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Es el volumen de penalización máximo por incumplimiento del...&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Es_el_volumen_de_penalizaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Es el volumen de penalización máximo por rescición anticipada...&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Es_el_volumen_de_penalizaci_n_m_ximo</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Es significativo el volumen de indemnización máximo respecto al...&quot;&quot; en la seccion &quot;&quot;Riesgos&quot;&quot;.&quot;</label>
+        <name>falta_Es_significativo_el_volumen_de_indemnizaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Existe experiencia en el Grupo en proyectos similares?&quot;&quot; en la seccion &quot;&quot;Detalle del alcance&quot;&quot;.&quot;</label>
+        <name>falta_Existe_experiencia_en_el</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Falta completar el campo &quot;&quot;¿Nº de personas que tendrían que incorporarse en plantilla en TEF?&quot;&quot; en la seccion &quot;&quot;Detalle del alcance&quot;&quot;.&quot;</label>
+        <name>falta_N_de_personas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- filterHelp --></label>
+        <name>filterHelp</name>
+    </customLabels>
+    <customLabels>
+        <label>Focus</label>
+        <name>focus</name>
+    </customLabels>
+    <customLabels>
+        <label>Generation</label>
+        <name>generation</name>
+    </customLabels>
+    <customLabels>
+        <label>Go to Criteria</label>
+        <name>gotoCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label>Go to the RDM</label>
+        <name>gotoMosaic</name>
+    </customLabels>
+    <customLabels>
+        <label>Go to the Oppty. Snapshot</label>
+        <name>gotoSnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- inSeccion --></label>
+        <name>inSeccion</name>
+    </customLabels>
+    <customLabels>
+        <label>Is influenced BY</label>
+        <name>influenced_by</name>
+    </customLabels>
+    <customLabels>
+        <label>Main Competitors</label>
+        <name>main_competitors</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;To reflect a new influence, drag the &quot;&quot;influencer&quot;&quot; box and drop over the &quot;&quot;influenced&quot;&quot; box.  Then, press &quot;&quot;Save Changes&quot;&quot;.  To print, press the buttom &quot;&quot;Download Images&quot;&quot;&quot;</label>
+        <name>modify_influences</name>
+    </customLabels>
+    <customLabels>
+        <label>Modify Influence Map</label>
+        <name>modify_influences_btn</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Drag the supervised contact box and drop it over the supervisor&apos;s.  Then, press the &quot;&quot;Save changes&quot;&quot; buttom&quot;</label>
+        <name>modify_org</name>
+    </customLabels>
+    <customLabels>
+        <label>Modify Org. Chart</label>
+        <name>modify_org_btn</name>
+    </customLabels>
+    <customLabels>
+        <label>Mouseover the contact in the graph or select the contact in the list to see Influences</label>
+        <name>mouseover</name>
+    </customLabels>
+    <customLabels>
+        <label>Name</label>
+        <name>name</name>
+    </customLabels>
+    <customLabels>
+        <label>Trade Balance</label>
+        <name>net_activity</name>
+    </customLabels>
+    <customLabels>
+        <label>No Data Found</label>
+        <name>no_industry_trends</name>
+    </customLabels>
+    <customLabels>
+        <label>Different to</label>
+        <name>not_equal_to</name>
+    </customLabels>
+    <customLabels>
+        <label>Offering Schedule</label>
+        <name>offer_schedule</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunity</label>
+        <name>opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label>Name of the Opportunity</label>
+        <name>opportunityName</name>
+    </customLabels>
+    <customLabels>
+        <label>Purchases to the Client</label>
+        <name>our_expenditures</name>
+    </customLabels>
+    <customLabels>
+        <label>People</label>
+        <name>people</name>
+    </customLabels>
+    <customLabels>
+        <label>By selecting the General Mosaic as Template all previous data will be erase, do you want to continue ?</label>
+        <name>popupGeneralMosaic</name>
+    </customLabels>
+    <customLabels>
+        <label>Potential Business</label>
+        <name>potential_business</name>
+    </customLabels>
+    <customLabels>
+        <label>Is reported by</label>
+        <name>reported_by</name>
+    </customLabels>
+    <customLabels>
+        <label>Save</label>
+        <name>save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- saveAndBlock --></label>
+        <name>saveAndBlock</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- saveAndUnblock --></label>
+        <name>saveAndUnblock</name>
+    </customLabels>
+    <customLabels>
+        <label>Save Changes</label>
+        <name>save_changes</name>
+    </customLabels>
+    <customLabels>
+        <label>Download Image</label>
+        <name>save_image</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- save_msg --></label>
+        <name>save_msg</name>
+    </customLabels>
+    <customLabels>
+        <label>Select Criteria to Evaluate</label>
+        <name>select_criteria</name>
+    </customLabels>
+    <customLabels>
+        <label>Share of Wallet</label>
+        <name>share_of_wallet</name>
+    </customLabels>
+    <customLabels>
+        <label>Selected user is the region Owner</label>
+        <name>share_region_to_owner</name>
+    </customLabels>
+    <customLabels>
+        <label>Less...</label>
+        <name>show_less</name>
+    </customLabels>
+    <customLabels>
+        <label>More...</label>
+        <name>show_more</name>
+    </customLabels>
+    <customLabels>
+        <label>See Video</label>
+        <name>show_video</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunities Snapshot</label>
+        <name>snapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- solution --></label>
+        <name>solution</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sponsor --></label>
+        <name>sponsor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sponsor_help --></label>
+        <name>sponsor_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- start with --></label>
+        <name>start_with</name>
+    </customLabels>
+    <customLabels>
+        <label>Strenghts</label>
+        <name>strenght</name>
+    </customLabels>
+    <customLabels>
+        <label>SWOT Analysis</label>
+        <name>swot</name>
+    </customLabels>
+    <customLabels>
+        <label>Threats</label>
+        <name>threats</name>
+    </customLabels>
+    <customLabels>
+        <label>Client Total ICT budget</label>
+        <name>totalict</name>
+    </customLabels>
+    <customLabels>
+        <label>Total revenue from the Client (b)</label>
+        <name>totrevenue</name>
+    </customLabels>
+    <customLabels>
+        <label>The graphic shows the relative positioning vs. our competitor in the criteria adopted by the Client for this Opportunity</label>
+        <name>tutorial_DCMCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;To build the Decision Criteria Matrix of a certain Opportunity, evaluate the Decision Cirteria by pressing on the &quot;&quot;Evaluate Criteria&quot;&quot; button.  If you need to add a different Criteria do so by pressing the &quot;&quot;Add Criteria&quot;&quot; button.   Once finalized the evaluation, press the &quot;&quot;See Criteria Graphic&quot;&quot;  button&quot;</label>
+        <name>tutorial_DCMEvaluateCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label>SCP automatically builds the Opportunity Snapshot, incorporating 6 sub-sections: 1) Key variable of the opportunity (FCV, % hit rate, etc.).  2) Valued Drivers associated with the Opportunity  3) Editable space for articulating the Value Proposition, based on the Value Drivers on the previous sub-section. 4) Relationship Development Mosaic 5) Decision Criteria Matrix of the Opportunity 6) Tasks associated with the Opportunity</label>
+        <name>tutorial_OpportunitySnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;First select the SCP section that will be part of the Report, by clicking the corresponding box.  Then, press the &quot;&quot;Export to Word&quot;&quot; button and edit it at your convenience&quot;</label>
+        <name>tutorial_accountCustomReport</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Analizar si algún (o algunos) Value Driver (s) podría(n) servir de base para generar una nueva oportunidad. En ese caso, presionar el botón &quot;&quot;Agregar Negocio Potencial&quot;&quot; y proceder a &quot;&quot;arrastrar&quot;&quot; los value drives correspondientes a ese nuevo Negocio Potencial. Seguidamente, completar el resto de los campos del nuevo Negocio Potencial detectado.&quot;</label>
+        <name>tutorial_accountGrowthStrategy</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;This section is to record the size and evoluction of the business we have with the Client, plus the relative impact and variation of such business in Client&apos;s total relative budget.   The following fields are editable: 1) (First row) Estimate of Client´s total relative budget.  2) (Second row) total amount of Revenues coming from the Client, and 3) (Forth row) if applicable, total amount of expenditures we might have made to the Client.    Third row (&quot;&quot;Share of wallet&quot;&quot;) and last row (&quot;&quot;Trade Balance&quot;&quot;) are NOT editable, since they are automatically calculated based on the other data.&quot;</label>
+        <name>tutorial_accountHistoricalBusinessWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>This section serves as a centralized repository for enterprise wide trends and challenges corresponding to the Sector/Industry to which the Client belongs to, either at Global, Regional and Local level.   The section is only editable by designated Administrators of such knowledge</label>
+        <name>tutorial_accountIndustryTrends</name>
+    </customLabels>
+    <customLabels>
+        <label>Drag the correponding value drivers and drop by the related opportunities</label>
+        <name>tutorial_accountIndustryTrendsWindowNew</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;This section serves the purpose of recording the specific Key Performance Indicators of our Client business.   The table gives the chance to observe a series of three year trend of each KPI.   There are two different types of KPIs: those that are defined by a designated Administrator based on the Sector/Industry the Client belogs to, and the other specific of the Client, that can be added by usign the &quot;&quot;Add New KPI&quot;&quot; button&quot;</label>
+        <name>tutorial_accountKPIWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;This sections summarizes all tasks added through the &quot;&quot;Add to Action Plan&quot;&quot; box, displayed on every page and screen of SCP.   To turn this list into an Action Plan, it must be completed the corresponding fields.   The column &quot;&quot;Subject&quot;&quot; is automatically fullfill by the system, and indicates in which section of SCP the task was originated&quot;</label>
+        <name>tutorial_accountMasterPlan</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;First, select the Opportunity on which the Relationship Mosaic will be built, by pressing the &quot;&quot;Go to the RDM&quot;&quot; button on the corresponding one&quot;</label>
+        <name>tutorial_accountOpportunityList</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;First select the Opportunity on which the Decision Matrix will be built, pressing the corresponding &quot;&quot;Go to Criteria&quot;&quot; button.&quot;</label>
+        <name>tutorial_accountOpportunityListCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;First, select the Opportunity which you wish to view the Snapshot by pressing the corresponding &quot;&quot;Go to Snapshot&quot;&quot; button&quot;</label>
+        <name>tutorial_accountOpportunityListSnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;To build or edit both the Org Chart and the Influence Map, press the &quot;&quot;See Org Chart/Influence Map&quot;&quot; buttom, and use the &quot;&quot;Drag &amp; Drop&quot;&quot; function.&quot;</label>
+        <name>tutorial_accountOrganizationChartWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>This section comprises three different sub-sections: 1) describes the activity of our competitors around our Client.  2) SWOT (Strenghts, Weakenesses, Opportunities and Threats) analysis on our relationship with the Client, and 3) the level of Client Satisfaction achieved through the corresponding surveys.</label>
+        <name>tutorial_accountOverallRelationshipWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;This section serves the purpose of recording our own business capabilities that are related to the Value Proposition to the Client.   These capabilities come from two different sources: 1) The ones that are centralized recorded by a designated Administrator, and are related to the Sector/Industry that the Client belongs to, and 2) Capabilities specific applicable to a Client (Success stories or Competitive Differenciators) that might be recorded by the Account Owner, using the &quot;&quot;Add Capability&quot;&quot; button&quot;</label>
+        <name>tutorial_accountPastProvenValueNew</name>
+    </customLabels>
+    <customLabels>
+        <label>This section purpose is to graphic the relationship with Client Contacts, primarily sorted by the Focus (Role) in the purchasing decision around our solutions.  When mouseover the names of the contacts more information is displayed, including a suggested approach based on the assigned values to each attribute.</label>
+        <name>tutorial_accountRDMChart</name>
+    </customLabels>
+    <customLabels>
+        <label>This section purpose is to graphic the relationship with Client Contacts, primarily sorted by the Attitude in the purchasing decision around our solutions.  When mouseover the names of the contacts more information is displayed, including a suggested approach based on the assigned values to each attribute.</label>
+        <name>tutorial_accountRDMChartAttitude</name>
+    </customLabels>
+    <customLabels>
+        <label>This section purpose is to graphic the relationship with Client Contacts, primarily sorted by the Attitude in the purchasing decision around our solutions for this Opportunity.. When mouseover the names of the contacts more information is displayed, including a suggested approach based on the assigned values to each attribute.</label>
+        <name>tutorial_accountRDMChartAttitude_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label>This section purpose is to graphic the relationship with Client Contacts, primarily sorted by the Focus (Role) in the purchasing decision around our solutions for this Opportunity.   When mouseover the names of the contacts more information is displayed, including a suggested approach based on the assigned values to each attribute.</label>
+        <name>tutorial_accountRDMChart_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label>The purpose of this section is to build the Relationship Development Mosaic with the Client, through the evaluation of the Contacts who participate in decisions related to our business.     To do so, the pertinent contacts must be chosen and evaluated by indicating the value of ALL the attributes the tool offers.   Once done this, the graphic representation could be seen, sorted by Role or Attitude, by pressing the corresponding button.</label>
+        <name>tutorial_accountRDMWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Si el Mosaico de la oportunidad es igual o similar al Mosaico General, podemos utilizar este úlitmo como &quot;&quot;base&quot;&quot; o &quot;&quot;template&quot;&quot; a través del botón correspondiente. Si no lo es, convendrá generarlo desde &quot;&quot;cero&quot;&quot;, es decir, evaluando TODOS los atributos de cada contacto que corresponda incorporar.&quot;</label>
+        <name>tutorial_accountRDMWindow_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;This section contains three sub-sections: 1) Strategic Context: this reflects the overall situation of our Client, growth o restrain perspectives, its market, its competition, other internal or external factors that compromise its performance, etc. 2) Strategic Initiatives: relevant co-ordinated efforts made or to be made by the Client, to achieve its business objetives, and might have a relationship to the solutions we provide.   3) Buying Criteria: any knowledge relative to understand if the Client has any pre-determined purchasing criteria (i.e: negotiations,  vendor profile preferences, centralized decisions, etc.).   All sections have the possibility to receive information from parent(s) account(s) if applicable.    Only fields that are editable are the ones related to the local (or &quot;&quot;child&quot;&quot;) account&quot;</label>
+        <name>tutorial_accountStrategicContextWindow</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;First indicate the Region, Sector and Sub-sector, press the Add button.  Input the Title and Description of the Trend in the pop-up box and press the &quot;&quot;Add&quot;&quot; button&quot;</label>
+        <name>tutorial_adminIndustryTrends</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Select the Region, Sector and Sub-sector and press the &quot;&quot;Add&quot;&quot; button.  Then input the name and the measure unit of the KPI in the displayed pop-up box and press the &quot;&quot;Add&quot;&quot; button&quot;</label>
+        <name>tutorial_adminKPI</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Select the Region, Sector and Sub-sector and press the Add button.  Indicate the Name and Type (picklist) of the Capability in the pop-up box.  Then press the &quot;&quot;Add&quot;&quot; button&quot;</label>
+        <name>tutorial_adminProvenValue</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Press the &quot;&quot;Add&quot;&quot; button and indicate the Region and User on the pop-up box&quot;</label>
+        <name>tutorial_adminRegions</name>
+    </customLabels>
+    <customLabels>
+        <label>Type</label>
+        <name>type</name>
+    </customLabels>
+    <customLabels>
+        <label>Unit</label>
+        <name>unit</name>
+    </customLabels>
+    <customLabels>
+        <label>&quot;Puede utilizar la funcionalidad de &quot;&quot;Notas y archivos adjuntos&quot;&quot; al final de la página para ampliar la información.&quot;</label>
+        <name>use_notes_and_files</name>
+    </customLabels>
+    <customLabels>
+        <label>Vertical Solutions</label>
+        <name>value_driver_sector</name>
+    </customLabels>
+    <customLabels>
+        <label>Client´s Value Drivers</label>
+        <name>value_drivers_account</name>
+    </customLabels>
+    <customLabels>
+        <label>View</label>
+        <name>view</name>
+    </customLabels>
+    <customLabels>
+        <label>See Criteria Graphic</label>
+        <name>viewCDC</name>
+    </customLabels>
+    <customLabels>
+        <label>See Org Chart/Influence Map</label>
+        <name>view_influence_map</name>
+    </customLabels>
+    <customLabels>
+        <label>See RDM sorted by Focus</label>
+        <name>view_mosaic</name>
+    </customLabels>
+    <customLabels>
+        <label>Weaknesses</label>
+        <name>weakness</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Dollar Budget --></label>
+        <name>Dollar_Budget</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Strategic Client Plan --></label>
+        <name>SCP</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- scp deprecated --></label>
+        <name>Strategic_Client_Plan</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</Translations>

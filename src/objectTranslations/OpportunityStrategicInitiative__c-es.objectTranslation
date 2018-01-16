@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity - Strategic Initiative</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunities &amp; Strategic Initiatives</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities &amp; Strategic Initiatives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Strategic Initiative --></label>
+        <name>Strategic_Initiative__c</name>
+        <relationshipLabel><!-- Opportunities &amp; Strategic Initiatives --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

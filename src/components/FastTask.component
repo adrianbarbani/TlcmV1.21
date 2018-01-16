@@ -1,0 +1,25 @@
+<apex:component allowDML="true" controller="FastTaskController">
+    <apex:attribute name="page" type="String" assignTo="{!PageName}" description="Name" required="true"/>
+    <apex:attribute name="account" type="String" assignTo="{!accountId}" description="Id" required="false"/>
+    <apex:attribute name="opp" type="String" assignTo="{!oppId}" description="Id" required="false"/>
+<style>
+ .FastTaskHolder{
+  width:640px;
+  border-bottom: 1px solid grey;
+  }
+</style>
+<!-- <apex:stylesheet value="{!$Resource.MyChatterCore}"/> -->
+<apex:outputText rendered="{!canEdit}">
+<div class="FastTaskHolder">
+<apex:form id="FastTaskForm">
+    
+    <span style="height:10px">&nbsp;<br/></span>
+    <span style="height:10px">&nbsp;<br/></span>
+    <h3>{!$Label.Add_to_Action_Plan}</h3>
+    <apex:inputTextArea value="{!msj}" style="width:640px; padding:2px; border-radius: 5px; border: 1px solid lightgrey;"/><br/>
+    <div style="text-align:right;"><!-- {!done}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --><apex:commandButton value=" {!$Label.Send} " styleClass="btnPrimary publishersharebutton btn btn-default btn-sm" style="margin-top:5px;" reRender="FastTaskForm" action="{!savetask}"/></div>
+    <br/>&nbsp;
+</apex:form>
+</div>
+</apex:outputText>
+</apex:component>

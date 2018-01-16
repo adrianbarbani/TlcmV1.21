@@ -1,0 +1,5 @@
+<apex:page controller="ChatterPageController">
+		
+	<chatter:feed entityId="{!accountId}" />
+	
+</apex:page>

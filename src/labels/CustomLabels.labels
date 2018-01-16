@@ -1,0 +1,3599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AHIH</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>AHIH</shortDescription>
+        <value>&gt; Identificar sus posibles “enemigos internos” y mantener un delicado equilibrio, nunca “tomar partido” &lt;br/&gt; 
+&gt; Construir una “agenda individual” para desarrollar la relación en forma duradera &lt;br/&gt; 
+&gt; Identificar su “círculo de confianza” y desarrollar un plan de contactos para relacionarse con él &lt;br/&gt; 
+&gt; Planificar exhaustivamente todos los contactos que tengamos con esta gente: quién, cuándo, qué frecuencia, qué mensaje. &lt;br/&gt; 
+&gt; Nunca hacerlo en base a “tomar partido” internamente, porque el día que “cambie la mano” quedamos afuera del partido &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>AHIL</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>AHIL</shortDescription>
+        <value>&gt; Escuchar sus consejos, pero validar su vigencia en el tiempo &lt;br/&gt; 
+&gt; No influyen pero sabrán quién es quién &lt;br/&gt; 
+&gt; Filtrar su sesgo político: llegaron donde están haciendo amigos. Y enemigos &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ALIH</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ALIH</shortDescription>
+        <value>&gt; Invertir mucho tiempo y recursos en él. Es muy probable que se convierta en un futuro decisor &lt;br/&gt; 
+&gt; Identificar su alineamiento político en la organización (de quién son tropa) &lt;br/&gt; 
+&gt; Cuidado de “no tomar partido”, puede haber grupos antagónicos, igualmente influyentes &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>ALIL</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ALIL</shortDescription>
+        <value>&gt; Identificar si es alguien que se moverá hacia arriba en la matriz de autoridad influencia
+&gt; Identificar su alineamiento político en la organización (de quién son tropa) 
+&gt; No cometer el error de ignorarlos 
+&gt; Estar atentos: pueden moverse en la matriz. Desarrollar la relación ANTES nos convertirá en sus aliados</value>
+    </labels>
+    <labels>
+        <fullName>AND</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>AND</shortDescription>
+        <value>AND</value>
+    </labels>
+    <labels>
+        <fullName>Account_Business_Landscape</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Account_Business_Landscape</shortDescription>
+        <value>Parque de servicios</value>
+    </labels>
+    <labels>
+        <fullName>Account_Name</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Account Name</shortDescription>
+        <value>Nombre de la Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Aceptar</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Aceptar</shortDescription>
+        <value>Aceptar</value>
+    </labels>
+    <labels>
+        <fullName>Action_Burning_Platform</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Burning Platform</shortDescription>
+        <value>&gt; Ofrecerle try and buy &lt;br/&gt; 
+&gt; No cometer el error de hablarle de tecnología o bondades de nuestro producto: su foco es salir de dónde está &lt;br/&gt; 
+&gt; Aquí vendemos supervivencia, urgencia, inmediatez. No vendemos tecnología &lt;br/&gt; 
+&gt; Puede ser fuente de MUCHA información &lt;br/&gt; 
+&gt; Hablarle de tiempos y pensar soluciones temporarias implantables de inmediato &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Controller</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Controller</shortDescription>
+        <value>&gt; Entender cuál es SU trade off para el gasto/capex necesario para nuestro proyecto &lt;br/&gt; 
+&gt; Explicar qué retorno tiene la inversión &lt;br/&gt; 
+&gt; Hacerle ver qué tiene él para ganar con el proyecto &lt;br/&gt; 
+&gt; Explicar cómo les impactará globalmente nuestro proyecto &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Developer</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Developer</shortDescription>
+        <value>&gt; Aprovechar su impulso (Aikido) &lt;br/&gt; 
+&gt; Estar en contacto permanente: es el que más abierto está a recibir propuestas de TODOS &lt;br/&gt; 
+&gt; Cuidar nuestro discurso: habla con la competencia &lt;br/&gt; 
+&gt; Escucharlo bien: es el que probablemente hable más con la competencia &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_End_User</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action End User</shortDescription>
+        <value>&gt; Hacerle ver qué tiene él para ganar con el proyecto &lt;br/&gt; 
+&gt; Desarrollar confianza en que estaremos a su lado apoyándolo &lt;br/&gt; 
+&gt; Le preocupa qué pasa con su carrera si el proyecto funciona bien/mal &lt;br/&gt; 
+&gt; Nunca ignorarlo, aunque tenga un rol pasivo en la compra … lo veremos en la posventa … &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Negative</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Negative</shortDescription>
+        <value>&gt; Mantener bajo perfil; nuestra competencia puede equivocarse y encararlo &lt;br/&gt; 
+&gt; Ser extremadamente cuidadoso: querrán matar al mensajero. Influir en él a través de vías indirectas &lt;br/&gt; 
+&gt; Hacerse ver siempre disponible pero no estar encima &lt;br/&gt; 
+&gt; Encarar las posibles razones de su soberbia: no entiende la situación actual y/o es puro ¨wishfull thinking&quot; &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Plan_Builder</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Plan Builder</shortDescription>
+        <value>Plan de Acción</value>
+    </labels>
+    <labels>
+        <fullName>Action_Sponsor</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Sponsor</shortDescription>
+        <value>&gt; Pedirle información, nunca que &quot;actúe&quot; &lt;br/&gt; 
+&gt; No pedirle que &quot;nos recomiende&quot;, pedirle consejo: normalmente con lo segundo, lo primero &quot;viene solo&quot; … &lt;br/&gt; 
+&gt; Hacerle sentir que la &quot;accountability&quot; es nuestra, el logro es suyo &lt;br/&gt; 
+&gt; Hacerle ver qué tiene él para ganar con el proyecto &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Statu_Quo</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Statu Quo</shortDescription>
+        <value>&gt; Hacerle ver un gap (positivo, como ve el que avanza, o negativo, como lo ve el escéptico) &lt;br/&gt; 
+&gt; No amenazarlo, solo hacerle ver gaps &lt;br/&gt; 
+&gt; Hacerle llegar un mensaje de algún superior que esté en actitud de avanzar &lt;br/&gt; 
+&gt; Relajarlo en que la nueva situación al menos no le complicará la vida &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Action_Technical</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Action Technical</shortDescription>
+        <value>&gt; Abordarlo con el nivel técnico adecuado &lt;br/&gt; 
+&gt; Le preocupa: ¿ qué pasa si el producto no funciona y leen mi informe ? &lt;br/&gt; 
+&gt; Suelen basar su decisión en la opinión de sus pares en otras empresas &lt;br/&gt; 
+&gt; Darle mucha importancia a su rol, incluso más de la que tiene &lt;br/&gt; 
+&gt; Hacerle ver qué tiene él para ganar con el proyecto &lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Actions</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Actions</shortDescription>
+        <value>Acciones</value>
+    </labels>
+    <labels>
+        <fullName>Activities</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Activities</shortDescription>
+        <value>Actividades</value>
+    </labels>
+    <labels>
+        <fullName>Actual_State</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Actual State</shortDescription>
+        <value>Estado actual</value>
+    </labels>
+    <labels>
+        <fullName>Add_Filter_Logic</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Add Filter Logic</shortDescription>
+        <value>Agregar Lógica de Filtro</value>
+    </labels>
+    <labels>
+        <fullName>Add_Share</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Add_Share</shortDescription>
+        <value>Agregar</value>
+    </labels>
+    <labels>
+        <fullName>Add_new_service</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Add_new_service</shortDescription>
+        <value>Agregar Nuevo Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Add_to_Action_Plan</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Add to Action Plan</shortDescription>
+        <value>Agregar al Plan de Acción</value>
+    </labels>
+    <labels>
+        <fullName>Administracion</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Administracion</shortDescription>
+        <value>Administración</value>
+    </labels>
+    <labels>
+        <fullName>Administration</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Administration</shortDescription>
+        <value>Administración</value>
+    </labels>
+    <labels>
+        <fullName>Administration_Trends</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Administration Trends</shortDescription>
+        <value>Administración de</value>
+    </labels>
+    <labels>
+        <fullName>Anterior</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Anterior</shortDescription>
+        <value>Anterior</value>
+    </labels>
+    <labels>
+        <fullName>Apply_Filters</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Apply Filters</shortDescription>
+        <value>Aplicar Filtros</value>
+    </labels>
+    <labels>
+        <fullName>Areas_Nos_Relacionamos</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Areas Nos Relacionamos</shortDescription>
+        <value>¿Cuáles son las áreas del cliente con las que actualmente nos relacionamos?</value>
+    </labels>
+    <labels>
+        <fullName>Areas_de_Trabajo</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Areas de Trabajo</shortDescription>
+        <value>Áreas de Trabajo</value>
+    </labels>
+    <labels>
+        <fullName>Asignacion_de_Eventos</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Asignacion de Eventos</shortDescription>
+        <value>Asignación de Eventos</value>
+    </labels>
+    <labels>
+        <fullName>Asignacion_value_drivers</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Asignacion value drivers</shortDescription>
+        <value>Asignación de Value Drivers:</value>
+    </labels>
+    <labels>
+        <fullName>Asignado_al_menos_una</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Asignado al menos una</shortDescription>
+        <value>Ha sido asignado por lo menos a una oportunidad existente.</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_to</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Assigned to</shortDescription>
+        <value>Asignado a</value>
+    </labels>
+    <labels>
+        <fullName>Attitude</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Attitude</shortDescription>
+        <value>Actitud</value>
+    </labels>
+    <labels>
+        <fullName>Authority</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Authority</shortDescription>
+        <value>Autoridad</value>
+    </labels>
+    <labels>
+        <fullName>Back_to_Opportunitiy_List</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Back to Opportunitiy List</shortDescription>
+        <value>Volver a Lista de Oportunidades</value>
+    </labels>
+    <labels>
+        <fullName>Big_Deals_Amount_of_resources_black</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Big Deals Amount of resources black</shortDescription>
+        <value>Argumentar el alto número de personas a ser transferidos, y por qué no existe otra alternativa</value>
+    </labels>
+    <labels>
+        <fullName>Big_Deals_enough_formal_information_alert</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Big Deals enough formal information alert</shortDescription>
+        <value>Disponer de información detallada y suficiente para desarrollar la propuesta</value>
+    </labels>
+    <labels>
+        <fullName>Big_Deals_review_external_resources</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Big Deals review external resources</shortDescription>
+        <value>Revisar qué recursos del Grupo son estrictamente imprescindibles (ponderándolo por la importancia relativa de la oportunidad)</value>
+    </labels>
+    <labels>
+        <fullName>Big_Deals_size_a_three_FTE_team</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Big Deals size a three FTE team</shortDescription>
+        <value>Dimensionar un equipo en el país equivalente a 3 FTEs full time (mínimo)</value>
+    </labels>
+    <labels>
+        <fullName>Big_deals_incomplete_survey</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Big deals incomplete survey</shortDescription>
+        <value>Para ver el resultado, el cuestionario debe estar completo. Revise todos los campos marcados como obligatorios.</value>
+    </labels>
+    <labels>
+        <fullName>Big_deals_unblocked_survey</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>Big_deals_unblocked_survey</shortDescription>
+        <value>Para ver el Scorecard el cuestionario debe estar Bloquedo</value>
+    </labels>
+    <labels>
+        <fullName>Brand</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Brand</shortDescription>
+        <value>Marca</value>
+    </labels>
+    <labels>
+        <fullName>Burning_Platform</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Burning Platform</shortDescription>
+        <value>P</value>
+    </labels>
+    <labels>
+        <fullName>Burning_Platform_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Burning Platform help</shortDescription>
+        <value>Problemas</value>
+    </labels>
+    <labels>
+        <fullName>Cadena_valor_procesos</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Cadena valor procesos</shortDescription>
+        <value>Cadena de Valor y Procesos</value>
+    </labels>
+    <labels>
+        <fullName>Calendar</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Calendar</shortDescription>
+        <value>Calendario</value>
+    </labels>
+    <labels>
+        <fullName>Casos_exito_sectorial</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Casos exito sectorial</shortDescription>
+        <value>Casos de Éxito Sectorial</value>
+    </labels>
+    <labels>
+        <fullName>Categoria</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Categoria</shortDescription>
+        <value>Categoría</value>
+    </labels>
+    <labels>
+        <fullName>Categoria_de_los_servicios</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Categoria de los servicios</shortDescription>
+        <value>Categoria de los servicios</value>
+    </labels>
+    <labels>
+        <fullName>Clarify_the_degree_of_compromise</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Clarify the degree of compromise</shortDescription>
+        <value>Aclarar al grado de compromiso</value>
+    </labels>
+    <labels>
+        <fullName>Client</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOpportunityList</shortDescription>
+        <value>Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Client_Basics</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Client Basics</shortDescription>
+        <value>Acerca del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Client_Context</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Client Context</shortDescription>
+        <value>Negocio del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Client_s</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Client&apos;s</shortDescription>
+        <value>Del cliente</value>
+    </labels>
+    <labels>
+        <fullName>Comments</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Comments</shortDescription>
+        <value>Comentarios</value>
+    </labels>
+    <labels>
+        <fullName>Commercial_Plan</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Commercial Plan</shortDescription>
+        <value>Gestión del Valor</value>
+    </labels>
+    <labels>
+        <fullName>Commercial_and_engineering_responsibles</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Commercial and engineering responsibles</shortDescription>
+        <value>Responsable Comercial y de Ingeniería de la OB</value>
+    </labels>
+    <labels>
+        <fullName>Competitor</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Competitor</shortDescription>
+        <value>Competidor</value>
+    </labels>
+    <labels>
+        <fullName>Competitor_Standing</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Competitor&apos;s Standing</shortDescription>
+        <value>Posicionamiento de la Competencia</value>
+    </labels>
+    <labels>
+        <fullName>Completed</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Completed</shortDescription>
+        <value>Completado</value>
+    </labels>
+    <labels>
+        <fullName>Conocimiento_del_Area</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Conocimiento del Area</shortDescription>
+        <value>Conocimiento del Área</value>
+    </labels>
+    <labels>
+        <fullName>Conocimiento_del_Territorio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Conocimiento del Territorio</shortDescription>
+        <value>Conocimiento del Territorio</value>
+    </labels>
+    <labels>
+        <fullName>Contact</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Contact</shortDescription>
+        <value>Contacto</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Influenced_By</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Contact Influenced By</shortDescription>
+        <value>Este Contacto es Influído POR</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Name</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Contact Name</shortDescription>
+        <value>Nombre del Contacto</value>
+    </labels>
+    <labels>
+        <fullName>Contact_influences_over</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Contact influences over</shortDescription>
+        <value>Este Contacto Influye EN</value>
+    </labels>
+    <labels>
+        <fullName>Contactos_Cliente_Deciden_Influyen</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Contactos Cliente Deciden Influyen</shortDescription>
+        <value>Contactos del Cliente que Deciden o Influyen en el Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Contacts_from_account</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Contacts from account</shortDescription>
+        <value>Contactos de la Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Contacts_from_parent_account</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Contacts from parent account</shortDescription>
+        <value>Contactos de las Cuentas Principales (&quot;Parent&quot;)</value>
+    </labels>
+    <labels>
+        <fullName>Contexto_General</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Contexto General</shortDescription>
+        <value>Contexto General</value>
+    </labels>
+    <labels>
+        <fullName>ContractError</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>ContractError</shortDescription>
+        <value>Si el campo &quot;Contrato con la Competencia&quot; esta seleccionado, el campo &quot;Nombre de la Competencia&quot; no puede estar vacío. Si el campo &quot;Contrato con la Competencia&quot; no esta seleccionado el campo &quot;Nombre de la Competencia&quot;  debe estar vacío.</value>
+    </labels>
+    <labels>
+        <fullName>CopyRDM</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>CopyRDM</shortDescription>
+        <value>Usar Mosaico General como Template</value>
+    </labels>
+    <labels>
+        <fullName>Country</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Country</shortDescription>
+        <value>País</value>
+    </labels>
+    <labels>
+        <fullName>Crear_Categoria_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Crear Categoria Servicio</shortDescription>
+        <value>Crear Categoría de Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Created_Date</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Created Date</shortDescription>
+        <value>Fecha de Creación</value>
+    </labels>
+    <labels>
+        <fullName>Cronograma_de_Cuenta</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Cronograma de Cuenta</shortDescription>
+        <value>Cronograma de Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Cuales_son_ingresos_anuales</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Cuales son ingresos anuales</shortDescription>
+        <value>¿Cuáles son los ingresos anuales del cliente?</value>
+    </labels>
+    <labels>
+        <fullName>Cuantos_vehiculos_parque</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Cuantos vehiculos parque</shortDescription>
+        <value>¿De cuantos vehículos dispone el parque?</value>
+    </labels>
+    <labels>
+        <fullName>Cuentas</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Cuentas</shortDescription>
+        <value>Cuentas</value>
+    </labels>
+    <labels>
+        <fullName>Current_Account</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current_Account</shortDescription>
+        <value>Current Account</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Report</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Custom_Report</shortDescription>
+        <value>Configurar Reporte SCP</value>
+    </labels>
+    <labels>
+        <fullName>Custom_Report_Msg</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Custom_Report_Msg</shortDescription>
+        <value>Seleccione los segmentos que desea que sean parte del Informe.</value>
+    </labels>
+    <labels>
+        <fullName>DCM</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>DCM</shortDescription>
+        <value>Criterios de Decisión por Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>DCM_HIGH</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>DCM_HIGH</shortDescription>
+        <value>ALTA</value>
+    </labels>
+    <labels>
+        <fullName>DCM_HIGH_1</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>DCM_HIGH_1</shortDescription>
+        <value>FUERTE</value>
+    </labels>
+    <labels>
+        <fullName>DCM_LOW</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>DCM_LOW</shortDescription>
+        <value>BAJA</value>
+    </labels>
+    <labels>
+        <fullName>DCM_LOW_1</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>DCM_LOW_1</shortDescription>
+        <value>DÉBIL</value>
+    </labels>
+    <labels>
+        <fullName>De</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>De</shortDescription>
+        <value>de</value>
+    </labels>
+    <labels>
+        <fullName>Del_buttom</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Del buttom</shortDescription>
+        <value>Eliminar</value>
+    </labels>
+    <labels>
+        <fullName>Delete_tasks</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Delete tasks</shortDescription>
+        <value>Eliminar Tareas</value>
+    </labels>
+    <labels>
+        <fullName>Deliberables_description</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Deliberables description</shortDescription>
+        <value>Descripción de los distintos entregables: productos, servicios, proyectos a medida</value>
+    </labels>
+    <labels>
+        <fullName>Descripcion_del_Cliente</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Descripcion del Cliente</shortDescription>
+        <value>Descripción del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Descripción</value>
+    </labels>
+    <labels>
+        <fullName>Detail_of_reach</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Detail of reach</shortDescription>
+        <value>Detalle del alcance</value>
+    </labels>
+    <labels>
+        <fullName>Detalle_de_Cuenta</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Detalle de Cuenta</shortDescription>
+        <value>Detalle de Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Developer</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Developer</shortDescription>
+        <value>A</value>
+    </labels>
+    <labels>
+        <fullName>Developer_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Developer help</shortDescription>
+        <value>Avanza</value>
+    </labels>
+    <labels>
+        <fullName>Dispone_parque_automotor</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Dispone parque automotor</shortDescription>
+        <value>¿El cliente dispone de parque automotor?</value>
+    </labels>
+    <labels>
+        <fullName>Double_click</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Double click message</shortDescription>
+        <value>Doble click para editar</value>
+    </labels>
+    <labels>
+        <fullName>Due_Date</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Due_Date</shortDescription>
+        <value>Fecha Limite</value>
+    </labels>
+    <labels>
+        <fullName>Economical_data</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Economical_data</shortDescription>
+        <value>Datos ecónomicos</value>
+    </labels>
+    <labels>
+        <fullName>Economical_information</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Economical information</shortDescription>
+        <value>Información económica</value>
+    </labels>
+    <labels>
+        <fullName>Edificios_centrales_administrativos</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Edificios centrales administrativos</shortDescription>
+        <value>Cantidad de edificios centrales y/o administrativos</value>
+    </labels>
+    <labels>
+        <fullName>Edit_Influences</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Edit Influences</shortDescription>
+        <value>Influencias</value>
+    </labels>
+    <labels>
+        <fullName>Ejes_de_Trabajo</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Ejes de Trabajo</shortDescription>
+        <value>Ejes de Tabajo</value>
+    </labels>
+    <labels>
+        <fullName>Eliminar_Marcados</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Eliminar Marcados</shortDescription>
+        <value>Eliminar Marcados</value>
+    </labels>
+    <labels>
+        <fullName>End_user</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>End user</shortDescription>
+        <value>Usuario Final</value>
+    </labels>
+    <labels>
+        <fullName>ErrorDeleteTask</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>ErrorDeleteTask</shortDescription>
+        <value>Una de las Tareas seleccionadas esta asignada a otro Usuario.</value>
+    </labels>
+    <labels>
+        <fullName>Estado_del_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Estado del Servicio</shortDescription>
+        <value>Estado del Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Estimated_FCV</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Estimated FCV</shortDescription>
+        <value>FCV Proyectado</value>
+    </labels>
+    <labels>
+        <fullName>Etapa_del_Proyecto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Etapa del Proyecto</shortDescription>
+        <value>Etapa del Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Evaluate</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Evaluate</shortDescription>
+        <value>Evaluar</value>
+    </labels>
+    <labels>
+        <fullName>Evento_Clientes</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Evento Clientes</shortDescription>
+        <value>Evento para Nuestros Clientes</value>
+    </labels>
+    <labels>
+        <fullName>Evento_Relevante_de_la_industria</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Evento Relevante de la industria</shortDescription>
+        <value>Evento Relevante de la industria</value>
+    </labels>
+    <labels>
+        <fullName>Excluir_del_gr_fico</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Excluir del gráfico</shortDescription>
+        <value>Excluir del Gráfico</value>
+    </labels>
+    <labels>
+        <fullName>Execution</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Execution</shortDescription>
+        <value>Ejecución</value>
+    </labels>
+    <labels>
+        <fullName>Explain_reason_for_high_indemnizations</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Explain reason for high indemnizations</shortDescription>
+        <value>Explicar el motivo de unas penalizaciones tan elevadas</value>
+    </labels>
+    <labels>
+        <fullName>Explain_strategic_reasons_for_long_presale</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Explain strategic reasons for long presale</shortDescription>
+        <value>Explicar razones estratégicas para mantener una preventa de larga duración</value>
+    </labels>
+    <labels>
+        <fullName>Export_to_Excel</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Export to Excel</shortDescription>
+        <value>Export to Excel</value>
+    </labels>
+    <labels>
+        <fullName>Export_to_Word</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Export_to_Word</shortDescription>
+        <value>Export to Word</value>
+    </labels>
+    <labels>
+        <fullName>Extend_the_period_to_present_the_offer_to_five_weeks</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Extend the period to present the offer to five weeks</shortDescription>
+        <value>Ampliar el período de presentación de la oferta a cinco semanas</value>
+    </labels>
+    <labels>
+        <fullName>Extend_the_start_date_to_three_weeks</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Extend the start date to three weeks</shortDescription>
+        <value>Ampliar la fecha de comienzo a un plazo de tres semanas</value>
+    </labels>
+    <labels>
+        <fullName>Falta_completar</fullName>
+        <categories>Big Deal form</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Falta completar</shortDescription>
+        <value>Falta completar el campo</value>
+    </labels>
+    <labels>
+        <fullName>Fecha</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Fecha</shortDescription>
+        <value>Fecha</value>
+    </labels>
+    <labels>
+        <fullName>Fecha_Estimada_de_Cierre</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Fecha Estimada de Cierre</shortDescription>
+        <value>Fecha Estimada de Cierre</value>
+    </labels>
+    <labels>
+        <fullName>Fecha_Vencimiento</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Fecha Vencimiento</shortDescription>
+        <value>Fecha de Vencimiento</value>
+    </labels>
+    <labels>
+        <fullName>Filter</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filtrar</value>
+    </labels>
+    <labels>
+        <fullName>Filter_Logic</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Filter Logic</shortDescription>
+        <value>Lógica de Filtro</value>
+    </labels>
+    <labels>
+        <fullName>Filtrar_por_Cliente</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Filtrar por Cliente</shortDescription>
+        <value>Filtrar por Usuario</value>
+    </labels>
+    <labels>
+        <fullName>Financial</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Financial</shortDescription>
+        <value>Financieros</value>
+    </labels>
+    <labels>
+        <fullName>Find_out_why_the_client_had_previous_debts</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Find out why the client had previous debts</shortDescription>
+        <value>Conocer el concurso de mora o el motivo de la deuda para su exposición en DRB</value>
+    </labels>
+    <labels>
+        <fullName>From_the_organization</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>From the organization</shortDescription>
+        <value>De organización</value>
+    </labels>
+    <labels>
+        <fullName>From_the_project</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>From the project</shortDescription>
+        <value>De la Implantación &amp; Operación</value>
+    </labels>
+    <labels>
+        <fullName>From_the_technical_solution</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>From the technical solution</shortDescription>
+        <value>De la solución técnica</value>
+    </labels>
+    <labels>
+        <fullName>From_third_parties</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>From third parties</shortDescription>
+        <value>De los terceros (si procede)</value>
+    </labels>
+    <labels>
+        <fullName>Fully_use_TEF_portfolio</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Fully use TEF portfolio</shortDescription>
+        <value>Utilizar al máximo el portfolio de TEF</value>
+    </labels>
+    <labels>
+        <fullName>GAP_Growth_Strategy</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GAP_Growth_Strategy</shortDescription>
+        <value>Estrategia de Crecimiento</value>
+    </labels>
+    <labels>
+        <fullName>General_information</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>General information</shortDescription>
+        <value>Información general</value>
+    </labels>
+    <labels>
+        <fullName>Gestion_de_Oportunidades</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Gestion de Oportunidades</shortDescription>
+        <value>Gestión de Oportunidades</value>
+    </labels>
+    <labels>
+        <fullName>Get_SLA_definitions</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Get SLA definitions</shortDescription>
+        <value>Conseguir la definición de los SLAs</value>
+    </labels>
+    <labels>
+        <fullName>Get_information_about_the_client</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Get information about the client</shortDescription>
+        <value>Ganar en conocimiento del cliente: generar/obtener información</value>
+    </labels>
+    <labels>
+        <fullName>Get_reach_with_maximum_possible_detail</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Get reach with maximum possible detail</shortDescription>
+        <value>Conseguir el alcance con el máximo detalle posible</value>
+    </labels>
+    <labels>
+        <fullName>Get_technical_description_with_maximum_detail</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Get technical description with maximum detail</shortDescription>
+        <value>Determinar la descripción técnica con el máximo detalle posible</value>
+    </labels>
+    <labels>
+        <fullName>Global_Buying_Criteria</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Parent Buying Criteria</shortDescription>
+        <value>Política de Compras</value>
+    </labels>
+    <labels>
+        <fullName>Global_Strategic_Context</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Parent Account Strategic Plan</shortDescription>
+        <value>Contexto Estratégico del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Global_Strategic_Initiative</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Global Strategic Initiative</shortDescription>
+        <value>Desafíos | Iniciativas de Negocio del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Greater_than</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Greater than</shortDescription>
+        <value>Mayor que</value>
+    </labels>
+    <labels>
+        <fullName>Hide_Filters</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Hide Filters</shortDescription>
+        <value>Ocultar filtros</value>
+    </labels>
+    <labels>
+        <fullName>Hitos_Relevantes</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Hitos Relevantes</shortDescription>
+        <value>Hitos Relevantes</value>
+    </labels>
+    <labels>
+        <fullName>Identify_Client_s_key_players_and_their_availability</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Identify Client&apos;s key players and their availability</shortDescription>
+        <value>Identificar los key players del cliente y su disponibilidad</value>
+    </labels>
+    <labels>
+        <fullName>Identify_alternative_platforms</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Identify alternative platforms</shortDescription>
+        <value>Identificar plataformas alternativas y la posibilidad del cambio a esta plataforma alternativa</value>
+    </labels>
+    <labels>
+        <fullName>Identify_decision_makers</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Identify decision makers</shortDescription>
+        <value>Identificar a los Decision Makers,</value>
+    </labels>
+    <labels>
+        <fullName>Identify_key_partners_for_the_project</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Identify key partners for the project</shortDescription>
+        <value>Identificar los Key partners para el proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Identify_posible_negative_impacts_of_project_on_the_client</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Identify posible negative impacts of project on the client</shortDescription>
+        <value>Identificar los principales riesgos del proyecto que pueden impactar negativamente en el cliente</value>
+    </labels>
+    <labels>
+        <fullName>Importance_to_Client</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Importance_to_Client</shortDescription>
+        <value>Importancia para el Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Incluir_al_gr_fico</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Incluir al gráfico</shortDescription>
+        <value>Incluir en el Gráfico</value>
+    </labels>
+    <labels>
+        <fullName>Indica_cant_sucursales</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Indica cant sucursales</shortDescription>
+        <value>Indica la cantidad de sucursales</value>
+    </labels>
+    <labels>
+        <fullName>Indica_cantidad_empleados</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Indica cantidad empleados</shortDescription>
+        <value>Indica la cantidad de Empleados</value>
+    </labels>
+    <labels>
+        <fullName>Indice_de_actividad</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Indice de actividad</shortDescription>
+        <value>Índice de Actividad</value>
+    </labels>
+    <labels>
+        <fullName>Industry_Competitive_Differenciators</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Industry Competitive Differenciators</shortDescription>
+        <value>Ventajas competitivas en la Industria</value>
+    </labels>
+    <labels>
+        <fullName>Industry_Offering</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Industry Offering</shortDescription>
+        <value>Oferta vertical (Industria)</value>
+    </labels>
+    <labels>
+        <fullName>Industry_Success_Stories</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Industry Success Stories</shortDescription>
+        <value>Casos de éxito en la Industria</value>
+    </labels>
+    <labels>
+        <fullName>Influence</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Influence</shortDescription>
+        <value>Influencia</value>
+    </labels>
+    <labels>
+        <fullName>Influence_Org</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Influence Map / Org Chart</shortDescription>
+        <value>Organigrama y Mapa de Influencia</value>
+    </labels>
+    <labels>
+        <fullName>Influence_Same_Account</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Influence Same Account</shortDescription>
+        <value>Los contactos deben ser de la misma cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Influences_Over</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Influences Over</shortDescription>
+        <value>Influye EN</value>
+    </labels>
+    <labels>
+        <fullName>Iniciativa</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Iniciativa estrategica</shortDescription>
+        <value>Iniciativa Estratégica</value>
+    </labels>
+    <labels>
+        <fullName>Initiative</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Initiative</shortDescription>
+        <value>Iniciativa</value>
+    </labels>
+    <labels>
+        <fullName>Ir_Detalle_Cuenta</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Ir Detalle Cuenta</shortDescription>
+        <value>Ir al Detalle de Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Justify_the_high_level_of_penalties</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Justify the high level of penalties</shortDescription>
+        <value>Justificar el elevado nivel de penalizaciones</value>
+    </labels>
+    <labels>
+        <fullName>Justify_the_high_working_liabilities_of_the_project</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Justify the high working liabilities of the project</shortDescription>
+        <value>Justificar el elevado nivel de pasivos laborales del proyecto</value>
+    </labels>
+    <labels>
+        <fullName>KPI</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>KPI</shortDescription>
+        <value>KPIs (Indicadores Claves de Performance)</value>
+    </labels>
+    <labels>
+        <fullName>LastModifiedDate</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Last Modified Date</shortDescription>
+        <value>Ultima Actualización</value>
+    </labels>
+    <labels>
+        <fullName>Last_Year</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last_Year</shortDescription>
+        <value>Last year</value>
+    </labels>
+    <labels>
+        <fullName>Last_Year_1</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last_Year-1</shortDescription>
+        <value>Last year -1</value>
+    </labels>
+    <labels>
+        <fullName>Last_Year_2</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last_Year-2</shortDescription>
+        <value>Last year -2</value>
+    </labels>
+    <labels>
+        <fullName>Less_than</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Less than</shortDescription>
+        <value>Menor que</value>
+    </labels>
+    <labels>
+        <fullName>Linked_Opportunities</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Linked Opportunities</shortDescription>
+        <value>Oportunidad Relacionada</value>
+    </labels>
+    <labels>
+        <fullName>Merge_tasks</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Merge tasks</shortDescription>
+        <value>Fusionar tareas</value>
+    </labels>
+    <labels>
+        <fullName>Metricas_analisis_mercado</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Metricas analisis mercado</shortDescription>
+        <value>Métricas y Análisis del Mercado</value>
+    </labels>
+    <labels>
+        <fullName>Missing_field_error_base</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Missing field error base</shortDescription>
+        <value>El campo %f es obligatorio</value>
+    </labels>
+    <labels>
+        <fullName>Modify_RDM</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Modify RDM</shortDescription>
+        <value>Modificar Mosaico</value>
+    </labels>
+    <labels>
+        <fullName>Months_to_go</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Months to go</shortDescription>
+        <value>Meses hasta el Vencimiento</value>
+    </labels>
+    <labels>
+        <fullName>Negative</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Negative</shortDescription>
+        <value>E</value>
+    </labels>
+    <labels>
+        <fullName>Negative_Help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Negative Help</shortDescription>
+        <value>Escéptico</value>
+    </labels>
+    <labels>
+        <fullName>Negative_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Negative Relationship</shortDescription>
+        <value>Relacionamiento Peligroso</value>
+    </labels>
+    <labels>
+        <fullName>Negotiate_submission_period_extension</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Negotiate submission period extension</shortDescription>
+        <value>Gestionar ampliación del periodo de presentación de la Oferta</value>
+    </labels>
+    <labels>
+        <fullName>Neutral_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Neutral Relationship</shortDescription>
+        <value>Neutralidad en el Relacionamiento</value>
+    </labels>
+    <labels>
+        <fullName>New</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>New</shortDescription>
+        <value>Nuevo</value>
+    </labels>
+    <labels>
+        <fullName>New_Contact</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>New Contact</shortDescription>
+        <value>Nuevo Contacto</value>
+    </labels>
+    <labels>
+        <fullName>New_Initiative</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>New Initiative</shortDescription>
+        <value>Nueva iniciativa</value>
+    </labels>
+    <labels>
+        <fullName>Nivel_de_Desarrollo</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nivel de Desarrollo</shortDescription>
+        <value>Nivel de desarrollo</value>
+    </labels>
+    <labels>
+        <fullName>Nivel_de_Relacion</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nivel de Relacion</shortDescription>
+        <value>Nivel de relación</value>
+    </labels>
+    <labels>
+        <fullName>No_Eventos_Cuentas</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>No Eventos Cuentas</shortDescription>
+        <value>No hay eventos de las cuentas seleccionadas</value>
+    </labels>
+    <labels>
+        <fullName>No_asignado_oportunidad</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>No asignado oportunidad</shortDescription>
+        <value>No ha sido asignado a ninguna oportunidad existente o potencial.</value>
+    </labels>
+    <labels>
+        <fullName>No_hay_Datos_Cargados</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>No hay Datos Cargados</shortDescription>
+        <value>: No hay datos cargados</value>
+    </labels>
+    <labels>
+        <fullName>No_hay_cuentas_cargadas</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>No hay cuentas cargadas</shortDescription>
+        <value>No hay cuentas cargadas</value>
+    </labels>
+    <labels>
+        <fullName>No_hay_cuentas_criterio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>No hay cuentas criterio</shortDescription>
+        <value>No hay cuentas que coincidan con el criterio de busqueda</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_Categoria_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nombre Categoria Servicio</shortDescription>
+        <value>Nombre de la Categoria de Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_de_la_Cuenta</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nombre de la Cuenta</shortDescription>
+        <value>Nombre de la Cuenta</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_de_la_oportunidad</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Nombre de la oportunidad</shortDescription>
+        <value>Nombre de la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_del_Competidor_del_Cliente</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nombre del Competidor del Cliente</shortDescription>
+        <value>Nombre del Competidor del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_del_Proyecto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nombre del Proyecto</shortDescription>
+        <value>Nombre del Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Nombre_del_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nombre del Servicio</shortDescription>
+        <value>Nombre del Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Not_contain</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Not contain</shortDescription>
+        <value>No contiene</value>
+    </labels>
+    <labels>
+        <fullName>Notes_Attachments</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Notes_&amp;_Attachments</shortDescription>
+        <value>Notas y archivos adjuntos</value>
+    </labels>
+    <labels>
+        <fullName>Nueva_Area</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nueva Area</shortDescription>
+        <value>Nueva Área</value>
+    </labels>
+    <labels>
+        <fullName>Nueva_Tecnologia</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nueva Tecnologia</shortDescription>
+        <value>Nueva Tecnología</value>
+    </labels>
+    <labels>
+        <fullName>Nuevo_Contacto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nuevo Contacto</shortDescription>
+        <value>Nuevo Contacto</value>
+    </labels>
+    <labels>
+        <fullName>Nuevo_Hito</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nuevo Hito</shortDescription>
+        <value>Nuevo Hito Relevante</value>
+    </labels>
+    <labels>
+        <fullName>Nuevo_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Nuevo Servicio</shortDescription>
+        <value>Nuevo Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Numero_de_la_oportunidad</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Numero de identificacion</shortDescription>
+        <value>Id #</value>
+    </labels>
+    <labels>
+        <fullName>OB_commercial_responsible</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>OB commercial responsible</shortDescription>
+        <value>Responsable comercial OB</value>
+    </labels>
+    <labels>
+        <fullName>Observaciones</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Observaciones</shortDescription>
+        <value>Observaciones</value>
+    </labels>
+    <labels>
+        <fullName>Obtener_Cuentas</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Obtener Cuentas</shortDescription>
+        <value>Obtener Cuentas</value>
+    </labels>
+    <labels>
+        <fullName>Opportunities</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Opportunities</shortDescription>
+        <value>Oportunidades</value>
+    </labels>
+    <labels>
+        <fullName>Opportunities_Value_Proposition</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunities_Value_Proposition</shortDescription>
+        <value>Asignación de Value Drivers a Oportunidades</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Fields</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity_Fields</shortDescription>
+        <value>Campos de la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_arrival_date</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Opportunity arrival date</shortDescription>
+        <value>Fecha en la que ha llegado la oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>Other</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Other</shortDescription>
+        <value>Otros</value>
+    </labels>
+    <labels>
+        <fullName>Otra_tecnologia</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Otra tecnologia</shortDescription>
+        <value>Otra Tecnología</value>
+    </labels>
+    <labels>
+        <fullName>Otro</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Otro</shortDescription>
+        <value>Otro</value>
+    </labels>
+    <labels>
+        <fullName>Otros</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Otros</shortDescription>
+        <value>Otros</value>
+    </labels>
+    <labels>
+        <fullName>Our_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Our Relationship</shortDescription>
+        <value>Nuestro Relacionamiento</value>
+    </labels>
+    <labels>
+        <fullName>Our_Standing</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Our_Standing</shortDescription>
+        <value>Nuestro Posicionamiento</value>
+    </labels>
+    <labels>
+        <fullName>Overall_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Overall Relationship</shortDescription>
+        <value>Situación Competitiva</value>
+    </labels>
+    <labels>
+        <fullName>Own_installed_base</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Own installed base</shortDescription>
+        <value>NUESTROS Contratos Vigentes con el Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Pagina</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Pagina</shortDescription>
+        <value>Página</value>
+    </labels>
+    <labels>
+        <fullName>Parent_Account</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Parent_Account</shortDescription>
+        <value>Parent Account(s)</value>
+    </labels>
+    <labels>
+        <fullName>Parque_automotor_propio_gestionado</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Parque automotor propio gestionado</shortDescription>
+        <value>Parque Automotor Propio o Gestionado</value>
+    </labels>
+    <labels>
+        <fullName>Parque_de_servicios</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Parque_de_servicios</shortDescription>
+        <value>Parque de Servicios</value>
+    </labels>
+    <labels>
+        <fullName>Perceived_Performance_Client</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Perceived_Performance_Client</shortDescription>
+        <value>¿Cómo nos ve el Cliente?</value>
+    </labels>
+    <labels>
+        <fullName>Personal_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Personal Relationship</shortDescription>
+        <value>Relacionamiento Personal</value>
+    </labels>
+    <labels>
+        <fullName>Positive_Relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Positive Relationship</shortDescription>
+        <value>Relacionamiento Ventajoso</value>
+    </labels>
+    <labels>
+        <fullName>Potential_New_Business</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Potential_New_Business</shortDescription>
+        <value>Negocios Potenciales</value>
+    </labels>
+    <labels>
+        <fullName>Preapare_organization_to_accomplish_SLAs</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Preapare organization to accomplish SLAs</shortDescription>
+        <value>Preparar a la Organización para afrontar el cumplimiento de los SLAs</value>
+    </labels>
+    <labels>
+        <fullName>Presale_and_offer</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Presale_and_offer</shortDescription>
+        <value>Preventa y oferta</value>
+    </labels>
+    <labels>
+        <fullName>Previsi_n_Cierre_TOP_3_deals</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Previsión Cierre TOP 3 deals</shortDescription>
+        <value>Previsión Cierre TOP 3 deals</value>
+    </labels>
+    <labels>
+        <fullName>Primera</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Primera</shortDescription>
+        <value>Primera</value>
+    </labels>
+    <labels>
+        <fullName>Principal_Competidor_Solucion</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Principal Competidor Solucion</shortDescription>
+        <value>¿Quién es nuestro principal competidor en esta solución?</value>
+    </labels>
+    <labels>
+        <fullName>Principales_players</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Principales players</shortDescription>
+        <value>Principales Players</value>
+    </labels>
+    <labels>
+        <fullName>Priority</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Priority</shortDescription>
+        <value>Prioridad</value>
+    </labels>
+    <labels>
+        <fullName>Product_Services</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Product / Service</shortDescription>
+        <value>Productos/Servicios</value>
+    </labels>
+    <labels>
+        <fullName>Project</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Project</shortDescription>
+        <value>Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Project_description</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Project description</shortDescription>
+        <value>Descripción del proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Propietario</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Propietario</shortDescription>
+        <value>Propietario</value>
+    </labels>
+    <labels>
+        <fullName>Proyecto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Proyecto</shortDescription>
+        <value>Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Publicaci_n_RFP_Comunicaciones</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Publicación RFP Comunicaciones</shortDescription>
+        <value>Publicación RFP Comunicaciones</value>
+    </labels>
+    <labels>
+        <fullName>Publicaci_n_RFP_TI</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Publicación RFP TI</shortDescription>
+        <value>Publicación RFP TI</value>
+    </labels>
+    <labels>
+        <fullName>RDM</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>RDM</shortDescription>
+        <value>Mosaico de Relacionamiento por Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>RDMGeneral</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>RDMGeneral</shortDescription>
+        <value>Mosaico de Relacionamiento General</value>
+    </labels>
+    <labels>
+        <fullName>RDM_attitude</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>RDM_attitude</shortDescription>
+        <value>Mosaico de Relacionamiento: CENTRADO EN ACTITUD</value>
+    </labels>
+    <labels>
+        <fullName>RDM_role</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>RDM_role</shortDescription>
+        <value>Mosaico de Relacionamiento: CENTRADO EN EL ROL</value>
+    </labels>
+    <labels>
+        <fullName>Reach</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Reach</shortDescription>
+        <value>Alcance</value>
+    </labels>
+    <labels>
+        <fullName>Recommendations</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Recommendations</shortDescription>
+        <value>Recomendaciones</value>
+    </labels>
+    <labels>
+        <fullName>Reduce_bails_study_alternative_warranties</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Reduce bails, study alternative warranties</shortDescription>
+        <value>Reducir el importe de las Fianzas. Estudiar garantías alternativas</value>
+    </labels>
+    <labels>
+        <fullName>Region</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Region</shortDescription>
+        <value>Región/País</value>
+    </labels>
+    <labels>
+        <fullName>Related_PNB</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Related_PNB</shortDescription>
+        <value>Potenciales Negocios Relacionados</value>
+    </labels>
+    <labels>
+        <fullName>Related_Value_Drivers</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Related Value Drivers</shortDescription>
+        <value>Related Value Drivers</value>
+    </labels>
+    <labels>
+        <fullName>Remove</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Remove</shortDescription>
+        <value>quitar</value>
+    </labels>
+    <labels>
+        <fullName>Renegociate_indemnizations</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Renegociate indemnizations</shortDescription>
+        <value>Negociar a la baja las indemnizaciones</value>
+    </labels>
+    <labels>
+        <fullName>Reports_To</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Reports To</shortDescription>
+        <value>Reporta A</value>
+    </labels>
+    <labels>
+        <fullName>Responsible</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Responsible</shortDescription>
+        <value>Responsable</value>
+    </labels>
+    <labels>
+        <fullName>Reto</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Reto</shortDescription>
+        <value>Reto</value>
+    </labels>
+    <labels>
+        <fullName>Risks</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Risks</shortDescription>
+        <value>Riesgos</value>
+    </labels>
+    <labels>
+        <fullName>SCP_Total</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>SCP_Total</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>SCP_noMismoContacto</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>SCP_noMismoContacto</shortDescription>
+        <value>No puede seleccionar al contacto que se está evaluando.</value>
+    </labels>
+    <labels>
+        <fullName>Seleccionado</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Seleccionado</shortDescription>
+        <value>Seleccionado</value>
+    </labels>
+    <labels>
+        <fullName>Seleccionar_paises_presencia</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Seleccionar paises presencia</shortDescription>
+        <value>Si el cliente tiene presencia fuera del país, selecciona en cuales de los siguientes países tienen negocio</value>
+    </labels>
+    <labels>
+        <fullName>Select</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Select</shortDescription>
+        <value>Seleccionar</value>
+    </labels>
+    <labels>
+        <fullName>Send</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Send</shortDescription>
+        <value>Enviar</value>
+    </labels>
+    <labels>
+        <fullName>Servicio</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Servicio</shortDescription>
+        <value>Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Servicios</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Servicios</shortDescription>
+        <value>Servicios</value>
+    </labels>
+    <labels>
+        <fullName>Servicios_Actualmente_Competencia</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Servicios Actualmente Competencia</shortDescription>
+        <value>Servicios actualmente provistos por la competencia</value>
+    </labels>
+    <labels>
+        <fullName>Servicios_Actualmente_Nosotros</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Servicios Actualmente Nosotros</shortDescription>
+        <value>Servicios actualmente provistos por nosotros</value>
+    </labels>
+    <labels>
+        <fullName>Servicios_Planeamos_Futuro</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Servicios Planeamos Futuro</shortDescription>
+        <value>Servicios que planeamos vender en el futuro</value>
+    </labels>
+    <labels>
+        <fullName>Show_Filters</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Show Filters</shortDescription>
+        <value>Mostrar Filtros</value>
+    </labels>
+    <labels>
+        <fullName>Si_asignado_oportunidad</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Si asignado oportunidad</shortDescription>
+        <value>Ha sido asignado por lo menos a una oportunidad potencial.</value>
+    </labels>
+    <labels>
+        <fullName>Siguiente</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Siguiente</shortDescription>
+        <value>Siguiente</value>
+    </labels>
+    <labels>
+        <fullName>Source</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Source</shortDescription>
+        <value>Origen</value>
+    </labels>
+    <labels>
+        <fullName>Statu_Quo</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Statu Quo</shortDescription>
+        <value>Q</value>
+    </labels>
+    <labels>
+        <fullName>Statu_Quo_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Statu Quo help</shortDescription>
+        <value>Statu Quo</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>Estado</value>
+    </labels>
+    <labels>
+        <fullName>Step1</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Step1</shortDescription>
+        <value>Revisión de Oportunidades en curso</value>
+    </labels>
+    <labels>
+        <fullName>Step2</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Step2</shortDescription>
+        <value>Revisión de Contratos Vigentes</value>
+    </labels>
+    <labels>
+        <fullName>Study_a_way_to_reduce_the_times</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study a way to reduce the times</shortDescription>
+        <value>Estudiar la forma de reducir los plazos</value>
+    </labels>
+    <labels>
+        <fullName>Study_a_way_to_reduce_third_party_dependence_below_50</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study a way to reduce third-party dependence below 50%</shortDescription>
+        <value>Estudiar la forma de reducir la dependencia de terceros por debajo del 50%</value>
+    </labels>
+    <labels>
+        <fullName>Study_a_way_to_reduce_third_party_dependence_below_80</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study a way to reduce third-party dependence below 80%</shortDescription>
+        <value>Estudiar la forma de reducir la dependencia de terceros por debajo del 80%</value>
+    </labels>
+    <labels>
+        <fullName>Study_posibility_to_fit_offer_with_existent_products_in_the_portfolio</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study posibility to fit offer with existent products in the portfolio</shortDescription>
+        <value>Evaluar la posibilidad de encajar la oferta con productos existentes del portfolio TEF</value>
+    </labels>
+    <labels>
+        <fullName>Study_the_posibility_to_fit_offer_with_existent_profiles</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study the posibility to fit offer with existent profiles</shortDescription>
+        <value>Evaluar la posibilidad de encajar la oferta con perfiles existentes en TEF</value>
+    </labels>
+    <labels>
+        <fullName>Study_the_way_to_substitute_key_partners</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Study the way to substitute key partners</shortDescription>
+        <value>Ver la posibilidad de sustituir los partners clave por otros con los que no exista conflicto</value>
+    </labels>
+    <labels>
+        <fullName>Subject</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Subject</shortDescription>
+        <value>Tema</value>
+    </labels>
+    <labels>
+        <fullName>Sucursales_crece_decrece</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Sucursales crece decrece</shortDescription>
+        <value>¿El número de sucursales, crece, decrece o se mantiene?</value>
+    </labels>
+    <labels>
+        <fullName>Suggested_approach</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Suggested approach</shortDescription>
+        <value>Enfoque Sugerido</value>
+    </labels>
+    <labels>
+        <fullName>Task_status</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Task status</shortDescription>
+        <value>Estado de la tarea</value>
+    </labels>
+    <labels>
+        <fullName>Team_for_offer_and_presale</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Team for offer and presale</shortDescription>
+        <value>Equipo preventa y oferta</value>
+    </labels>
+    <labels>
+        <fullName>Technical</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Technical</shortDescription>
+        <value>T</value>
+    </labels>
+    <labels>
+        <fullName>Technical_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Technical help</shortDescription>
+        <value>Técnico</value>
+    </labels>
+    <labels>
+        <fullName>Tecnologia</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Tecnologia</shortDescription>
+        <value>Tecnología</value>
+    </labels>
+    <labels>
+        <fullName>Tecnologias_Responden_Proyecto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Tecnologias Responden Proyecto</shortDescription>
+        <value>Tecnologías que responden al Proyecto</value>
+    </labels>
+    <labels>
+        <fullName>Tendencias</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Tendencias</shortDescription>
+        <value>Tendencias</value>
+    </labels>
+    <labels>
+        <fullName>Tipo_de_Area</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Tipo de Area</shortDescription>
+        <value>Tipo de Área</value>
+    </labels>
+    <labels>
+        <fullName>Tipo_de_Contacto</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Tipo de Contacto</shortDescription>
+        <value>Tipo de contacto</value>
+    </labels>
+    <labels>
+        <fullName>Title</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Title</shortDescription>
+        <value>Título</value>
+    </labels>
+    <labels>
+        <fullName>Todos</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Todos</shortDescription>
+        <value>Todos</value>
+    </labels>
+    <labels>
+        <fullName>Trend</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Industry Trend</shortDescription>
+        <value>Contexto Sectorial</value>
+    </labels>
+    <labels>
+        <fullName>Try_to_exclude_or_minimize_the_human_resource_requirement</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Try to exclude or minimize the human resource requirement</shortDescription>
+        <value>Intentar excluir la transferencia de RRHH del proyecto o Minimizar su impacto.</value>
+    </labels>
+    <labels>
+        <fullName>URL_Attachment</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>URL Attachment</shortDescription>
+        <value>URL/Documento Adjunto</value>
+    </labels>
+    <labels>
+        <fullName>Ultima</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Ultima</shortDescription>
+        <value>Última</value>
+    </labels>
+    <labels>
+        <fullName>Unlink</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Unlink</shortDescription>
+        <value>Desvincular</value>
+    </labels>
+    <labels>
+        <fullName>User</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>User</shortDescription>
+        <value>U</value>
+    </labels>
+    <labels>
+        <fullName>User_Region</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>User_Region</shortDescription>
+        <value>Usuario</value>
+    </labels>
+    <labels>
+        <fullName>Value_Arguments</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value_Arguments</shortDescription>
+        <value>Value Drivers</value>
+    </labels>
+    <labels>
+        <fullName>Value_Proposition</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Value Proposition</shortDescription>
+        <value>Acerca de Nuestro Negocio con el Cliente</value>
+    </labels>
+    <labels>
+        <fullName>Vencimiento</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Vencimiento</shortDescription>
+        <value>Vencimiento</value>
+    </labels>
+    <labels>
+        <fullName>Vencimiento_Contrato_Activo_con_Telef_nica</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Vencimiento Contrato Activo con Telefónica</shortDescription>
+        <value>Vencimiento Contrato Activo con Telefónica</value>
+    </labels>
+    <labels>
+        <fullName>Vencimiento_Contrato_Activo_con_la_Competencia</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Vencimiento Contrato Activo con la Competencia</shortDescription>
+        <value>Vencimiento Contrato Activo con la Competencia</value>
+    </labels>
+    <labels>
+        <fullName>Vencimiento_Contrato_Servicio</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Vencimiento Contrato Servicio</shortDescription>
+        <value>Vencimiento Contrato del Servicio</value>
+    </labels>
+    <labels>
+        <fullName>Vencimientos_Eventos_Etc</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Vencimientos Eventos Etc</shortDescription>
+        <value>Vencimientos de Contratos, Eventos Importantes, etc.</value>
+    </labels>
+    <labels>
+        <fullName>Venicmiento_Contrato_Nosotros</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Venicmiento Contrato Nosotros</shortDescription>
+        <value>Vencimiento Contrato Activo Con Nosotros</value>
+    </labels>
+    <labels>
+        <fullName>View_Mosaic_order_by_Attitude</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>View Mosaic order by Attitude</shortDescription>
+        <value>Ver mosaico ordenado por Actitud</value>
+    </labels>
+    <labels>
+        <fullName>View_Org_Chart</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>View Org Chart</shortDescription>
+        <value>Ver Organigrama</value>
+    </labels>
+    <labels>
+        <fullName>account_past_proven_value</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>account_past_proven_value</shortDescription>
+        <value>Casos de Éxito y Diferenciadores en el Cliente</value>
+    </labels>
+    <labels>
+        <fullName>add</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>add</shortDescription>
+        <value>Agregar</value>
+    </labels>
+    <labels>
+        <fullName>add_buttom</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>add buttom</shortDescription>
+        <value>Agregar</value>
+    </labels>
+    <labels>
+        <fullName>add_kpi</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>add_kpi</shortDescription>
+        <value>Add KPI</value>
+    </labels>
+    <labels>
+        <fullName>already</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Already Evaluated Contacts</shortDescription>
+        <value>Contactos ya Evaluados</value>
+    </labels>
+    <labels>
+        <fullName>back_to_contact</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>back to contact</shortDescription>
+        <value>Volver a la Tabla de Contactos</value>
+    </labels>
+    <labels>
+        <fullName>badFilter</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>badFilter</shortDescription>
+        <value>Filtro Incorrecto</value>
+    </labels>
+    <labels>
+        <fullName>buying_cycle</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>buying cycle</shortDescription>
+        <value>Etapa Ciclo de Compra</value>
+    </labels>
+    <labels>
+        <fullName>checkbox_help</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>checkbox_help</shortDescription>
+        <value>La casilla seleccionada indica &quot;SI&quot; por respuesta</value>
+    </labels>
+    <labels>
+        <fullName>close</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>close</shortDescription>
+        <value>Cerrar</value>
+    </labels>
+    <labels>
+        <fullName>close_without_save</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>close_without_save</shortDescription>
+        <value>If you leave the page unsaved data will be lost</value>
+    </labels>
+    <labels>
+        <fullName>closest</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>closest team member</shortDescription>
+        <value>Miembro más Cercano de Nuestro Equipo</value>
+    </labels>
+    <labels>
+        <fullName>competition_relationship</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>competition relationship</shortDescription>
+        <value>Relacionamiento con la Competencia</value>
+    </labels>
+    <labels>
+        <fullName>contact_to_view</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>contact_to_view</shortDescription>
+        <value>Contactos a Visualizar</value>
+    </labels>
+    <labels>
+        <fullName>contain</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>contain</shortDescription>
+        <value>Contiene</value>
+    </labels>
+    <labels>
+        <fullName>controller</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>controller</shortDescription>
+        <value>C</value>
+    </labels>
+    <labels>
+        <fullName>controller_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>controller_help</shortDescription>
+        <value>Controlador</value>
+    </labels>
+    <labels>
+        <fullName>csat</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>Client Satisfaction Evolution</shortDescription>
+        <value>Evolución de la Satisfacción del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>dblClickToAddCapability</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>dblClickToAddCapability</shortDescription>
+        <value>Doble Click para agregar una Capacidad</value>
+    </labels>
+    <labels>
+        <fullName>dblClickToAddValue</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>dblClickToAddValue</shortDescription>
+        <value>Doble Click para agregar un objetivo de Valor</value>
+    </labels>
+    <labels>
+        <fullName>delete</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>delete</shortDescription>
+        <value>Borrar</value>
+    </labels>
+    <labels>
+        <fullName>end_with</fullName>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>end with</shortDescription>
+        <value>Termina con</value>
+    </labels>
+    <labels>
+        <fullName>equals</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>equals</shortDescription>
+        <value>Igual</value>
+    </labels>
+    <labels>
+        <fullName>eval_criteria</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>eval_criteria</shortDescription>
+        <value>Evaluación del Criterio</value>
+    </labels>
+    <labels>
+        <fullName>falta_Actividades_a_realizar_durante</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Actividades a realizar durante</shortDescription>
+        <value>Falta completar el campo &quot;Actividades a realizar durante la preventa&quot; en la seccion &quot;Equipo de preventa y oferta&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Calcular_el_n_de_jornadas</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta &quot;Calcular el nº de jornadas</shortDescription>
+        <value>Falta completar el campo &quot;Calcular el nº de jornadas&quot; en la seccion &quot;Equipo de preventa y oferta&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Concretar_el_n_mero_FTEs</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Concretar el número FTEs</shortDescription>
+        <value>Falta completar el campo &quot;Concretar el número FTEs que la OB está dispuesta a aportar en preventa y propuesta&quot; en la seccion &quot;Equipo de preventa y oferta&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Concretar_el_n_mero_de_FTEs_de_terceros</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Concretar el número de FTEs de terceros</shortDescription>
+        <value>Falta completar el campo &quot;Concretar el número de FTEs de terceros que se requieren&quot; en la seccion &quot;Equipo de preventa y oferta&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_grado_de_exigencia</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Cuál es el grado de exigencia</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el grado de exigencia de los SLAs que pide el cliente respecto a nuestro estándar?&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_grado_de_fiabilidad_sobre</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Cuál es el grado de fiabilidad sobre</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el grado de fiabilidad sobre la continuidad en el tiempo...&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_grado_de_interrelaci_n</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Cuál es el grado de interrelación</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el grado de interrelación con los principales decisores?&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_impacto_del_proyecto</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Cuál es el impacto del proyecto</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el impacto del proyecto en el negocio del cliente?&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_nivel_de_conocimiento</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Cuál es el nivel de conocimiento</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el nivel de conocimiento del Cliente:&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_l_es_el_plazo_de_ejecuci_n</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Cuál es el plazo de ejecución</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuál es el plazo de ejecución del proyecto?&quot; en la seccion &quot;Detalle del alcance&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cu_nta_es_la_facilidad_para_TEF</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta &quot;¿Cuánta es la facilidad para TEF</shortDescription>
+        <value>Falta completar el campo &quot;¿Cuánta es la facilidad de cumplir los SLAs solicitados?&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Cuantificar_el_importe_de_las_Fianzas</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Cuantificar el importe de las Fianzas</shortDescription>
+        <value>Falta completar el campo &quot;Cuantificar el importe de las Fianzas a depositar&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Detallar_el_de_la_soluci_n</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Detallar el % de la solución</shortDescription>
+        <value>Falta completar el campo &quot;Detallar el % de la solución que puede aportar con su portfolio&quot; en la seccion &quot;Detalle del alcance&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Detallar_el_importe</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Detallar el importe</shortDescription>
+        <value>Falta completar el campo &quot;Detallar el importe de las penalizaciones / indemnizaciones&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Duraci_n_estimada</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Duración estimada</shortDescription>
+        <value>Falta completar el campo &quot;Duración estimada de la Preventa y Oferta&quot; en la seccion &quot;Equipo de preventa y oferta&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Duraci_n_total_del_proyecto</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Duración total del proyecto</shortDescription>
+        <value>Falta completar el campo &quot;Duración total del proyecto&quot; en la seccion &quot;Detalle del alcance&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Es_el_volumen_de_pasivo_laboral_m_ximo_significativo_respecto</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Es el volumen de pasivo laboral máximo significativo respecto</shortDescription>
+        <value>Falta completar el campo &quot;¿Es el volumen de pasivo laboral máximo significativo respecto al...&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Es_el_volumen_de_penalizaci_n</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Es el volumen de penalización</shortDescription>
+        <value>Falta completar el campo &quot;¿Es el volumen de penalización máximo por incumplimiento del...&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Es_el_volumen_de_penalizaci_n_m_ximo</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Es el volumen de penalización máximo</shortDescription>
+        <value>Falta completar el campo &quot;¿Es el volumen de penalización máximo por rescición anticipada...&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Es_significativo_el_volumen_de_indemnizaci_n</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta ¿Es significativo el volumen de indemnización</shortDescription>
+        <value>Falta completar el campo &quot;¿Es significativo el volumen de indemnización máximo respecto al...&quot; en la seccion &quot;Riesgos&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_Existe_experiencia_en_el</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Existe experiencia en el</shortDescription>
+        <value>Falta completar el campo &quot;¿Existe experiencia en el Grupo en proyectos similares?&quot; en la seccion &quot;Detalle del alcance&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>falta_N_de_personas</fullName>
+        <categories>Big Deal form</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>falta Nº de personas</shortDescription>
+        <value>Falta completar el campo &quot;¿Nº de personas que tendrían que incorporarse en plantilla?&quot; en la seccion &quot;Detalle del alcance&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>filterHelp</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>filterHelp</shortDescription>
+        <value>Ejemplo: (1 OR 2) AND 3</value>
+    </labels>
+    <labels>
+        <fullName>focus</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>focus</shortDescription>
+        <value>Rol</value>
+    </labels>
+    <labels>
+        <fullName>generation</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>generation</shortDescription>
+        <value>Generación</value>
+    </labels>
+    <labels>
+        <fullName>gotoCriteria</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>gotoCriteria</shortDescription>
+        <value>Ir a los Criterios</value>
+    </labels>
+    <labels>
+        <fullName>gotoMosaic</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>gotoMosaic</shortDescription>
+        <value>Ir al Mosaico</value>
+    </labels>
+    <labels>
+        <fullName>gotoSnapshot</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>gotoSnapshot</shortDescription>
+        <value>Ir al Snapshot</value>
+    </labels>
+    <labels>
+        <fullName>inSeccion</fullName>
+        <categories>Big Deal form</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>inSeccion</shortDescription>
+        <value>en la seccion</value>
+    </labels>
+    <labels>
+        <fullName>influenced_by</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>influenced by</shortDescription>
+        <value>Es Influído POR</value>
+    </labels>
+    <labels>
+        <fullName>main_competitors</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>main competitors</shortDescription>
+        <value>Principales Competidores del Cliente</value>
+    </labels>
+    <labels>
+        <fullName>modify_influences</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>modify_influences</shortDescription>
+        <value>Para agregar o para quitar una Influencia: 1) Arrastrar la caja del contacto influyente 2) Soltarla sobre la caja del contacto influenciado 3) Clickear el botón de &quot;Guardar cambios&quot; antes de abandonar la página!</value>
+    </labels>
+    <labels>
+        <fullName>modify_influences_btn</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>modify influences btn</shortDescription>
+        <value>Modificar Mapa de Influencias</value>
+    </labels>
+    <labels>
+        <fullName>modify_org</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>modify_org</shortDescription>
+        <value>Para modificar el Organigrama: 1) Arrastrar la caja del contacto impactado 2) Soltarlo sobre la caja del nuevo Supervisor 3) Clickear sobre el botón de &quot;Guardar Cambios&quot; antes de abandonar la página!</value>
+    </labels>
+    <labels>
+        <fullName>modify_org_btn</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>modify org btn</shortDescription>
+        <value>Modificar Organigrama</value>
+    </labels>
+    <labels>
+        <fullName>mouseover</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>mouse over for influence map</shortDescription>
+        <value>Para ver las Influencias, haga click sobre el contacto que quiere visualizar, de acuerdo al siguiente codigo</value>
+    </labels>
+    <labels>
+        <fullName>name</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>name</shortDescription>
+        <value>Nombre</value>
+    </labels>
+    <labels>
+        <fullName>net_activity</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Net commercial activity with client</shortDescription>
+        <value>Share of Wallet</value>
+    </labels>
+    <labels>
+        <fullName>no_industry_trends</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>no_industry_trends</shortDescription>
+        <value>No Industry Trends for this Region</value>
+    </labels>
+    <labels>
+        <fullName>not_equal_to</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>not equal to</shortDescription>
+        <value>Distinto de</value>
+    </labels>
+    <labels>
+        <fullName>offer_schedule</fullName>
+        <categories>Big Deals</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>offer schedule</shortDescription>
+        <value>Calendario de la oferta</value>
+    </labels>
+    <labels>
+        <fullName>opportunity</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>opportunity</shortDescription>
+        <value>Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>opportunityName</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>opportunityName</shortDescription>
+        <value>Nombre de la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>our_expenditures</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Our expenditures with cliente</shortDescription>
+        <value>Compras efectuadas al Cliente</value>
+    </labels>
+    <labels>
+        <fullName>people</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>people</shortDescription>
+        <value>Personas</value>
+    </labels>
+    <labels>
+        <fullName>popupGeneralMosaic</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>popupGeneralMosaic</shortDescription>
+        <value>Al seleccionar el Mosaico General como &quot;Template&quot;, se sobrescribirá la información del Mosaico previamente cargada para esta oportunidad. ¿Está seguro que desea continuar?</value>
+    </labels>
+    <labels>
+        <fullName>potential_business</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>potential_business</shortDescription>
+        <value>Negocio Potencial</value>
+    </labels>
+    <labels>
+        <fullName>reported_by</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>reported by</shortDescription>
+        <value>Le Reporta/n</value>
+    </labels>
+    <labels>
+        <fullName>save</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>save</shortDescription>
+        <value>Guardar</value>
+    </labels>
+    <labels>
+        <fullName>saveAndBlock</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>saveAndBlock</shortDescription>
+        <value>Guardar y Bloquear</value>
+    </labels>
+    <labels>
+        <fullName>saveAndUnblock</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>saveAndUnblock</shortDescription>
+        <value>Desbloquear</value>
+    </labels>
+    <labels>
+        <fullName>save_changes</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>save changes</shortDescription>
+        <value>Guardar Cambios</value>
+    </labels>
+    <labels>
+        <fullName>save_image</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>save image</shortDescription>
+        <value>Descargar Imagen</value>
+    </labels>
+    <labels>
+        <fullName>save_msg</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>save_msg</shortDescription>
+        <value>Se ha descargado en su computadora una imagen conteniendo el Organigrama y la vista seleccionada del Mapa de Influencias . Para verla o imprimirla diríjase a su carpeta de descargas del navegador.</value>
+    </labels>
+    <labels>
+        <fullName>select_criteria</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>select_criteria</shortDescription>
+        <value>Seleccionar Criterios para Evaluación</value>
+    </labels>
+    <labels>
+        <fullName>share_of_wallet</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>share of wallet</shortDescription>
+        <value>&quot;Share of Wallet&quot;</value>
+    </labels>
+    <labels>
+        <fullName>share_region_to_owner</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>error share region to owner</shortDescription>
+        <value>El Usuario seleccionado es el dueño de la Región</value>
+    </labels>
+    <labels>
+        <fullName>show_less</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>show_less</shortDescription>
+        <value>Menos</value>
+    </labels>
+    <labels>
+        <fullName>show_more</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>show_more</shortDescription>
+        <value>Más</value>
+    </labels>
+    <labels>
+        <fullName>show_video</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>show_video</shortDescription>
+        <value>Ver Video</value>
+    </labels>
+    <labels>
+        <fullName>snapshot</fullName>
+        <categories>SCP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>snapshot</shortDescription>
+        <value>Opportunity Snapshot</value>
+    </labels>
+    <labels>
+        <fullName>solution</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>solution</shortDescription>
+        <value>Solución</value>
+    </labels>
+    <labels>
+        <fullName>sponsor</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>sponsor</shortDescription>
+        <value>S</value>
+    </labels>
+    <labels>
+        <fullName>sponsor_help</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>sponsor_help</shortDescription>
+        <value>Sponsor</value>
+    </labels>
+    <labels>
+        <fullName>start_with</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>start with</shortDescription>
+        <value>Comienza con</value>
+    </labels>
+    <labels>
+        <fullName>strenght</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>strenght</shortDescription>
+        <value>Fortalezas</value>
+    </labels>
+    <labels>
+        <fullName>swot</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>swot analysis</shortDescription>
+        <value>Análisis FODA de nuestro relacionamiento con el cliente</value>
+    </labels>
+    <labels>
+        <fullName>threats</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>threats</shortDescription>
+        <value>Amenazas</value>
+    </labels>
+    <labels>
+        <fullName>totalict</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Total client ICT expenditure</shortDescription>
+        <value>Gasto Total del Cliente en TCI (a)</value>
+    </labels>
+    <labels>
+        <fullName>totrevenue</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Our total revenue from client</shortDescription>
+        <value>Nuestra Facturación Total al Cliente (b)</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_DCMCriteria</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_DCMCriteria</shortDescription>
+        <value>El gráfico permite visualizar el posicionamiento relativo a nuestro competidor para los criterios adoptados por el cliente para esta oportunidad.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_DCMEvaluateCriteria</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_DCMEvaluateCriteria</shortDescription>
+        <value>Para construir la Matriz se deberá evaluar los Criterios de Decisión que el cliente ha adoptado para esta determinada oportunidad. Si el criterio no ha sido creado previamente, deberá generarse oprimiendo el botón &quot;Agregar&quot; que se encuentra junto al texto &quot;Nuevo Criterio&quot;. Una vez finalizada la evaluación, el gráfico puede analizarse presionando el botón &quot;Ver Gráfico de Criterios&quot;</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_OpportunitySnapshot</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_OpportunitySnapshot</shortDescription>
+        <value>SCP construye la Ficha de la Oportunidad en forma automática, incorporando 6 secciones: 1) las variables clave (FCV, prob. de éxito, etc.), 2) los Value Drivers que han sido asociados a la oportunidad, 3) el espacio para que el usuario registre la Propuesta de Valor, basándose en los value drivers que tiene a la vista, 4) el Mosaico de Relacionamiento de la Oportunidad, 5) La Matriz de Criterios de Decisión de la Oportunidad y 6) Las tareas que han sido asociadas a la Oportunidad</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountCustomReport</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountCustomReport</shortDescription>
+        <value>Primero se debe proceder a seleccionar con un tilde, las secciones de SCP que formarán parte del reporte. A continuación, presionar el botón &quot;Exportar a Word&quot;</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountGrowthStrategy</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountGrowthStrategy</shortDescription>
+        <value>Analizar si algún (o algunos) Value Driver (s) podría(n) servir de base para generar una nueva oportunidad. En ese caso, presionar el botón &quot;Agregar Negocio Potencial&quot; y proceder a &quot;arrastrar&quot; los value drives correspondientes a ese nuevo Negocio Potencial. Seguidamente, completar el resto de los campos del nuevo Negocio Potencial detectado.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountHistoricalBusinessWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountHistoricalBusinessWindow</shortDescription>
+        <value>En esta sección se registra la cuantificación de negocios con el cliente en una serie de tres años y la variación relativa de nuestro negocio en el presupuesto del cliente, para los bienes y servicios que ofrecemos.  Son editables: 1) la estimación del gasto total de cliente en estos servicios (primera fila de la tabla), 2) nuestra facturación total al cliente (segunda fila) y 3) si aplicara, el total de compras que hayamos hecho nosotros al cliente (cuarta fila).   La fila &quot;Share of Wallet&quot; (tercera) y la de &quot;Actividad Comercial Neta&quot; (última fila) NO son editables ya que se calculan automáticamente en base a los otros datos</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountIndustryTrends</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountIndustryTrends</shortDescription>
+        <value>En esta sección se registran en forma centralizada para toda la organización, las tendencias y desafíos Globales, Regionales y Locales,  del sector al cual pertenece el Cliente.   La sección es solamente editable por un Administrador central de dicha información.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountIndustryTrendsWindowNew</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountIndustryTrendsWindowNew</shortDescription>
+        <value>&quot;Arrastrar&quot; los value drivers y &quot;soltarlos&quot; junto a las oportunidades relacionadas</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountKPIWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountKPIWindow</shortDescription>
+        <value>En esta sección se consignarán los nombres y valores de los Indicadores Clave de Performance (KPIs) específicos del negocio de nuestro Cliente.   La tabla prevé la posibilidad de registrar una serie de tres años para atrás, de modo de ver tendencias.   Hay dos tipos de KPIs: aquellos cuya definición de nombre fue realizada en forma centralizada por un Administrador en función al Sector de industria al que pertenece el cliente, y aquellos cuya definición de nombre estará realizada por el Propietario de la Cuenta, utilizando el botón de &quot;Agregar nuevo KPI&quot;</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountMasterPlan</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountMasterPlan</shortDescription>
+        <value>Aquí confluyen todas las tareas que han sido agregadas a través de la &quot;caja&quot; denominada &quot;Agregar al Plan de Acción&quot; que se encuentra en todas y cada pantalla de SCP. Para convertir a esta lista de tareas en un Plan, se debe proceder a completar los campos correspondientes. La columna &quot;Tema&quot; es completada automáticamente por el sistema, y la misma indica la sección de SCP donde fue cargada dicha tarea.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountOpportunityList</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOpportunityList</shortDescription>
+        <value>En primer lugar, se debe seleccionar la oportunidad para la cual se construirá el Mosaico, oprimiendo el botón &quot;Ir al Mosaico&quot; que corresponda a la oportunidad en cuestión</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountOpportunityListCriteria</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOpportunityListCriteria</shortDescription>
+        <value>En primer lugar debemos seleccionar la Oportunidad sobre la cual construiremos la Matriz de Criterios de Decisión, presionando el botón &quot;Ir a los Criterios&quot; que corresponda a la Oportunidad en cuestión</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountOpportunityListSnapshot</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOpportunityListSnapshot</shortDescription>
+        <value>En primer lugar se deberá seleccionar la oportunidad sobre la cual se quiere trabajar, presionando el botón &quot;Ir a la Ficha&quot; correspondiente.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountOrganizationChartWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOrganizationChartWindow</shortDescription>
+        <value>Para construir o editar tanto el Organigrama como el Mapa de Influencias, presionar el botón &quot;Ver Organigrama y Mapa de Influencia&quot;, donde estas tareas pueden realizarse a través de un &quot;drag &amp; drop&quot;</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountOverallRelationshipWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountOverallRelationshipWindow</shortDescription>
+        <value>La Situación Competitiva consta de 3 secciones: 1) la que describe la actividad de nuestros competidores en el cliente, 2) el análisis FODA (Fortalezas, Oportunidades, Desafíos y Amenazas) en nuestra relación con el cliente, y 3) el registro del nivel de satisfacción del cliente con nosotros obtenidos a través de las encuestas correspondientes</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountPastProvenValueNew</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountPastProvenValueNew</shortDescription>
+        <value>En esta sección se registran aquellas capacidades propias de nuestro negocio que sirvan a la propuesta de valor al cliente.   Estas capacidades tienen dos fuentes diferentes: 1) Las registradas en forma centralizada por un Administrador en función al Sector de industria al que pertenece el cliente o a Capacidades Generales de nuestro negocio, y 2) Las capacidades de aplicación específica al Cliente (Casos de Éxito o Diferenciadores Competitivos) que deberán ser registradas por el Propietario de la Cuenta, utilizando el botón de &quot;Agregar nueva CapacidadI&quot;</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMChart</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMChart</shortDescription>
+        <value>En esta sección se grafica el relacionamiento con los contactos del cliente, ordenado primariamente por su rol en las decisiones de compra del rubro de nuestros productos o servicios.  Al pasar el &quot;ratón&quot; por encima de los nombres de los contactos podrá verse más información sobre los mismos, incluyendo el enfoque sugerido para el acercamiento, de acuerdo a los valores asignados a sus atributos individuales.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMChartAttitude</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMChartAttitude</shortDescription>
+        <value>En esta sección se grafica el relacionamiento con los contactos del cliente, ordenado primariamente por su actitud general frente a las decisiones de compra del rubro de nuestros productos o servicios. Al pasar el &quot;ratón&quot; por encima de los nombres de los contactos podrá verse más información sobre los mismos, incluyendo el enfoque sugerido para el acercamiento, de acuerdo a los valores asignados a sus atributos individuales.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMChartAttitude_Opp</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMChartAttitude_Opp</shortDescription>
+        <value>tutorial_accountRDMChartAttitude_Opp</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMChart_Opp</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMChart_Opp</shortDescription>
+        <value>Aquí se visualiza el Mosaico construído para la oportunidad seleccionada. Al hacer &quot;mouse over&quot; sobre cualquier contacto, aparecerá un menú con opciones adicionales, entre ellas, el &quot;enfoque sugerido&quot; por SCP para el desarrollo del relacionamiento con ese contacto en particular. El enfoque sugerido es construído en forma automática por SCP, en función de los valores de atributos particulares que hemos seleccionado para ese contacto.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMWindow</shortDescription>
+        <value>En esta sección construiremos el Mosaico de Relacionamiento General con el Cliente, por medio de la evaluación de los Contactos del mismo que participan de decisiones relativas a nuestro negocio en términos generales. Para ello, se deberán indicar el contacto a evaluar y cargar un valor para TODOS los atributos que se presentan. Una vez realizado esto, se podrá ver la representación gráfica ordenada por Rol o por Actitud, pulsando el botón correspondiente.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountRDMWindow_Opp</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountRDMWindow_Opp</shortDescription>
+        <value>Si el Mosaico de la oportunidad es igual o similar al Mosaico General, podemos utilizar este úlitmo como &quot;base&quot; o &quot;template&quot; a través del botón correspondiente. Si no lo es, convendrá generarlo desde &quot;cero&quot;, es decir, evaluando TODOS los atributos de cada contacto que corresponda incorporar.</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_accountStrategicContextWindow</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_accountStrategicContextWindow</shortDescription>
+        <value>Esta sección consta de tres sub-secciones: 1) Contexto estratégico: se debe reflejar la situación macro de nuestro cliente, sus perspectivas de crecimiento o reducción, su mercado, su competencia, otros factores externos o internos que condicionen su performance, etc.   2) Iniciativas estratégicas: son aquellos esfuerzos relevantes que el Cliente lleva o llevará a cabo, para cumplir sus objetivos de negocio, y que tienen relación con bienes o servicios que proveemos.  3) Criterios de compras: se consignará si el Cliente tiene algún patrón determinado de compras, en cuanto a proveedores o a políticas internas que merezcan ser registrados.   La sección prevé para todas las sub-secciones la posibilidad de recibir información de la(s) cuenta(s) padre(s) si las hubiera.   Solo son editables los campos relacionados con la presente cuenta (local o &quot;hija&quot;)</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_adminIndustryTrends</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_adminIndustryTrends</shortDescription>
+        <value>tutorial_adminIndustryTrends</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_adminKPI</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_adminKPI</shortDescription>
+        <value>tutorial_adminKPI</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_adminProvenValue</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_adminProvenValue</shortDescription>
+        <value>tutorial_adminProvenValue</value>
+    </labels>
+    <labels>
+        <fullName>tutorial_adminRegions</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>tutorial_adminRegions</shortDescription>
+        <value>tutorial_adminRegions</value>
+    </labels>
+    <labels>
+        <fullName>type</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>type</shortDescription>
+        <value>Tipo</value>
+    </labels>
+    <labels>
+        <fullName>unit</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>unit</shortDescription>
+        <value>Unidad de Medida</value>
+    </labels>
+    <labels>
+        <fullName>use_notes_and_files</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>use_notes_and_files</shortDescription>
+        <value>Puede utilizar la funcionalidad de &quot;Notas y archivos adjuntos&quot; al final de la página para ampliar la información.</value>
+    </labels>
+    <labels>
+        <fullName>value_driver_sector</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>value driver sector</shortDescription>
+        <value>Soluciones Para el Sector</value>
+    </labels>
+    <labels>
+        <fullName>value_drivers_account</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>value drivers account</shortDescription>
+        <value>Value Drivers</value>
+    </labels>
+    <labels>
+        <fullName>view</fullName>
+        <categories>SCP</categories>
+        <language>es_MX</language>
+        <protected>true</protected>
+        <shortDescription>view</shortDescription>
+        <value>Ver</value>
+    </labels>
+    <labels>
+        <fullName>viewCDC</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>viewCDC</shortDescription>
+        <value>Ver Gráfico de Criterios</value>
+    </labels>
+    <labels>
+        <fullName>view_influence_map</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>view influence map</shortDescription>
+        <value>Ver Organigrama / Mapa de Influencia</value>
+    </labels>
+    <labels>
+        <fullName>view_mosaic</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>view mosaic</shortDescription>
+        <value>Ver mosaico ordenado por Rol</value>
+    </labels>
+    <labels>
+        <fullName>weakness</fullName>
+        <categories>SCP</categories>
+        <language>es</language>
+        <protected>true</protected>
+        <shortDescription>weakness</shortDescription>
+        <value>Debilidades</value>
+    </labels>
+</CustomLabels>

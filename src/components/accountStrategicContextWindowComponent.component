@@ -1,0 +1,170 @@
+<apex:component controller="accountStrategicContextWindow">
+    <style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        } 
+    </style>    
+    
+
+    <span style="font-weight: bold; font-size: 14px;">{!$Label.scp_certa_gc__global_strategic_context}</span>
+    <apex:outputPanel rendered="{!globalStrategicContext.size > 0}">
+        <table class="table table-striped table-bordered table-condensed">            
+            <tr>
+                <th colspan="2" class="headerRow">  
+                    <apex:outputText value="{!$Label.scp_certa_gc__parent_account}" />
+                </th>
+                <th class="headerRow">  
+                    <apex:outputText value="{!$Label.scp_certa_gc__lastmodifieddate}" />
+                </th>
+            </tr>
+            <apex:repeat value="{!globalStrategicContext}" var="item" >
+            <tr>
+                <td colspan="2">
+                    <apex:outputText value="{!item.Strategic_Context__c} ({!item.Name})" />
+                </td>
+                <td>
+                    <apex:outputText value="{0,date,dd'/'MM'/'yyyy HH:mm:ss z}">
+                        <apex:param value="{!item.Strategic_Context_Last_Update__c}" /> 
+                    </apex:outputText>
+                </td>
+            </tr>               
+            </apex:repeat>
+        </table>
+    </apex:outputPanel>
+    <br/>
+    <!-- <span style="font-weight: bold; font-size: 14px;">{!$Label.Local_Strategic_Context}</span> -->
+
+    <table class="table table-striped table-bordered table-condensed">        
+        <tr>
+            <th colspan="2" class="headerRow">  
+                <apex:outputPanel rendered="{!globalStrategicContext.size == 0}">
+                	<apex:outputText value="{!$Label.scp_certa_gc__current_account}" />
+                </apex:outputPanel>
+            </th>
+            <th class="headerRow">  
+                <apex:outputText value="{!$Label.scp_certa_gc__lastmodifieddate}" />
+            </th>
+        </tr>
+        <apex:repeat value="{!account}" var="account" >
+        <tr>
+            <td colspan="2">    
+                <apex:outputField value="{!account.Strategic_Context__c}"/>
+            </td>
+            <td>
+                <apex:outputText value="{0,date,dd'/'MM'/'yyyy HH:mm:ss z}">
+                    <apex:param value="{!account.Strategic_Context_Last_Update__c}" /> 
+                </apex:outputText>
+            </td>
+        </tr>
+        </apex:repeat>
+    </table>
+    <br/>
+
+    <span style="font-weight: bold; font-size: 14px;">{!$Label.scp_certa_gc__global_strategic_initiative}</span>
+    <apex:outputPanel rendered="{!globalStrategicInitiatives.size > 0}">        
+        <table class="table table-striped table-bordered table-condensed">            
+            <tr>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.scp_certa_gc__numero_de_la_oportunidad}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.scp_certa_gc__parent_account}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.scp_certa_gc__lastmodifieddate}" />
+                </th>                   
+            </tr>
+            <apex:repeat value="{!globalStrategicInitiatives}" var="item" >
+            <tr>
+                <td>
+                    <apex:outputText value="{!item.name}" />
+                </td>
+                <td>
+                    <apex:outputText value="{!item.Strategic_Initiative__c} ({!item.account__r.Name})" />
+                </td>
+                <td>
+                    <apex:outputText value="{0,date,dd'/'MM'/'yyyy HH:mm:ss z}">
+                        <apex:param value="{!item.LastModifiedDate}" /> 
+                    </apex:outputText>
+                </td>                   
+            </tr>
+            </apex:repeat>
+        </table>
+    </apex:outputPanel>
+    <br/>
+
+    <!-- <span style="font-weight: bold; font-size: 14px;">{!$Label.Local_Strategic_Initiative}</span> -->
+    <table class="table table-striped table-bordered table-condensed">
+        <tr>
+            <th class="headerRow">
+                <apex:outputText value="{!$Label.scp_certa_gc__numero_de_la_oportunidad}" />
+            </th>
+            <th class="headerRow">
+                <apex:outputPanel rendered="{!globalStrategicInitiatives.size == 0}">
+                	<apex:outputText value="{!$Label.scp_certa_gc__current_account}" />
+                </apex:outputPanel>
+            </th>
+            <th class="headerRow">
+                <apex:outputText value="{!$Label.scp_certa_gc__lastmodifieddate}" />
+            </th>           
+        </tr>
+        <apex:repeat value="{!localStrategicInitiatives}" var="item" >
+        <tr>
+            <td>
+                <apex:outputText value="{!item.name}" />
+            </td>
+            <td>
+                <apex:outputField value="{!item.Strategic_Initiative__c}"/>
+            </td>
+            <td>
+                <apex:outputText value="{0,date,dd'/'MM'/'yyyy HH:mm:ss z}">
+                       <apex:param value="{!item.LastModifiedDate}" /> 
+                   </apex:outputText>
+            </td>
+        </tr>   
+        </apex:repeat>
+    </table>
+    <br/>
+    <!--
+ee
+<span style="font-weight: bold; font-size: 14px;">{!$Label.Global_Buying_Criteria}</span>
+<apex:outputPanel rendered="{!globalBuyingCriteria.size > 0}">
+<table class="table table-striped table-bordered table-condensed">
+<tr>
+<th  colspan="3" class="headerRow">
+<apex:outputText value="{!$Label.scp_certa_gc__parent_account}"/>
+</th>
+</tr>
+<apex:repeat value="{!globalBuyingCriteria}" var="item" >
+<tr>
+<td colspan="3">
+<apex:outputText value="{!item}"/>
+</td>
+</tr>
+</apex:repeat>
+</table>
+</apex:outputPanel>
+<br/>
+ff
+<span style="font-weight: bold; font-size: 14px;">{!$Label.Local_Buying_Criteria}</span> 
+<table class="table table-striped table-bordered table-condensed">
+<tr class="headerRow">
+<apex:outputPanel rendered="{!globalBuyingCriteria.size == 0}">
+<th colspan="3" class="headerRow">
+<apex:outputText value="{!$Label.scp_certa_gc__current_account}" />
+</th>
+</apex:outputPanel>
+</tr>   
+<tr>
+<td colspan="3" class=" dataCell  " style="width:50%;">
+<apex:outputField value="{!account.Buying_Criteria__c}"/>
+</td>
+</tr>
+</table>
+-->
+</apex:component>

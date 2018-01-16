@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- SCP Capability --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- SCP Capability --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel>Own capabilities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Capability/Area</label>
+        <name>CapabilityArea__c</name>
+        <relationshipLabel>GAP Capabilities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Value</label>
+        <name>value__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre de SCP Capability --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

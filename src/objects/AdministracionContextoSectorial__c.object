@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Micro_Industry__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>micro industry</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>segmento_vertical__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>segmento vertical</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Administración Pública, Defensa y Seguridad Social</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agricultura, Ganadería, Caza y Silvicultura</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Asociaciones e Instituciones</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Autopartistas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Concesionarios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Automotores - Industria Automotriz</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Construcción</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consultoras</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Educación</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Entretenimiento</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Explotación de Minas y Canteras</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Extranjero</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Municipal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Nacional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gobierno Provincial</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Alimenticia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industria Química</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Industrias - Otro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Logística</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manufactura</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medios de Comunicación</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Petróleo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Agua</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Correos</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Energía</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - GAS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prestadores Servicios Públicos - Transporte</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Clínicas, Sanatorios y Hospitales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Laboratorios</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Salud - Medicina Prepaga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seguros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios de Hotelería y Restaurantes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros - Banca</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Financieros - Tarjetas</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios Inmobiliarios, Empresariales y de Alquiler</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios - Otro</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Servicios-Otros</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Siderurgia / Metalurgia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tecnología</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telecomunicaciones</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Transporte</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Turismo</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <gender>Feminine</gender>
+    <label>AdministracionContextoSectorial</label>
+    <nameField>
+        <label>Nombre de AdministracionContextoSectorial</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>AdministracionContextoSectorial</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

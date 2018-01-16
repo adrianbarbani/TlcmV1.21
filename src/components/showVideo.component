@@ -1,0 +1,3 @@
+<apex:component controller="tutorialController">
+	<a class="btn btn-xs btn-default" style="font-size:11px;color:#5c7995;" target="_blank" href="http://strategicclientplan.com?videoUrl={!pageName}"><apex:outputText value="{!$Label.scp_certa_gc__show_video}"/></a>	    
+</apex:component>

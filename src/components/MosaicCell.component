@@ -1,0 +1,61 @@
+<apex:component controller="MosaicCellController">
+  <apex:attribute name="list" type="ExtendedEvaluation[]"  required="true" assignTo="{!ECList}" description="data"/>
+
+    <apex:repeat value="{!ECList}" var="ExtC">
+        <div class="ContactPlacer" id="{!ExtC.ContactEval.Contact__r.id}">
+            <span class="Relationship{!ExtC.Relationship}">
+              <apex:outputText rendered="{!IF(ExtC.ContactEval.Buying_Cycle__c = ExtC.ContactEval.Opportunity__r.Buying_Cycle__c, false, true)}" ></apex:outputText>{!LEFT(ExtC.ContactEval.Contact__r.FirstName,1)}. {!ExtC.ContactEval.Contact__r.LastName}&nbsp;<span class="glyphicon {!IF(ExtC.Relationship == 'Positive','glyphicon-thumbs-up', IF(ExtC.Relationship == 'Negative','glyphicon-thumbs-down','glyphicon-hand-right'))} icon-btn-left"></span> ({!ExtC.ContactEval.Generation__c})
+            </span>
+            <div class="ContactMenu">
+                    {!$Label.Title}: {!ExtC.ContactEval.Contact__r.title}<br/>
+                
+                <div class="ContactMenuItem ShowInfluences">
+                    {!$Label.Influences_Over}
+                </div>
+                <div class="ContactMenuItem ShowInfluenced">
+                    {!$Label.influenced_by}
+                </div>
+                <div class="ContactMenuItem">
+                    {!$Label.closest}: {!ExtC.ContactEval.Contact__r.Closest_Account_Team_Member__r.name}
+                </div> 
+                <!--span class="ToolTipAtribute">{!$Label.buying_cycle}: <apex:outputText rendered="{!IF(ExtC.ContactEval.Buying_Cycle__c = ExtC.ContactEval.Opportunity__r.Buying_Cycle__c, false, true)}" ></apex:outputText>{!ExtC.ContactEval.Buying_Cycle__c}</span><br/-->
+                <div class="ContactMenuItem ShowEvaluation">
+                    {!$label.suggested_approach} -->
+                </div>                
+            </div>
+            <div class="ToolTipData EvaluationData">
+                 <span class="ToolTipTitle" >{!$label.suggested_approach}</span><br/>
+                 <br/>
+                 
+                 <span class="ToolTipAtribute">{!$label.Focus}: {!ExtC.ContactEval.Focus__c}</span><br/>
+                 <apex:outputText escape="false" value="{!$Label.Action_Controller}"  rendered="{!IF(ExtC.ContactEval.Focus__c = 'Controller', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_End_User}"  rendered="{!IF(ExtC.ContactEval.Focus__c = 'End User', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_Sponsor}"  rendered="{!IF(ExtC.ContactEval.Focus__c = 'Sponsor', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_Technical}"  rendered="{!IF(ExtC.ContactEval.Focus__c = 'Technical', true, false)}"></apex:outputText>
+                 <br/>
+                 <span class="ToolTipAtribute">{!$Label.Attitude}: {!ExtC.ContactEval.Attitudes__c}</span><br/>
+                 <apex:outputText escape="false" value="{!$Label.Action_Developer}"  rendered="{!IF(ExtC.ContactEval.Attitudes__c = 'Developer', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_Burning_Platform}"  rendered="{!IF(ExtC.ContactEval.Attitudes__c = 'Burning Platform', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_Statu_Quo}"  rendered="{!IF(ExtC.ContactEval.Attitudes__c = 'Statu Quo', true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Action_Negative}"  rendered="{!IF(ExtC.ContactEval.Attitudes__c = 'Negative', true, false)}"></apex:outputText>
+                 <br/>                 
+                 <span class="ToolTipAtribute">{!$Label.Authority}: {!ExtC.ContactEval.Authority__c}</span> / 
+                 <span class="ToolTipAtribute">{!$Label.Influence}: {!ExtC.ContactEval.Influence__c}</span><br/>
+                 <apex:outputText escape="false" value="{!$Label.AHIH}"  rendered="{!IF((ExtC.ContactEval.Authority__c = 'High' && ExtC.ContactEval.Influence__c = 'High') , true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.AHIL}"  rendered="{!IF((ExtC.ContactEval.Authority__c = 'High' && ExtC.ContactEval.Influence__c = 'Low') , true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.ALIH}"  rendered="{!IF((ExtC.ContactEval.Authority__c = 'Low' && ExtC.ContactEval.Influence__c = 'High') , true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.ALIL}"  rendered="{!IF((ExtC.ContactEval.Authority__c = 'Low' && ExtC.ContactEval.Influence__c = 'Low') , true, false)}"></apex:outputText>
+                 <br/><br/>
+                 <span class="ToolTipAtribute">{!$Label.Personal_Relationship}: {!ExtC.Relationship}</span><br/>
+                 <apex:outputText escape="false" value="{!$Label.Positive_Relationship}"  rendered="{!IF((ExtC.Relationship = 'Positive') , true, false)}"></apex:outputText>
+                 <apex:outputText escape="false" value="{!$Label.Neutral_Relationship}"  rendered="{!IF((ExtC.Relationship = 'Neutral') , true, false)}"></apex:outputText> 
+                 <apex:outputText escape="false" value="{!$Label.Negative_Relationship}"  rendered="{!IF((ExtC.Relationship = 'Negative') , true, false)}"></apex:outputText>   
+                 <br/><br/>
+                 <span class="ToolTipAtribute">{!$Label.generation}: {!ExtC.ContactEval.Generation__c}</span><br/>                 
+            </div>
+            <div class="ToolTipData InfluencesData"><apex:repeat value="{!ExtC.ContactInfluences}" var="string" id="InfluencesData">{!string.id},</apex:repeat></div>
+            <div class="ToolTipData InfluencedData"><apex:repeat value="{!ExtC.ContactInfluenced}" var="string" id="InfluencedData">{!string.id},</apex:repeat></div>
+        </div>
+    </apex:repeat>
+    
+</apex:component>

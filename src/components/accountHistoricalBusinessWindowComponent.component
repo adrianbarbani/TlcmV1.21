@@ -1,0 +1,86 @@
+<apex:component controller="accountHistoricalBusinessWindow">
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        } 
+    </style> 
+
+	<table class="table table-striped table-bordered table-condensed">
+		<tbody>
+			<tr class="headerRow">
+				<th scope="col" class="deemphasize AlignRight"></th>
+				<th scope="col" class="deemphasize AlignRight" width="25%">YTD</th>
+				<th scope="col" class="deemphasize AlignRight" width="25%">Año Anterior</th>
+				<th scope="col" class="deemphasize AlignRight" width="25%">Año Anterior - 1</th>
+			</tr>                
+			<tr class="dataRow" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}">
+				<td class="dataCell">{!$Label.totalict}</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;">                         
+					<apex:outputField styleClass="thisyear_a__c" value="{!thisyear.a__c}"/>
+				</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="lastyear_a__c" value="{!lastyear.a__c}"/>
+                </td>
+                <td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="last2year_a__c" value="{!last2year.a__c}"/>
+				</td>
+			</tr>
+			<!-- ListRow -->
+			<tr class="dataRow odd" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}">
+				<td class="dataCell">{!$Organization.Name} {!$Label.totrevenue}</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="thisyear_b__c" value="{!thisyear.b__c}"/>
+				</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="lastyear_b__c" value="{!lastyear.b__c}"/>
+				</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="last2year_b__c" value="{!last2year.b__c}"/>
+				</td>
+			</tr>
+			<!-- ListRow -->
+			<tr class="dataRow even first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}">
+				<td class="dataCell">{!$Organization.Name} {!$Label.share_of_wallet} (b/a)</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!thisyear.Share_of_Wallet__c}"/>
+				</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!lastyear.Share_of_Wallet__c}"/>
+				</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!last2year.Share_of_Wallet__c}"/>
+				</td>
+			</tr>
+			<!-- ListRow -->
+			<tr class="dataRow even first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}">
+				<td class="dataCell">{!$Organization.Name} {!$Label.our_expenditures} (c)</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="thisyear_c__c" value="{!thisyear.cc__c}" />
+				</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="lastyear_c__c" value="{!lastyear.cc__c}"/>
+				</td>
+				<td class="dataCell AlignRight MyEdit" style="text-align:right;"> 
+					<apex:outputField styleClass="last2year_c__c" value="{!last2year.cc__c}"/>
+				</td>
+			</tr>
+			<tr class="dataRow even last" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}">
+				<td class="dataCell">{!$Label.scp_certa_gc__net_activity} (b-c)</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!thisyear.Net_Activity_With_Client__c}"/>
+				</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!lastyear.Net_Activity_With_Client__c}"/>
+				</td>
+				<td class="dataCell AlignRight" style="text-align:right;">
+					<apex:outputField value="{!last2year.Net_Activity_With_Client__c}"/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</apex:component>

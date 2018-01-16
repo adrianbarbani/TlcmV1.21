@@ -1,0 +1,8 @@
+<apex:page controller="AccountPastProvenValueNewController" contentType="application/vnd.ms-excel#{!excelName}" showheader="false">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    </head>
+    
+    <h2><apex:outputText value="{!$Label.account_past_proven_value}"/></h2>
+    <c:accountPastProvenValueNewComponent />
+</apex:page>

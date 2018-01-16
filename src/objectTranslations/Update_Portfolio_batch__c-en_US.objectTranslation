@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Update Portfolio batch --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Update Portfolio batch --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Accion --></label>
+        <name>Accion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asignado --></label>
+        <name>Asignado__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cliente --></label>
+        <name>Cliente__c</name>
+    </fields>
+    <fields>
+        <label><!-- Codigo Rol --></label>
+        <name>Codigo_Rol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descripcion Rol --></label>
+        <name>Descripcion_Rol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Descripcion del error --></label>
+        <name>Descripcion_del_error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha Alta --></label>
+        <name>Fecha_Alta__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fecha Baja --></label>
+        <name>Fecha_Baja__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nombre y Apellido --></label>
+        <name>Nombre_y_Apellido__c</name>
+    </fields>
+    <fields>
+        <label><!-- hayError --></label>
+        <name>hayError__c</name>
+    </fields>
+    <fields>
+        <label><!-- idClienteLegado --></label>
+        <name>idClienteLegado__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre de Update Portfolio batch --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

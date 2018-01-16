@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Servicio --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Servicio --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Categoria de Servicio --></label>
+        <name>Categoria_Servicio__c</name>
+        <relationshipLabel><!-- Servicios --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Nombre de Servicio --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

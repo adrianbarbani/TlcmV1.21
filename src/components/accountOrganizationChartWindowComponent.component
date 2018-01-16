@@ -1,0 +1,67 @@
+<apex:component controller="AccountContacts">
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        } 
+    </style> 
+    
+    <table class="table table-striped table-bordered table-condensed">
+    	<thead>
+    		<tr>
+    			<th class="headerRow">                    
+                    <apex:outputText value="{!$Label.Contact_Name}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$ObjectType.Contact.Fields.Title.Label}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.Reports_To}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.reported_by}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.Influences_Over}" />
+                </th>
+                <th class="headerRow">
+                    <apex:outputText value="{!$Label.influenced_by}" />
+                </th>
+    		</tr>    		
+    	</thead>
+    	<tbody>
+    		<apex:repeat value="{!Contacts}" var="item">
+    		<tr class="dataRow">
+    			<td class="dataCell">
+    				<apex:outputText value="{!item.contact.Name}" />
+    			</td>
+    			<td class="dataCell">
+    				<apex:outputText value="{!item.contact.title}" />
+    			</td>
+    			<td class="dataCell">
+    				<apex:outputText value="{!item.ReportsTo.name}" />
+    			</td>
+    			<td class="dataCell">	
+    				<apex:repeat value="{!item.ReportedBy}" var="subitem">
+					    <apex:outputText value="{!subitem.name}" /><br/>
+					</apex:repeat>
+    			</td>    			
+    			<td class="dataCell">
+    				<apex:repeat value="{!item.ContactInfluences}" var="subitem">
+					    <apex:outputText value="{!subitem.name}" /><br/>
+					</apex:repeat>
+    			</td>
+    			<td class="dataCell">
+    				<apex:repeat value="{!item.ContactInfluenced}" var="subitem">
+						<apex:outputText value="{!subitem.name}" /><br/>
+					</apex:repeat>
+    			</td>
+    		</tr>
+    		</apex:repeat>    		
+    	</tbody>
+    </table>
+</apex:component>

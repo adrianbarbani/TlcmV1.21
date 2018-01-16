@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Cargo Mensual</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>sales_price_opportunitylineitem</name>
+    </fields>
+    <fields>
+        <label><!-- Campo para sumar en oportunidad --></label>
+        <name>Campo_para_sumar_en_oportunidad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo Mensual --></label>
+        <name>Cargo_Mensual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo por única vez total sumable --></label>
+        <name>Cargo_por_nica_vez_total_sumable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo por única vez total --></label>
+        <name>Cargo_por_unica_vez_total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo totales por mes Total sumable --></label>
+        <name>Cargo_totales_por_mes_Total_sumable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo unica vez --></label>
+        <name>Cargo_unica_vez__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargos Totales por Mes --></label>
+        <name>Cargos_Totales_por_Mes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comentarios --></label>
+        <name>Comentarios__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precio Total Contrato --></label>
+        <name>FCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Moneda --></label>
+        <name>Moneda__c</name>
+        <picklistValues>
+            <masterLabel>ARG</masterLabel>
+            <translation><!-- ARG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monto Total Contrato --></label>
+        <name>Monto_Total_Contrato__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plazo (meses) --></label>
+        <name>Plazo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Mes por Plazo --></label>
+        <name>Total_Mes_por_Plazo__c</name>
+    </fields>
+    <layouts>
+        <layout>SCP Producto Oportunidad</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- La cantidad de los productos debe ser un valor entero --></errorMessage>
+        <name>Productos_tiene_que_ser_un_valor_entero</name>
+    </validationRules>
+</CustomObjectTranslation>

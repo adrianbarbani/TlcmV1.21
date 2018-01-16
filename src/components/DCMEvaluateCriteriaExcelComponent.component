@@ -1,0 +1,55 @@
+<apex:component controller="DCMEvaluateCriteriaController">
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        }
+    </style>
+    
+   	<table id="mainTable" class="list display" border="1">
+   		<tr class="headerRow">
+   			<th>
+                <apex:outputText value="Criterio"/>
+   				<!--<apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}" />-->
+   			</th>
+   			<th>
+                <apex:outputText value="Consideración del cliente"/>
+   				<!--<apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Customer_Consideration__c.label}" />-->
+   			</th>
+   			<th>
+                <apex:outputText value="Nuestra posición competitiva"/>
+   				<!--<apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Our_Competitive_Standing__c.label}" />-->
+   			</th>
+   			<th>
+                <apex:outputText value="Competidores competitivos de pie"/>
+   				<!--<apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Competitors_Competitive_Standing__c.label}" />-->
+   			</th>
+   			<th>
+   				<apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}" />
+   			</th>
+   		</tr>
+   		<apex:repeat value="{!evaluatedDCM}" var="item">
+   		<tr>
+   			<td class="dataCell">	
+   				<apex:outputField value="{!item.Criteria__c}" />
+   			</td>
+   			<td class="dataCell">	
+   				<apex:outputField value="{!item.Customer_Consideration__c}"/>
+   			</td>
+   			<td class="dataCell">	
+   				<apex:outputField value="{!item.Our_Competitive_Standing__c}" />
+   			</td>
+   			<td class="dataCell">	
+   				<apex:outputField value="{!item.Competitors_Competitive_Standing__c}" />
+   			</td>
+   			<td class="dataCell">	
+   				<apex:outputField value="{!item.Approach__c}" />
+   			</td>
+   		</tr>
+    	</apex:repeat>
+   	</table>
+</apex:component>

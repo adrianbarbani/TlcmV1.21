@@ -1,0 +1,433 @@
+<apex:component controller="DCMEvaluateCriteriaController">
+	<style>
+    	#MapTable {     
+	        border-collapse:collapse;
+	    }
+	    
+	    #MapTable td {
+	    	text-align: center;
+	    	/*width: 50px;*/
+	    }
+	    
+	    #MapTable .border {     
+	        text-align: center;              
+	        vertical-align: middle;
+	        border: 1px solid #539fc6;       
+	        /*width: 50px !important;*/        
+	        background-color: white;
+	    }   
+	    
+	    #MapTable .notBorder {      
+	        border: 0px;
+	    }
+	    
+	    #MapTable .notBorderRight {     
+	        border-right: 0px;
+	    }
+	    
+	    #MapTable .notBorderLeft {      
+	        border-left: 0px;
+	    }
+	    
+	    #MapTable div {     
+	        font-size: 14px;
+	        font-weight: bold;      
+	    }
+	    
+	    .PopupHolder, .PopupHolderOpp {
+	        float:right;
+	        margin-right: 6px;
+	        margin: 5px;
+	        cursor: pointer;
+	    }
+	    
+	    .PopupHolder *, .PopupHolderOpp *{
+	        box-sizing: content-box;
+	    }
+	    
+	    .label {
+	    	/*margin: 5px;*/
+	    }
+    </style>
+    
+     <script>
+        $j = jQuery.noConflict();        
+        
+        $j(document).ready(function() {
+            init();                        
+        });
+    		
+    	function init() {	
+    		$j(".PopupHolder").mouseenter(function(event){
+	            if ($j(this).children(".lookupHoverDetail").css("display") == "none") {
+	            	$j(this).children(".lookupHoverDetail").css("top",event.clientY + 'px');
+	    			$j(this).children(".lookupHoverDetail").css("left",event.clientX + 'px');
+	    			$j(this).children(".lookupHoverDetail").css("position","fixed");
+	            	$j(this).children(".lookupHoverDetail").show();            	
+	    		}
+	        });
+	        
+	        $j(".PopupHolder").mouseleave(function(){
+	            $j(this).children(".lookupHoverDetail").hide();
+	        });
+	        
+	        $j(".PopupHolderOpp").mouseenter(function(event){
+	            if ($j(this).children(".lookupHoverDetail").css("display") == "none") {
+	            	$j(this).children(".lookupHoverDetail").css("top", event.clientY + 'px');
+	    			$j(this).children(".lookupHoverDetail").css("left",(event.clientX - 360) + 'px');
+	    			$j(this).children(".lookupHoverDetail").css("position","fixed");    		
+	            	$j(this).children(".lookupHoverDetail").show();            	
+	    		}
+	        });
+	        
+	        $j(".PopupHolderOpp").mouseleave(function(){
+	            $j(this).children(".lookupHoverDetail").hide();
+	        });
+	    }
+	</script>
+	
+	<!-- Grafico -->
+    <div class="conteinerDiv bootstrap-sf1" style="background-color: white;">
+		<table id="MapTable" style="width:90%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="notBorder"></td>
+				<td class="notBorder"></td>
+				<td colspan="4" style="height: 50px; border-left: 0px; border-right: 0px; border-bottom: 0px; vertical-align: top;text-align: center;">
+					<table cellpadding="5" cellspacing="5">
+						<tr>
+							<td>
+								<span class="label label-danger label-link" style="display: block;min-width: 73px;max-width: 73px;height: 11px;float: left; margin-left: 10px;"/>
+							</td>
+							<td>
+								<apex:OutputText styleClass="our" style="float:left; margin-left:10px; font-weight: bold;" value="{!$Label.Our_Standing}" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="label label-primary label-link" style="display: block;min-width: 73px;max-width: 73px;height: 11px;float: left; margin-left: 10px;"/>
+							</td>
+							<td>
+								<apex:OutputText styleClass="competitor" style="float: left; margin-left:10px; font-weight: bold;" value="{!$Label.Competitor_Standing}" />
+							</td>
+						</tr>
+					</table>
+				</td>                                       
+			</tr>
+			<tr>
+				<td class="border" rowspan="2" style="width:50px;padding: 5px; border:0px;">
+					<div>{!$Label.Importance_to_Client}</div>
+				</td>
+				<td class="border" style="height: 100px; width:50px; border-left: 0px; border-bottom: 0px; border-top: 0px; vertical-align: top;">
+				    <div>{!$Label.DCM_HIGH}</div>                        
+				</td>
+			    <td class="notBorderRight border" style="width: 300px; text-align: center;  height: 200px; border-top: 0px;">                      
+	                   <apex:repeat value="{!OurVK}" var="our">
+	                   	<!-- 
+	                   	<span class="label label-danger label-link">
+	                   		<apex:outputText styleClass="our" value=" {!our.Criteria__c}"/>
+	                   	</span>
+	                   	 -->
+	                   	<div class="PopupHolder">
+	                                   	<span class="label label-danger label-link" style="display: block;min-width: 73px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topLeft"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+			    </td>
+			    <td class="border notBorderLeft" style="width: 300px; border-top: 0px;">
+	                   <apex:repeat value="{!competitorVK}" var="our">
+	                      	<div class="PopupHolderOpp" style="float:left;">
+	                                   	<span class="label label-primary label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topRight"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>                                    
+			    </td>
+			    <td class="border notBorderRight" style="width: 300px; border-top: 0px;">
+	                   <apex:repeat value="{!OurVW}" var="our">
+	                     		<div class="PopupHolder">
+	                                   	<span class="label label-danger label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topLeft"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>                                    
+			    </td>
+			    <td class="border notBorderLeft" style="width: 300px;border-right: 0px; border-top: 0px;">
+	                   <apex:repeat value="{!competitorVW}" var="our">
+	                     		<div class="PopupHolderOpp" style="float:left;">
+	                                   	<span class="label label-primary label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topRight"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+			    </td>                   
+			</tr>
+			<tr>                    
+				<td class="border" style="height: 100px; width:50px;border-left: 0px;border-bottom: 0px; border-top: 0px;vertical-align: bottom;">
+				    <div>{!$Label.DCM_LOW}</div>                     
+				</td>
+				<td class="border notBorderRight" style="height: 200px;">
+	                   <apex:repeat value="{!OurNV}" var="our">
+	                     		<div class="PopupHolder">
+	                                   	<span class="label label-danger label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topLeft"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+			    </td>
+			    <td class="border notBorderLeft">
+	                   <apex:repeat value="{!competitorNV}" var="our">
+	                     		<div class="PopupHolderOpp" style="float:left;">
+	                                   	<span class="label label-primary label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topRight"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+				</td>
+				<td class="border notBorderRight">
+					<apex:repeat value="{!OurVS}" var="our">
+	                     			<div class="PopupHolder">
+	                                   	<span class="label label-danger label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topLeft"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+				</td>
+				<td class="border notBorderLeft" style="border-right: 0px;">
+					<apex:repeat value="{!competitorVS}" var="our">
+	                       	<div class="PopupHolderOpp" style="float:left;">
+	                                   	<span class="label label-primary label-link" style="display: block;min-width: 73px;"><span style="margin-right: 5px;">{!Left(our.Criteria__c,14)}<apex:outputText value="..." rendered="{!LEN(our.Criteria__c)>14}" /></span></span>
+	                                       <div class="individualPalette lookupHoverDetail lookupHoverDetailOverridable" style="display:none; visibility:visible; position:absolute; top:auto; left:auto;">
+	                                           <div class="Custom50Block topRight"><div class="bPageBlock secondaryPalette">
+	                                               <div class="pbHeader">
+	                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+	                                                       <tr>
+	                                                           <td colspan="2" class="pbTitle" style="text-align: center;"><h2 class="mainTitle">Criterio</h2></td>                                                               
+	                                                       </tr>
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbBody">
+	                                                   <table class="detailList" border="0" cellpadding="0" cellspacing="0" style="border-bottom:0px;"><tbody>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Criteria__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Criteria__c}"/></td>
+												</tr>
+												<tr>
+	                                                           	<th class="labelCol" style="text-align: right;"><apex:outputText value="{!$ObjectType.SCP_Criteria_DCM__c.fields.Approach__c.label}"/></th>
+													<td class="dataCol" style="text-align: left;"><apex:outputText value="{!our.Approach__c}"/></td>
+												</tr>															
+	                                                   </tbody></table>
+	                                               </div>
+	                                               <div class="pbFooter secondaryPalette">
+	                                                   <div class="bg"></div>
+	                                               </div>
+	                                           </div>
+	                                    	</div>
+	                              		</div>
+						</div>
+					</apex:repeat>
+				</td>
+			</tr>
+			<tr>
+				<td class="notBorder">
+	               
+				</td>
+				<td class="notBorder">
+	               
+				</td>
+				<td class="border" colspan="2" style="height: 30px; border-bottom: 0px; border-left: 0px; border-right: 0px; text-align: left;">
+					<div>{!$Label.DCM_LOW_1}</div>
+				</td>
+				<td class="border" colspan="2" style="border-bottom: 0px; border-left: 0px; border-right: 0px; text-align: right;">
+					<div>{!$Label.DCM_HIGH_1}</div>
+				</td>                                       
+			</tr>
+			<tr>
+				<td class="notBorder">
+	               
+				</td>
+				<td class="notBorder">
+	               
+				</td>
+				<td colspan="4" style="height: 50px; border-left: 0px; border-right: 0px; border-bottom: 0px; vertical-align: top;">
+					<div>{!$Label.Perceived_Performance_Client}</div>
+				</td>                                       
+			</tr>
+		</table>
+	</div>
+</apex:component>

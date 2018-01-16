@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- SCP Custom Report --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- SCP Custom Report --></value>
+    </caseValues>
+    <fields>
+        <label>Account</label>
+        <name>Account__c</name>
+        <relationshipLabel>4P Report</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Action Plan</label>
+        <name>actionPlan__c</name>
+    </fields>
+    <fields>
+        <label>Client´s Context</label>
+        <name>clientContext__c</name>
+    </fields>
+    <fields>
+        <label>Competitors</label>
+        <name>competitors__c</name>
+    </fields>
+    <fields>
+        <label>DCM</label>
+        <name>dcm__c</name>
+    </fields>
+    <fields>
+        <label>Growth Strategy</label>
+        <name>growthStrategy__c</name>
+    </fields>
+    <fields>
+        <label>Industry Trend</label>
+        <name>industryTrend__c</name>
+    </fields>
+    <fields>
+        <label>Influence Map</label>
+        <name>influenceMap__c</name>
+    </fields>
+    <fields>
+        <label><!-- kpi --></label>
+        <name>kpi__c</name>
+    </fields>
+    <fields>
+        <label>Net Actiity</label>
+        <name>netActivity__c</name>
+    </fields>
+    <fields>
+        <label>Proven Value</label>
+        <name>provenValue__c</name>
+    </fields>
+    <fields>
+        <label>Value Drivers</label>
+        <name>valueDrivers__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre de SCP Custom Report --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

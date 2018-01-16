@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Categoria --></label>
+        <name>Categoria__c</name>
+    </fields>
+    <fields>
+        <label><!-- productoGeneradoPorDelta --></label>
+        <name>productoGeneradoPorDelta__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Solo el dueño del registro puede editar un producto. --></errorMessage>
+        <name>Solo_editable_por_duenio</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,1324 @@
+<apex:component controller="BigDealChartsController" allowDML="true" >
+    <apex:attribute name="opportunity" description="The opportunity for the component."
+                    type="Opportunity" required="true" assignTo="{!BigDealOpportunity}" /> 
+
+    <apex:stylesheet value="{!$Resource.zinoChart}"/>
+	<apex:stylesheet value="{!$Resource.zinoCore}"/>
+	
+	
+	<apex:includeScript value="{!$Resource.zinoFront}"/>
+	<apex:includeScript value="{!$Resource.zinoCanvas}"/>
+	<apex:includeScript value="{!$Resource.zinoChartJS}"/>
+	<apex:includeScript value="{!$Resource.zinoSVG}"/>
+	<style>
+        #chart {
+        	margin-left: 30px;
+        }
+        
+    	g.zui-chart-legend text {
+            font-size: 10pt;
+        	font-weight: bold;
+        }
+        
+        g.zui-chart-legend text:first-child {
+        	font-size: 20pt;
+        }
+        
+        .bigDealsTable .detail-table {
+        	width: 100%
+        }
+        
+        .foreground {
+        position: relative;
+        width: 14%;
+        height: 18%;
+        }
+        
+        .bigDealsTable .detail-table tr td {
+        	background-color: #DEDEDE; 
+        	border: 5px solid white; 
+        	padding: 3px;
+        }
+        
+        .bigDealsTable .Bar-Table {
+        	width: 100%;
+        }
+        .bigDealsTable .Bar-Table tr td {
+        	border: 0px solid transparent;
+            margin-right: 0px;
+        }
+        
+        .bigDealsTable .td-field-name {
+        	padding-left: 5px;
+        	padding-right: 5px;
+        	vertical-align: top;
+        	width : 350px;
+        }
+        
+        .bigDealsTable .td-bar {
+        	align : left;
+        }
+        
+        .bigDealsTable .td-scoring {
+        	text-align : right;
+        	vertical-align: top;
+        }
+        
+        .bigDealsTable .text-max-score {
+        	color : #777777; display: inline;
+        }
+        
+        .bigDealsTable .section-score {
+        	font-weight: bold;
+        	display: inline;
+        }
+        
+        .bigDealsTable .section-weight {
+        	color : #777777;
+        	display: inline;
+        }
+        
+        .bigDealsTable .section-title {
+        	display: inline;
+        }
+        .bigDealsTable .progress {
+        	margin-bottom : 0px;
+        }
+        
+        .bigDealsTable .section-title{
+        	display: inline; 
+        	font-weight : bold;
+        }
+        
+        #actions-and-recommendations td {
+        	text-align: left;
+        	padding-right: 5pt;
+        	padding-left: 5pt;
+        }
+
+        .linkbtn, .linkbtn * {
+            font-family: Calibri, ProximaNovaSoft-Regular, 'Helvetica Neue', 'Gill Sans', 'Gill Sans MT', Candara, Segoe, 'Segoe UI', Arial, sans-serif ! important;
+        }
+    </style>
+    
+	<script>
+        var jq = jq213;
+    	jq(document).ready(function() {
+    		zinoFront(jq);
+            zinoChartInit(jq);
+            createGraph();
+        })
+        
+        function createGraph() {
+            var graphGreen = "{!Green}";
+            var graphRed = "{!Red}";
+            var graphYellow = "{!Yellow}";
+            var graphBlack = "{!Black}";
+            
+            console.log("{!RisksData.Color}");
+            console.log("{!Scheduledata.Color}");
+            var data = [
+                {
+                    "label":"{!$Label.Risks}", 
+                    "value": {!RisksData.Score},
+                    "color": "{!RisksData.Color}"
+                    
+                },
+                {
+                    "label":"{!$Label.Reach}", 
+                    "value": {!ReachData.Score},
+                    "color": "{!ReachData.Color}"
+                },
+                {
+                    "label":"{!$Label.Economical_data}", 
+                    "value": {!EconomicalInfoData.Score},
+                    "color": "{!EconomicalInfoData.Color}"
+                },
+                {
+                    "label":"{!$Label.Presale_and_offer}", 
+                    "value": {!PresaleAndOfferData.Score},
+                    "color": "{!PresaleAndOfferData.Color}"
+                },
+                {
+                    "label":"{!$Label.Calendar}", 
+                    "value": {!Scheduledata.Score},
+                    "color": "{!Scheduledata.Color}"
+                    
+                }
+            ];
+            for (var i = 0; i < data.length; i++) {
+                data[i].category = [{
+                    "label": data[i].label + " " + Math.round(data[i].value),
+                    "value": data[i].value, 
+                    /*"color": "transparent"*/
+                    "color": "white"
+                }];
+                data[i].label = "";
+            }
+            
+            var sum = {!TotalScore};
+            //HACK when a section is more than 50% of the graph, it starts to draw into the center
+            var blankSections = Math.ceil((100 - sum)/25);// (0-25] 1 section; (25-50] 2 sections; (50-75] 3 sections; (75 - 100] 4 sections
+            for(var i = 0; i < blankSections; i++) {
+                data.unshift({
+                    label: "",
+                    value: (100 - sum) / blankSections,
+                    color: "transparent",
+                    color: "white",
+                    "category": [
+                        {
+                            "label": "",
+                            "value": (100 - sum) / 3,
+                            "color": "transparent",
+                            "color": "white"
+                        }
+                    ]
+                });
+            }
+            
+            
+            jq("#chart").zinoChart({
+                type: "pie",
+                variation: "multi-level",
+                width: 530,
+                height: 350,
+                radius: 200,
+                legend: true,
+                series: [
+                    {
+                        "label": Math.round(sum),
+                        "color": "{!Color}",
+                        "alpha": "20",
+                        "category": data
+                    }
+                ]
+            });
+            if("{!Color}" === graphBlack) {
+                jq("g.zui-chart-legend text:first-child").attr("fill", "white");
+            }
+        }
+	</script>
+    
+    <apex:outputPanel rendered="{!BigDealSurvey.Id != null}">
+        <div>
+            <div class="pbSubheader brandTertiaryBgr first tertiaryPalette">
+                <div class="btn-group pull-right" role="group" aria-label="...">
+                    <apex:outputLink value="{!$Page.OpportunityBigDeal}?id={!opportunity.id}">
+                        <button type="button" class="btn btn-default btn-sm">
+                            Big Deal
+                        </button>
+                    </apex:outputLink>
+                </div>
+                <img src="/s.gif" class="hideListButton hideShowSection" />
+                <h3>Big Deal</h3>
+            </div>            
+            <apex:outputPanel rendered="{!SurveyIsComplete && (isBigDealAdmin || isBlocked)}">
+				
+
+                
+                <table class="bigDealsTable">
+                    <tr>
+                        <td id="chart-and-recommendations-column" style="vertical-align : top; width: 50%; padding-right: 20px;">
+                                                            
+                            <div id="chart">
+                            <apex:outputPanel rendered="{!BigDealSurvey.Aprobar_Go_Estrategico__c}">
+                                <div class="foreground" style="background:url('{!$Resource.Logo_aprobado}'); margin: 12% -1% -26% 76%; width:107px; height:66px; background-size: contain; background-repeat: no-repeat;"/>
+                            </apex:outputPanel>
+                            </div>
+                            
+                            <B>{!$Label.Project_description}</B><BR/>
+                            <div>
+                                <apex:outputField value="{!BigDealOpportunity.Description}"/>
+                            </div>
+                            <BR/>
+                            <table border="1" id="actions-and-recommendations" style="width:100%; text-align: center;">
+                                <!-- ------------------------------------------------------------------ -->
+                                <!-- ------------------------------------------------------------------ -->
+                                <tr style="font-size: 13pt;">
+                                    <th style="width: 50%; text-align:center;">
+                                        {!$Label.Actions}/<font color="{!Red}">{!$Label.Recommendations}</font>
+                                    </th>
+                                    <th style="text-align:center;">
+                                        {!$Label.Responsible}
+                                    </th>
+                                </tr>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ScheduleData.OfferTurnInDate.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Extend_the_period_to_present_the_offer_to_five_weeks}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!ScheduleData.OfferTurnInDate.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Negotiate_submission_period_extension}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ScheduleData.ContractStartDate.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Extend_the_start_date_to_three_weeks}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ReachData.AffectedLines.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Fully_use_TEF_portfolio}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ReachData.DeliberablesDescription.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Get_reach_with_maximum_possible_detail}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ReachData.TechnicalArchitectureDescription.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Get_technical_description_with_maximum_detail}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ReachData.ReachOfThirdPartyInvolvement.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Study_a_way_to_reduce_third_party_dependence_below_80}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!ReachData.ReachOfThirdPartyInvolvement.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Study_a_way_to_reduce_third_party_dependence_below_50}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!ReachData.AmountOfResourcesToIncorporate.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Big_Deals_Amount_of_resources_black}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!ReachData.AmountOfResourcesToIncorporate.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Try_to_exclude_or_minimize_the_human_resource_requirement}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfContributedFTE.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Clarify_the_degree_of_compromise}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfContributedFTE.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Big_Deals_size_a_three_FTE_team}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfThirdPartyFTERequired.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Big_Deals_review_external_resources}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Explain_strategic_reasons_for_long_presale}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Study_a_way_to_reduce_the_times}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.Clients.KnowledgeOnTheClient.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Get_information_about_the_client}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Clients.RelationWithPrincipalDecisionMakers.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Identify_decision_makers}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Clients.ProjectImpactOnClient.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Identify_posible_negative_impacts_of_project_on_the_client}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.TechnicalSolution.EnoughFormalInformation.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Big_Deals_enough_formal_information_alert}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!OR(RisksData.TechnicalSolution.CapacityToSatisfySLA.Color == Red, 
+                                                                RisksData.TechnicalSolution.SLADemandDegree.Color == Red)}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Preapare_organization_to_accomplish_SLAs}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.TechnicalSolution.DegreeOfCertainityStabilityOfPlatform.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Identify_alternative_platforms}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.Project.Indemnizations.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Explain_reason_for_high_indemnizations}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!NOT(BigDealSurvey.SLA_definidos__c)}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Get_SLA_definitions}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Project.Bails.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Reduce_bails_study_alternative_warranties}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.Financial.ClientFinancialStability.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Find_out_why_the_client_had_previous_debts}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!OR(OR(RisksData.Financial.IndemnizationsVSValue.Color == Red,
+                                                                RisksData.Financial.PenaltyOnContractCancellation.Color == Red),
+                                                                RisksData.Financial.PenaltyOnLevelService.Color == Red)}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Justify_the_high_level_of_penalties}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Financial.WorkingLiabilityVSValue.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Justify_the_high_working_liabilities_of_the_project}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Financial.IndemnizationsVSValue.Color == Black}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span> {!$Label.Renegociate_indemnizations}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.Organization.ProductsInPortfolio.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Study_posibility_to_fit_offer_with_existent_products_in_the_portfolio}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Organization.ProfilesAvailable.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Study_the_posibility_to_fit_offer_with_existent_profiles}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.Organization.ClientKeyPersonnel.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Identify_Client_s_key_players_and_their_availability}
+                                        </td>
+                                        <td>
+                                            {!$Label.Commercial_and_engineering_responsibles}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                                <apex:outputPanel rendered="{!RisksData.ThirdParty.PartnersIdentified.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Identify_key_partners_for_the_project}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <apex:outputPanel rendered="{!RisksData.ThirdParty.SituationWithPartnersIsFavorable.Color == Red}">
+                                    <tr>				    
+                                        <td>
+                                            <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span> {!$Label.Study_the_way_to_substitute_key_partners}
+                                        </td>
+                                        <td>
+                                            {!$Label.OB_commercial_responsible}
+                                        </td>
+                                    </tr>
+                                </apex:outputPanel>
+                                <!-- ------------------------------------------------------------------ -->
+                            </table>
+                            <!-- ------------------------------------------------------------------ -->
+                            <!-- ------------------------------------------------------------------ -->
+                        </td>
+                        <td style="vertical-align:top">
+                            <table class="detail-table">
+                                <tr id="schedule-data">
+                                    <td>
+                                        <div id="schedule-data-title">
+                                            <div class="section-title"><apex:outputLink target="_parent" value="{!$Page.OpportunityBigDeal}?id={!Opportunity.id}&section=offer-schedule">{!$Label.Calendar}</apex:outputLink></div>
+                                            <div style="float : right; display : inline;">
+                                                <h2 id="schedule-data-score" class="section-score">{!ROUND(ScheduleData.Score, 0)}</h2>
+                                                <text class="section-weight">/{!ROUND(ScheduleData.Weight, 0)}</text>
+                                            </div>
+                                        </div>
+                                        <table class="Bar-Table">
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.fecha_de_entrega__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ScheduleData.OfferTurnInDate.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: {!ScheduleData.OfferTurnInDate.PercentageScore}%; background-color: {!ScheduleData.OfferTurnInDate.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ScheduleData.OfferTurnInDate.Score, 0)}
+                                                    <text class="section-weight">/{!ROUND(ScheduleData.OfferTurnInDate.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ScheduleData.OfferTurnInDate.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!ScheduleData.OfferTurnInDate.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Fecha_comienzo_de_contrato__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ScheduleData.ContractStartDate.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: {!ScheduleData.ContractStartDate.PercentageScore}%; background-color: {!ScheduleData.ContractStartDate.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ScheduleData.ContractStartDate.Score, 0)}
+                                                    <text class="section-weight">/{!ROUND(ScheduleData.ContractStartDate.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ScheduleData.ContractStartDate.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!ScheduleData.ContractStartDate.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <!-- ------------------------------------------------------------------ -->
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="Economical-data">
+                                    <td>
+                                        <div id="Economical-data-title">
+                                            <div class="section-title"><apex:outputLink target="_parent" value="{!$Page.OpportunityBigDeal}?id={!Opportunity.id}&section=economical-info">{!$Label.Economical_data}</apex:outputLink></div> 
+                                            <div style="float : right; display : inline;">
+                                                <h2 id="Economical-data-score" class="section-score">{!ROUND(EconomicalInfoData.Score, 0)}</h2>
+                                                <text class="section-weight">/{!ROUND(EconomicalInfoData.Weight, 0)}</text>
+                                            </div>
+                                        </div>
+                                        <table class="Bar-Table">
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Full_contract_value__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!(EconomicalInfoData.FullContractValue.MaxScore + EconomicalInfoData.FCVSecondary.MaxScore) * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!(EconomicalInfoData.FullContractValue.Score + EconomicalInfoData.FCVSecondary.Score) / 
+                                                                    (EconomicalInfoData.FullContractValue.MaxScore + EconomicalInfoData.FCVSecondary.MaxScore) * 100}%; 
+                                                                    background-color: {!EconomicalInfoData.FCVSecondary.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(EconomicalInfoData.FullContractValue.Score + EconomicalInfoData.FCVSecondary.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(EconomicalInfoData.FullContractValue.MaxScore + EconomicalInfoData.FCVSecondary.MaxScore, 0)}</text>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.NAV_12_meses_naturales__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!(EconomicalInfoData.NaturalYearNAV.MaxScore + EconomicalInfoData.NaturalYearNAVSecondary.MaxScore) * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!(EconomicalInfoData.NaturalYearNAV.Score + EconomicalInfoData.NaturalYearNAVSecondary.Score) / 
+                                                                    (EconomicalInfoData.NaturalYearNAV.MaxScore + EconomicalInfoData.NaturalYearNAVSecondary.MaxScore) * 100}%; 
+                                                                    background-color: {!EconomicalInfoData.NaturalYearNAVSecondary.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(EconomicalInfoData.NaturalYearNAV.Score + EconomicalInfoData.NaturalYearNAVSecondary.Score, 0)}
+                                                    <text class="section-weight">/{!ROUND(EconomicalInfoData.NaturalYearNAV.MaxScore + EconomicalInfoData.NaturalYearNAVSecondary.MaxScore, 0)}</text>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.NAV_o_ingresos_proximos_12_meses__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!(EconomicalInfoData.IncomeForNext12Months.MaxScore + EconomicalInfoData.IncomeForNext12MonthsSecondary.MaxScore) * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!(EconomicalInfoData.IncomeForNext12Months.Score + EconomicalInfoData.IncomeForNext12MonthsSecondary.Score) / 
+                                                                    (EconomicalInfoData.IncomeForNext12Months.MaxScore + EconomicalInfoData.IncomeForNext12MonthsSecondary.MaxScore) * 100}%; 
+                                                                    background-color: {!EconomicalInfoData.IncomeForNext12MonthsSecondary.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(EconomicalInfoData.IncomeForNext12Months.Score + EconomicalInfoData.IncomeForNext12MonthsSecondary.Score, 0)}
+                                                    <text class="section-weight">/{!ROUND(EconomicalInfoData.IncomeForNext12Months.MaxScore + EconomicalInfoData.IncomeForNext12MonthsSecondary.MaxScore, 0)}</text>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Capex_total__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!EconomicalInfoData.TotalCapex.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!EconomicalInfoData.TotalCapex.percentageScore}%; background-color: {!EconomicalInfoData.TotalCapex.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(EconomicalInfoData.TotalCapex.Score, 0)}
+                                                    <text class="section-weight">/{!ROUND(EconomicalInfoData.TotalCapex.MaxScore, 0)}</text>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- ------------------------------------------------------------------ -->
+                                        <!-- ------------------------------------------------------------------ -->
+                                    </td>
+                                </tr>
+                                <tr id="reach-data">
+                                    <td>
+                                        <div id="reach-title">
+                                            <div  class="section-title"><apex:outputLink target="_parent" value="{!$Page.OpportunityBigDeal}?id={!Opportunity.id}&section=detail-reach">{!$Label.Reach}</apex:outputLink></div> 
+                                            <div style="float : right; display : inline;">
+                                                <h2 id="reach-score" class="section-score" >{!ROUND(ReachData.Score, 0)}</h2>
+                                                <text class="section-weight">/{!ROUND(ReachData.Weight, 0)}</text>
+                                            </div>
+                                        </div>
+                                        <table class="Bar-Table">
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Lineas_implicadas__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ReachData.AffectedLines.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!ReachData.AffectedLines.PercentageScore}%; 
+                                                                    background-color: {!ReachData.AffectedLines.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ReachData.AffectedLines.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(ReachData.AffectedLines.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ReachData.AffectedLines.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.Deliberables_description}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ReachData.DeliberablesDescription.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!ReachData.DeliberablesDescription.PercentageScore}%; 
+                                                                    background-color: {!ReachData.DeliberablesDescription.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ReachData.DeliberablesDescription.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(ReachData.DeliberablesDescription.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ReachData.DeliberablesDescription.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Arquitectura_tecnica__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ReachData.TechnicalArchitectureDescription.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!ReachData.TechnicalArchitectureDescription.PercentageScore}%; 
+                                                                    background-color: {!ReachData.TechnicalArchitectureDescription.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ReachData.TechnicalArchitectureDescription.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(ReachData.TechnicalArchitectureDescription.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ReachData.TechnicalArchitectureDescription.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Alcance_de_la_colaboracion_con_terceros__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ReachData.ReachOfThirdPartyInvolvement.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!ReachData.ReachOfThirdPartyInvolvement.PercentageScore}%; 
+                                                                    background-color: {!ReachData.ReachOfThirdPartyInvolvement.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ReachData.ReachOfThirdPartyInvolvement.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(ReachData.ReachOfThirdPartyInvolvement.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ReachData.ReachOfThirdPartyInvolvement.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!ReachData.ReachOfThirdPartyInvolvement.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Cantidad_de_personas_a_incorporar__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!ReachData.AmountOfResourcesToIncorporate.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!ReachData.AmountOfResourcesToIncorporate.PercentageScore}%; 
+                                                                    background-color: {!ReachData.AmountOfResourcesToIncorporate.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(ReachData.AmountOfResourcesToIncorporate.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(ReachData.AmountOfResourcesToIncorporate.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!ReachData.AmountOfResourcesToIncorporate.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!ReachData.AmountOfResourcesToIncorporate.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                        </table>
+                                        <!-- ------------------------------------------------------------------ -->
+                                        <!-- ------------------------------------------------------------------ -->
+                                    </td>
+                                </tr>
+                                <tr id="presale-and-offer">
+                                    <td>
+                                        <div id="presale-and-offer-title">
+                                            <div class="section-title"><apex:outputLink target="_parent" value="{!$Page.OpportunityBigDeal}?id={!Opportunity.id}&section=offer-presale">{!$Label.Presale_and_offer}</apex:outputLink></div> 
+                                            <div style="float : right; display : inline;">
+                                                <h2 id="reach-score" class="section-score" >{!ROUND(PresaleAndOfferData.Score, 0)}</h2>
+                                                <text class="section-weight">/{!ROUND(PresaleAndOfferData.Weight, 0)}</text>
+                                            </div>
+                                        </div>
+                                        <table class="Bar-Table">
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.FTE_que_se_aportaran__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!PresaleAndOfferData.AmountOfContributedFTE.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!PresaleAndOfferData.AmountOfContributedFTE.PercentageScore}%; 
+                                                                    background-color: {!PresaleAndOfferData.AmountOfContributedFTE.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(PresaleAndOfferData.AmountOfContributedFTE.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(PresaleAndOfferData.AmountOfContributedFTE.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfContributedFTE.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfContributedFTE.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.FTE_terceros_requeridos__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!PresaleAndOfferData.AmountOfThirdPartyFTERequired.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!PresaleAndOfferData.AmountOfThirdPartyFTERequired.PercentageScore}%; 
+                                                                    background-color: {!PresaleAndOfferData.AmountOfThirdPartyFTERequired.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(PresaleAndOfferData.AmountOfThirdPartyFTERequired.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(PresaleAndOfferData.AmountOfThirdPartyFTERequired.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!PresaleAndOfferData.AmountOfThirdPartyFTERequired.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Actividades_durante_preventa__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!PresaleAndOfferData.ActivitiesDuringPresale.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!PresaleAndOfferData.ActivitiesDuringPresale.PercentageScore}%; 
+                                                                    background-color: {!PresaleAndOfferData.ActivitiesDuringPresale.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(PresaleAndOfferData.ActivitiesDuringPresale.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(PresaleAndOfferData.ActivitiesDuringPresale.MaxScore, 0)}</text>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$ObjectType.Big_deals_Survey__c.fields.Duracion_estimada_Preventa__c.inlineHelpText}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.MaxScore * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.PercentageScore}%; 
+                                                                    background-color: {!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(PresaleAndOfferData.EstimatedPresaleAndOfferDuration.MaxScore, 0)}</text>
+                                                    <apex:outputPanel rendered="{!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Color == Red}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!PresaleAndOfferData.EstimatedPresaleAndOfferDuration.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <!-- ------------------------------------------------------------------ -->
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="risks">
+                                    <td>
+                                        <div id="risks-title">
+                                            <div class="section-title"><apex:outputLink target="_parent" value="{!$Page.OpportunityBigDeal}?id={!Opportunity.id}&section=risks">{!$Label.Risks}</apex:outputLink></div>
+                                            <div style="float : right; display : inline;">
+                                                <h2 id="risks-score" class="section-score" >{!ROUND(RisksData.Score, 0)}</h2>
+                                                <text class="section-weight">/{!ROUND(RisksData.Weight, 0)}</text>
+                                            </div>
+                                        </div>
+                                        <table class="Bar-Table">
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.Client_s}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.Clients.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.Clients.PercentageScore}%; 
+                                                                    background-color: {!RisksData.Clients.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.Clients.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.Clients.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR(RisksData.Clients.KnowledgeOnTheClient.Color == Red,
+                                                                                OR(RisksData.Clients.RelationWithPrincipalDecisionMakers.Color == Red, 
+                                                                                    RisksData.Clients.ProjectImpactOnClient.Color == Red))}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.From_the_technical_solution}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.TechnicalSolution.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.TechnicalSolution.PercentageScore}%; 
+                                                                    background-color: {!RisksData.TechnicalSolution.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.TechnicalSolution.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.TechnicalSolution.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR(
+                                                                                OR(RisksData.TechnicalSolution.EnoughFormalInformation.Color == Red,
+                                                                                    RisksData.TechnicalSolution.CapacityToSatisfySLA.Color == Red),
+                                                                                OR(RisksData.TechnicalSolution.SLADemandDegree.Color == Red, 
+                                                                                    RisksData.TechnicalSolution.DegreeOfCertainityStabilityOfPlatform.Color == Red))}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.From_the_project}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.Project.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.Project.PercentageScore}%; 
+                                                                    background-color: {!RisksData.Project.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.Project.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.Project.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR(RisksData.Project.Indemnizations.Color == Red,
+                                                                                OR(RisksData.Project.DefinedSLA.Color == Red,
+                                                                                    RisksData.Project.Bails.Color == Red))}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.Financial}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.Financial.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.Financial.PercentageScore}%; 
+                                                                    background-color: {!RisksData.Financial.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.Financial.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.Financial.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR( 
+                                                                                    OR(
+                                                                                        RisksData.Financial.ClientFinancialStability.Color == Red,
+                                                                                        OR(
+                                                                                            RisksData.Financial.PenaltyOnLevelService.Color == Red,
+                                                                                            RisksData.Financial.PenaltyOnContractCancellation.Color == Red
+                                                                                        )
+                                                                                    ),
+                                                                                    OR(
+                                                                                        RisksData.Financial.IndemnizationsVSValue.Color == Red,
+                                                                                        RisksData.Financial.WorkingLiabilityVSValue.Color == Red
+                                                                                    )
+                                                                                )}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                    <apex:outputPanel rendered="{!RisksData.Financial.IndemnizationsVSValue.Color == Black}">
+                                                        <span class="glyphicon glyphicon-remove" style="color : {!Black}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.From_the_organization}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.Organization.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.Organization.PercentageScore}%; 
+                                                                    background-color: {!RisksData.Organization.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.Organization.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.Organization.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR(RisksData.Organization.ProductsInPortfolio.Color == Red,
+                                                                                OR(RisksData.Organization.ProfilesAvailable.Color == Red,
+                                                                                    RisksData.Organization.ClientKeyPersonnel.Color == Red))}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <tr>
+                                                <td class="td-field-name">
+                                                    {!$Label.From_third_parties}
+                                                </td>
+                                                <td class="td-bar">
+                                                    <div class="progress" style="width : {!RisksData.ThirdParty.Weight * 10}px;">
+                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" 
+                                                             style="width: {!RisksData.ThirdParty.PercentageScore}%; 
+                                                                    background-color: {!RisksData.ThirdParty.Color};">
+                                                            <span class="sr-only"></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="td-scoring">
+                                                    {!ROUND(RisksData.ThirdParty.Score, 0)}
+                                                    <text class="text-max-score">/{!ROUND(RisksData.ThirdParty.Weight, 0)}</text>
+                                                    <apex:outputPanel rendered="{!OR(RisksData.ThirdParty.PartnersIdentified.Color == Red,
+                                                                                    RisksData.ThirdParty.SituationWithPartnersIsFavorable.Color == Red)}">
+                                                        <span class="glyphicon glyphicon-warning-sign" style="color : {!Red}"></span>
+                                                    </apex:outputPanel>
+                                                </td>
+                                            </tr>
+                                            <!-- ------------------------------------------------------------------ -->
+                                            <!-- ------------------------------------------------------------------ -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- ------------------------------------------------------------------ -->
+                <!-- ------------------------------------------------------------------ -->
+
+
+
+
+                <apex:form >
+                    <apex:actionFunction name="SaveChanges" action="{!save}"/>
+                    <apex:actionFunction name="insert" action="{!insertRerources}"/>
+                    <!--apex:actionFunction name="checkBoxChange" action="{!save}"/-->
+                    <apex:actionFunction name="irASolicitudCapex" action="{!irASolicitudCapex}"/>
+                    <apex:actionFunction name="aprobarGo" action="{!aprobarGoEstrategico}" />
+                    <apex:actionFunction name="desaprobarGo" action="{!desaprobarGoEstrategico}"/>
+                    
+                    <apex:outputPanel rendered="{!isBigDealAdmin}" styleClass="pull-right">
+                        
+                        <apex:outputPanel rendered="{! !BigDealSurvey.Aprobar_Go_Estrategico__c}">
+                            <button type="button" class="btn btn-default btn-sm" onclick="aprobarGo();return false;">
+                                <span class="glyphicon glyphicon-ok icon-btn-left"></span>&nbsp;Aprobar Go Estrategico
+                            </button>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{! BigDealSurvey.Aprobar_Go_Estrategico__c}">
+                            <button type="button" class="btn btn-default btn-sm" onclick="desaprobarGo();return false;">
+                                <span class="glyphicon glyphicon-remove icon-btn-left"></span>&nbsp;Desaprobar Go Estrategico
+                            </button>
+                        </apex:outputPanel>
+                        <br/><br/>
+                        
+                    </apex:outputPanel>  
+                        
+                    <br/>                   
+                    <apex:outputPanel id="resourcesPanel">
+                        <apex:outputPanel rendered="{!BigDealSurvey.Aprobar_Go_Estrategico__c}">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align:top;width:48%;padding-right: 5px;">
+                                    <table id="mainTable1" class="table table-striped table-bordered table-condensed">
+                                        <thead>
+                                            <tr>                  
+                                                <th style="width:75px;">
+                                                </th>
+                                                <th>
+                                                    <apex:outputText value="Categoria"></apex:outputText>
+                                                </th>
+                                                <th>                          
+                                                    <apex:outputText value="Recurso"></apex:outputText>
+                                                </th>
+                                                 <th>  
+                                                    <apex:outputText value="Detalle"></apex:outputText>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!bigDealResources}" var="bigDealResource">
+                                            <tr style="height: 32px;">
+                                                <td>
+                                                    <apex:commandLink styleClass="btn btn-default btn-sm linkbtn" value="{!$Label.delete}" action="{!deleteResource}" rendered="{!canEdit}">
+                                                        <apex:param assignTo="{!delid}" name="delid" value="{!bigDealResource.id}"/>
+                                                    </apex:commandLink> 
+                                                </td>
+                                                <td>
+                                                    <apex:outputField value="{!bigDealResource.Resource__r.Category__r.Name}"/>
+                                                </td>
+                                                <td>
+                                                    <apex:outputField value="{!bigDealResource.Resource__r.Name}"/>
+                                                </td>
+                                                <apex:outputPanel rendered="{! !bigDealResource.Resource__r.puede_acceder_a_una_solicitud_capex__c}">
+                                                    <td>
+                                                        <apex:inputField value="{!bigDealResource.Text__c}"/>
+                                                    </td>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!bigDealResource.Resource__r.puede_acceder_a_una_solicitud_capex__c}">
+                                                    <td>
+                                                        
+                                                        <button type="button" class="btn btn-default btn-sm" onclick="irASolicitudCapex();return false;">
+                                                            <span class="glyphicon glyphicon-share-alt icon-btn-left"></span>&nbsp;Solicitud Capex
+                                                        </button>
+                                                    </td>
+                                                </apex:outputPanel> 
+                                            </tr>
+                                            </apex:repeat>
+                                        </tbody>
+                                    </table>
+
+                                    <apex:outputPanel rendered="{!CanEdit}">
+                                        <button type="button" class="btn btn-default btn-sm" onclick="SaveChanges();return false;">
+                                            <span class="glyphicon glyphicon-floppy-disk icon-btn-left"></span>&nbsp;{!$Label.save}
+                                        </button>
+                                    </apex:outputPanel>
+                                </td>
+                                <td style="vertical-align:top;width:48%;padding-left: 5px;">
+                                    <table id="mainTable2" class="table table-striped table-bordered table-condensed">
+                                        <thead>
+                                            <tr>                  
+                                                <th>                                   
+                                                </th>
+                                                <th>                          
+                                                    <apex:outputText value="Categoria"></apex:outputText>
+                                                </th>
+                                                <th>                          
+                                                    <apex:outputText value="Recurso"></apex:outputText>
+                                                </th>                                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!resources}" var="resource">
+                                            <tr>
+                                                <td>
+                                                    <apex:inputField value="{!resource.Selected__c}"/>
+                                                </td>
+                                                <td>
+                                                    <apex:outputField value="{!resource.Category__r.Name}"/>
+                                                </td>
+                                                <td>
+                                                    <apex:outputField value="{!resource.Name}"/>
+                                                </td>
+                                            </tr>
+                                            </apex:repeat>
+                                        </tbody>
+                                    </table>
+
+                                    <apex:outputPanel rendered="{!CanEdit}">
+                                        <button type="button" class="btn btn-default btn-sm" onclick="insert();return false;">
+                                            <span class="glyphicon glyphicon-log-in icon-btn-left"></span>&nbsp;Asignar Recursos
+                                        </button>
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <apex:inputField value="{!BigDealSurvey.Detalles_adicionales__c}" style="width:100%;"/>
+                    </apex:outputPanel>
+                  </apex:outputPanel>
+
+                </apex:form>
+                <!-- ------------------------------------------------------------------ -->
+                <!-- ------------------------------------------------------------------ -->
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!NOT(SurveyIsComplete)}">
+                <div>
+                    {!$Label.Big_deals_incomplete_survey}
+                </div>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!!isBlocked && !isBigDealAdmin}">
+                <div>
+                    {!$Label.Big_deals_unblocked_survey}
+                </div>
+            </apex:outputPanel>
+        </div>
+        
+        <div class="separator"></div>
+    </apex:outputPanel>
+</apex:component>

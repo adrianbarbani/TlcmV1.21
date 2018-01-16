@@ -1,0 +1,182 @@
+<apex:component controller="MenuSCPEnCuentaController">
+    <!-- <apex:attribute type="String" name="AcctId" assignTo="{!AcctId}" description="Value to pass into the controller"/> -->
+        <apex:includeScript value="{!$Resource.JQuery}"  />
+        <apex:includeScript value="{!$Resource.JQueryUI}"  />
+        <apex:stylesheet value="{!$Resource.JQueryUICSSMod}"  />
+            <script>
+                $j = jQuery.noConflict();
+                $j(document).ready(function() {
+                    $j(".render").addClass("ui-tabs-hide");
+                    $j("#menu").tabs();                                                          
+                });
+            </script>
+            <style>
+                                                
+                #menu * {
+			    	font-family: ProximaNovaSoft-Regular, 'Helvetica Neue', Calibri, 'Gill Sans', 'Gill Sans MT', Candara, Segoe, 'Segoe UI', Arial, sans-serif;
+			    	font-size: 15px;
+			    }
+                
+                div#menu {
+                    position: relative;
+                    padding-left: 300px;                    
+                }
+                 
+                div#menu > div {
+                    min-height: 162px;
+                    /*background-color: #2481bb;*/
+                    background-color: white;
+                    color: rgb(82, 83, 84);
+                    border: 0px;
+                }
+                 
+                div#menu .ui-tabs-nav {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    width: 340px;
+                    padding: 5px 0px 5px 5px;
+                }
+                 
+                div#menu .ui-tabs-nav li {
+                    left: 20px;
+                    width: 338px;
+                    border-right: none;
+                    overflow: hidden;
+                    margin-bottom: 2px; 
+                    margin-left: -25px;                   
+                }
+                 
+                div#menu .ui-tabs-nav li a {
+                    float: right;
+                    width: 90%;
+                    text-align: left; 
+                    /*font-size: 12px;*/ 
+                    /*font-family: Arial, Helvetica, sans-serif;*/ 
+                    line-height: 20px;      
+                }
+                 
+                div#menu .ui-tabs-nav li.ui-tabs-selected {
+                    border: none;
+                    /*border-right: solid 2px #fff;*/
+                    border-right: solid 2px #2481bb;
+                    border-bottom: 2px solid #2481bb;
+                    background: none;
+                    /*background-color: #fff;*/
+                    width: 342px;
+                    background-color: #2481bb;
+                    /*background-color: green;*/
+                    color:white;
+                    margin-left: -25px;
+                }              
+                
+                div#menu li.ui-tabs-selected span{
+                    /*color: #17a4d1;*/
+                    
+                }
+                
+                .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+                    /*background: #f2f2f3;*/
+                    background: #2a94d6;
+                    /*background: yellow;*/
+                    border: 0px solid red;
+                }
+                
+                .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+                    border: 0px solid green;
+                }
+                
+                .ui-widget-header {
+                    /*background: #f2f2f3;*/
+                    background: #2a94d6;
+                    /*background: purple;*/
+                    border: 0px solid #e3e3e4;
+                }
+                
+                .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+                	color:white;
+                }
+                
+                .ui-widget-content a { 
+                	/*color:white;*/
+                	/*color: rgb(82, 83, 84);*/
+                	color: #2481bb;
+                	text-decoration: none;
+                }        
+                
+                .ui-widget-content li {
+                	color: #2481bb;
+                	list-style-type: none;   
+                	margin-top: 10px;             	
+                }
+                
+                .ui-widget-content a:hover {
+                	color:rgb(133, 206, 234);
+                	text-decoration: none;
+                }        
+                
+                .ui-widget-content {
+                	/*border: 1px solid #2a94d6 !important;*/
+                }
+                 
+                #menu {
+					border: 1px solid #2a94d6;                
+                }
+                         
+            </style>
+
+            <div id="menu">
+              <ul>
+                <li><apex:outputLink value="#tabs-1"><span>{!$Label.scp_certa_gc__client_basics}</span></apex:outputLink></li>
+                <li><apex:outputLink value="#tabs-2"><span>{!$Label.scp_certa_gc__value_proposition}</span></apex:outputLink></li>
+                <li><apex:outputLink value="#tabs-3"><span>{!$Label.scp_certa_gc__commercial_plan}</span></apex:outputLink></li>
+                <li><apex:outputLink value="#tabs-4"><span>{!$Label.scp_certa_gc__execution}</span></apex:outputLink></li>
+                <li><apex:outputLink rendered="{!hasPermission}" value="#tabs-5"><span>{!$Label.scp_certa_gc__administration}</span></apex:outputLink></li>                
+              </ul>
+              <div id="tabs-1">
+                  <ul>
+                    <li><apex:outputLink target="_parent" value="{!$Page.accountIndustryTrends}?id={!AcctId}">{!$Label.scp_certa_gc__trend}</apex:outputLink></li>
+                    <li><apex:outputLink target="_parent" value="{!$Page.accountStrategicContextWindow}?id={!AcctId}">{!$Label.scp_certa_gc__client_context}</apex:outputLink></li>
+                    <!--<li><apex:outputLink target="_parent" value="{!$Page.accountKPIWindow}?id={!AcctId}">{!$Label.KPI}</apex:outputLink></li>-->
+                    <li><apex:outputLink target="_parent" value="{!$Page.accountOrganizationChart}?id={!AcctId}">{!$Label.scp_certa_gc__influence_org}</apex:outputLink></li>                    
+                </ul>  
+              </div>
+              <div id="tabs-2">
+                    <ul>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountHistoricalBusinessWindow}?id={!AcctId}">{!$Label.scp_certa_gc__net_activity}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountPastProvenValueNew}?id={!AcctId}">{!$Label.scp_certa_gc__account_past_proven_value}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountOverallRelationshipWindow}?id={!AcctId}">{!$Label.scp_certa_gc__overall_relationship}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountRDMWindow}?id={!AcctId}">{!$Label.scp_certa_gc__rdmgeneral}</apex:outputLink></li>
+                    </ul>   
+              </div>
+              <div id="tabs-3">
+                    <ul>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountIndustryTrendsWindowNew}?id={!AcctId}">{!$Label.scp_certa_gc__opportunities_value_proposition}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountOpportunityListCriteria}?id={!AcctId}">{!$Label.scp_certa_gc__dcm}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountOpportunityList}?id={!AcctId}">{!$Label.scp_certa_gc__rdm}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountOpportunityListSnapshot}?id={!AcctId}">{!$Label.scp_certa_gc__snapshot}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountGrowthStrategy}?id={!AcctId}">{!$Label.scp_certa_gc__gap_growth_strategy}</apex:outputLink></li>
+                        <!-- <li><apex:outputLink target="_parent" value="{!$Page.AccountOutlookSales}?id={!AcctId}">{!$Label.SCP_OutlookSales}</apex:outputLink></li> -->
+                    </ul>    
+              </div>
+              <div id="tabs-4">
+                    <ul>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountMasterPlan}?id={!AcctId}">{!$Label.scp_certa_gc__action_plan_builder}</apex:outputLink></li>
+                        <li><apex:outputLink target="_parent" value="{!$Page.accountCustomReport}?id={!AcctId}">{!$Label.scp_certa_gc__custom_report}</apex:outputLink></li>
+                    </ul>    
+              </div>
+              <div id="tabs-5" class="render">
+                  <apex:outputPanel rendered="{!hasPermission}">
+                      <ul>                        
+                          <apex:outputPanel rendered="{!hasPermissionRegion}">
+                          	<li><apex:outputLink target="_parent" value="{!$Page.adminRegions}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__region}</apex:outputLink></li>
+                          </apex:outputPanel>
+                          <li><apex:outputLink target="_parent" value="{!$Page.adminIndustryTrends}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__trend}</apex:outputLink></li>
+                          <li><apex:outputLink target="_parent" value="{!$Page.adminKPI}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__kpi}</apex:outputLink></li>
+						  <li><apex:outputLink target="_parent" value="{!$Page.adminProvenValue}">{!$Label.scp_certa_gc__administration_trends} {!$Label.scp_certa_gc__account_past_proven_value}</apex:outputLink></li>	
+                      </ul>
+                  </apex:outputPanel>    
+              </div>              
+            </div>                  
+</apex:component>

@@ -1,0 +1,93 @@
+<apex:component controller="accountKPIWindow">
+
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        } 
+    </style> 
+	
+	<table class="table table-striped table-bordered table-condensed">
+		<thead class="rich-table-thead">
+			<tr>
+	          	<th class="headerRow" scope="col">
+	          		{!$ObjectType.KPI__C.fields.Name__c.label}
+	          	</th>
+	          	<th class="headerRow" scope="col" colspan="1">
+	          		Source
+	          	</th>
+	          	<th class="headerRow" scope="col">
+	          		{!$Label.unit}
+	          	</th>
+	          	<th class="headerRow" style="text-align:right;" scope="col" colspan="1">
+	          		{!$Label.Last_Year}
+	          	</th>
+	          	<th class="headerRow" style="text-align:right;" scope="col" colspan="1">
+	          		{!$Label.Last_Year_1}
+	          	</th>
+	          	<th class="headerRow" style="text-align:right;" scope="col" colspan="1">
+	          		{!$Label.Last_Year_2}
+	          	</th>
+			</tr>
+		</thead>
+		<tbody id="j_id0:KPITable:Content:j_id109:tb">
+			<apex:repeat value="{!data}" var="item">
+			<tr class="dataRow even  first " onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">
+	            <td class="dataCell  "  colspan="1">{!item.kpi.Name__c}</td>
+	            <td class="dataCell  "  colspan="1">{!item.source}</td>
+	            <td class="dataCell  "  colspan="1">{!item.kpi.Unit__c}</td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+                    <apex:outputField value="{!item.thisyear.Value__c}"/>
+                </td>
+                <td class="dataCell  "  colspan="1" style="text-align:right;">
+                    <apex:outputField value="{!item.lastyear.Value__c}"/>
+                </td>
+                <td class="dataCell  "  colspan="1" style="text-align:right;">
+                    <apex:outputField value="{!item.last2year.Value__c}"/>
+                </td>
+			</tr>
+			</apex:repeat>
+			<apex:repeat value="{!parentData}" var="item">
+			<tr class="dataRow even  first " onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">
+	            <td class="dataCell  "  colspan="1">{!item.kpi.Name__c}</td>
+	            <td class="dataCell  "  colspan="1">{!item.source}</td>
+	            <td class="dataCell  "  colspan="1">{!item.kpi.Unit__c}</td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.thisyear.Value__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.lastyear.Value__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.last2year.Value__c}"/>
+	            </td>
+			</tr>
+			</apex:repeat>		
+			<apex:repeat value="{!localData}" var="item">
+			<tr class="dataRow even  first " onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">
+	            <td class="dataCell  "  colspan="1">
+	            	<apex:outputField value="{!item.kpi.Name__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1">{!item.source}</td>
+	            <td class="dataCell  "  colspan="1">
+	            	<apex:outputField value="{!item.kpi.Unit__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.thisyear.Value__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.lastyear.Value__c}"/>
+	            </td>
+	            <td class="dataCell  "  colspan="1" style="text-align:right;">
+	                <apex:outputField value="{!item.last2year.Value__c}"/>
+	            </td>
+			</tr>
+			</apex:repeat>
+		</tbody>
+	</table>
+
+</apex:component>

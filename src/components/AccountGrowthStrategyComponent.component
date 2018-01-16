@@ -1,0 +1,169 @@
+<apex:component controller="AccountGrowthStrategyController">
+	<style>
+        .headerRow {    
+            background-color: #F2F3F3;          
+            color: #000000;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 5px 2px;
+            text-align: center;         
+        }
+    </style>
+    <table class="list" width="100%" cellspacing="10">
+        <tr>
+            <td style="width: 50%; vertical-align: top;">
+                <span style="float: left;font-weight: bold;">{!$Label.Value_Arguments}</span>
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr class="headerRow">                              
+                            <th scope="col" class=" deemphasize">{!$Label.Numero_de_la_oportunidad}</th>
+                            <th scope="col" class=" deemphasize">{!$Label.Value_Arguments}</th>
+                            <th scope="col" class=" deemphasize">{!$Label.Related_PNB}</th>
+                            <th scope="col" class=" deemphasize">{!$Label.Type}</th>
+                            <th scope="col" class=" deemphasize">{!$Label.Source}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <apex:repeat value="{!regions}" var="item">
+                            <apex:repeat value="{!item.Trends}" var="subitem">
+                                <tr id="{!subitem.id}" class="IndustryTrendsRow DraggableRow dataRow {!IF(subitem.Opportunities__r.size > 0 , '' , 'NotUsed')}"  onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">                                       
+                                    <td class="TdName dataCell" >
+                                        {!subitem.Name}     
+                                    </td>
+                                    <td class=" dataCell  ">
+                                        {!subitem.Trend__c}
+                                    </td>
+                                    <td class="TdLink" style="width:125px;">
+                                        <apex:repeat value="{!subitem.Potential_New_Business_Trend__r}" var="npb"><apex:outputField value="{!npb.Potential_New_Business__c}"/><br/></apex:repeat>
+                                    </td>                                               
+                                    <td class=" dataCell  ">
+                                        {!$Label.scp_certa_gc__trend}
+                                    </td>
+                                    <td class=" dataCell  ">
+                                        {!item.region.name}
+                                    </td>
+                                </tr>
+                            </apex:repeat>
+                        </apex:repeat>
+                        <apex:repeat value="{!globalStrategicInitiatives}" var="subitem">
+                           <tr id="{!subitem.id}" class="StrategicInitiativeRow DraggableRow dataRow {!IF(subitem.Opportunities__r.size > 0 , '' , 'NotUsed')}"  onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">                                   
+                                <td class="TdName dataCell" >
+                                    {!subitem.Name}     
+                                </td>
+                                <td class=" dataCell  "><!-- Strategic_Initiative_URL__c -->
+                                    {!subitem.Strategic_Initiative__c}
+                                </td> 
+                                <td class="TdLink" style="width:125px;">
+                                    <apex:repeat value="{!subitem.Potential_New_Business_Strategic_Ini__R}" var="pnbs"><apex:outputField value="{!pnbs.Potential_New_Business__c}"/><br/></apex:repeat>
+                                </td>                                                                  
+                                <td class=" dataCell  ">
+                                    {!$Label.scp_certa_gc__iniciativa} 
+                                </td>
+                                <td class=" dataCell  ">
+                                    Parent Account
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        <apex:repeat value="{!localStrategicInitiatives}" var="subitem">
+                            <tr id="{!subitem.id}" class="StrategicInitiativeRow DraggableRow dataRow {!IF(subitem.Opportunities__r.size > 0 , '' , 'NotUsed')}"  onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">                                  
+                                <td class="TdName dataCell" >
+                                    {!subitem.Name}     
+                                </td>
+                                <td class=" dataCell  "><!-- Strategic_Initiative_URL__c -->
+                                    {!subitem.Strategic_Initiative__c}
+                                </td>
+                                <td class="TdLink" style="width:125px;">
+                                    <apex:repeat value="{!subitem.Potential_New_Business_Strategic_Ini__R}" var="pnbs"><apex:outputField value="{!pnbs.Potential_New_Business__c}"/><br/></apex:repeat>
+                                </td>                                           
+                                <td class=" dataCell  ">
+                                    {!$Label.scp_certa_gc__iniciativa} 
+                                </td>
+                                <td class=" dataCell  ">
+                                    Account
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        <apex:repeat value="{!provenValueWrapperList}" var="subitem">
+                            <tr id="{!subitem.provenValue.id}" class="PastProvenValueNewRow DraggableRow dataRow {!IF(subitem.provenValue.OpportunityPastProvenValueNew__r.size > 0 , '' , 'NotUsed')}"  onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">                                   
+                                <td class="TdName dataCell" >
+                                    {!subitem.provenValue.Name}     
+                                </td>
+                                <td class=" dataCell  ">
+                                    {!subitem.provenValue.Unique_Value__c}
+                                </td>
+                                <td class="TdLink" style="width:125px;">
+                                    <apex:repeat value="{!subitem.provenValue.Potential_New_Business_Past_Provent__r}" var="pnb"><apex:outputField value="{!pnb.Potential_New_Business__c}"/><br/></apex:repeat>
+                                </td>                                           
+                                <td class=" dataCell  ">
+                                    {!subitem.provenValue.Type__c}
+                                </td>
+                                <td class=" dataCell  ">
+                                    {!subitem.source}
+                                </td>                                           
+                            </tr>
+                        </apex:repeat>                              
+                    </tbody>
+                </table>
+            </td>
+            <td></td>
+            <td style="width: 50%; vertical-align: top;">
+                <span style="float: left;font-weight: bold;">Potential New Business (PNB)</span>
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr class="headerRow">                              
+                            <th scope="col" class=" deemphasize">{!$Label.Numero_de_la_oportunidad}</th>
+                            <th scope="col" class=" deemphasize">{!$ObjectType.Potential_New_Business__c.fields.Potential_new_Business__c.label}</th>
+                            <th scope="col" class=" deemphasize">{!$ObjectType.Potential_New_Business__c.fields.Estimated_FCV__c.label}</th>
+                            <th scope="col" class=" deemphasize">{!$Label.Related_Value_Drivers}</th>
+                            <th scope="col" class=" deemphasize">{!$ObjectType.Potential_New_Business__c.fields.Contact_to_approach__c.label}</th>
+                            <th scope="col" class=" deemphasize">{!$ObjectType.Potential_New_Business__c.fields.Status__c.label}</th>
+                            <th scope="col" class=" deemphasize">{!$ObjectType.Potential_New_Business__c.fields.Comments__c.label}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{!PotentialNewBusinessList}" var="pnb">
+                        <tr id="{!pnb.id}" class="dataRow even droppableTD">                                        
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Name}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Potential_new_Business__c}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Estimated_FCV__c}"/>
+                            </td>                                       
+                            <td class="dataCell">
+                                <apex:repeat value="{!pnb.Potential_New_Business_Trend__r}" var="subitem">
+                                    <div class="PopupHolder">
+                                        <span class="prefixTR">TR</span>-{!subitem.Industry_Trend__r.name}
+                                    </div>
+                                </apex:repeat>
+                                <apex:repeat value="{!pnb.Potential_New_Business_Strategic_Ini__r}" var="subitem">
+                                    <div class="PopupHolder">
+                                        <span class="prefixST">ST</span>-{!subitem.Strategic_Initiative__r.name}
+                                    </div>
+                                </apex:repeat>
+                                <apex:repeat value="{!pnb.Potential_New_Business_Past_Provent__r}" var="subitem">
+                                    <div class="PopupHolder">
+                                        <span class="prefixPPV">PV</span>-{!subitem.Past_Proven_Value__r.name}
+                                    </div>
+                                </apex:repeat>
+                            </td>                                       
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Contact_to_approach__c}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Status__c}"/>
+                            </td>
+                            <td class="dataCell">
+                                <apex:outputField value="{!pnb.Comments__c}"/>
+                            </td>
+                        </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+            
+</apex:component>

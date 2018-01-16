@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Nombre de la Competencia --></label>
+        <name>competitorName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valor Total del Contrato --></label>
+        <name>fcv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contrato con la Competencia --></label>
+        <name>isCompetitorContract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cargo Recurrente Mensual --></label>
+        <name>mrc__c</name>
+    </fields>
+</CustomObjectTranslation>

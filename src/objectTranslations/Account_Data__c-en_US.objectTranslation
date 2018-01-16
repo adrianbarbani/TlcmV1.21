@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Account Data --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Account Data --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Review --></label>
+        <name>Account_Review_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Review --></label>
+        <name>Account_Review__c</name>
+        <relationshipLabel><!-- Accounts Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cuenta --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Accounts Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Total Value --></label>
+        <name>Approval_Total_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competidores Last Update --></label>
+        <name>Competitors_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competidores --></label>
+        <name>Competitors_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitors Number --></label>
+        <name>Competitors_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CurrencyIsoCode --></label>
+        <name>CurrencyIsoCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- FCV Potenciales Negocios --></label>
+        <name>FCV_New_Potential_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oportunidades con Mosaico --></label>
+        <name>Opportunities_With_RDM_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities With RDM --></label>
+        <name>Opportunities_With_RDM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunities With VD --></label>
+        <name>Opportunities_With_VD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oportunidades con Value Drivers --></label>
+        <name>Opportunities_With_Value_Drivers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oportunidad --></label>
+        <name>Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- PNB Amount --></label>
+        <name>PNB_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCP Past Activity --></label>
+        <name>SCP_Past_Activity__c</name>
+        <relationshipLabel><!-- Accounts Data --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SCP Share of Wallet --></label>
+        <name>SCP_Share_of_Wallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desafíos | Iniciativas, Last Update --></label>
+        <name>Strategic_Initiative_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desafíos | Iniciativas de Negocio --></label>
+        <name>Strategic_Initiative_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategic Initiative Number --></label>
+        <name>Strategic_Initiative_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actividad Comercial Neta --></label>
+        <name>Trade_Balance__c</name>
+    </fields>
+    <nameFieldLabel><!-- Nombre de Account Data --></nameFieldLabel>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

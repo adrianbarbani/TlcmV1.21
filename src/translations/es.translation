@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- SCP --></label>
+        <name>SCP</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- AHIH --></label>
+        <name>AHIH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AHIL --></label>
+        <name>AHIL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ALIH --></label>
+        <name>ALIH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ALIL --></label>
+        <name>ALIL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AND --></label>
+        <name>AND</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Account_Business_Landscape --></label>
+        <name>Account_Business_Landscape</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Account Name --></label>
+        <name>Account_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Aceptar --></label>
+        <name>Aceptar</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Burning Platform --></label>
+        <name>Action_Burning_Platform</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Controller --></label>
+        <name>Action_Controller</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Developer --></label>
+        <name>Action_Developer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action End User --></label>
+        <name>Action_End_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Negative --></label>
+        <name>Action_Negative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Plan Builder --></label>
+        <name>Action_Plan_Builder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Sponsor --></label>
+        <name>Action_Sponsor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Statu Quo --></label>
+        <name>Action_Statu_Quo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Action Technical --></label>
+        <name>Action_Technical</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actions --></label>
+        <name>Actions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Activities --></label>
+        <name>Activities</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Actual State --></label>
+        <name>Actual_State</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add Filter Logic --></label>
+        <name>Add_Filter_Logic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add_Share --></label>
+        <name>Add_Share</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add_new_service --></label>
+        <name>Add_new_service</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Add to Action Plan --></label>
+        <name>Add_to_Action_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Administracion --></label>
+        <name>Administracion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Administration --></label>
+        <name>Administration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Administration Trends --></label>
+        <name>Administration_Trends</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Anterior --></label>
+        <name>Anterior</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply Filters --></label>
+        <name>Apply_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Areas Nos Relacionamos --></label>
+        <name>Areas_Nos_Relacionamos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Areas de Trabajo --></label>
+        <name>Areas_de_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Asignacion de Eventos --></label>
+        <name>Asignacion_de_Eventos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Asignacion value drivers --></label>
+        <name>Asignacion_value_drivers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Asignado al menos una --></label>
+        <name>Asignado_al_menos_una</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Assigned to --></label>
+        <name>Assigned_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Attitude --></label>
+        <name>Attitude</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Authority --></label>
+        <name>Authority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back to Opportunitiy List --></label>
+        <name>Back_to_Opportunitiy_List</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big Deals Amount of resources black --></label>
+        <name>Big_Deals_Amount_of_resources_black</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big Deals enough formal information alert --></label>
+        <name>Big_Deals_enough_formal_information_alert</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big Deals review external resources --></label>
+        <name>Big_Deals_review_external_resources</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big Deals size a three FTE team --></label>
+        <name>Big_Deals_size_a_three_FTE_team</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big deals incomplete survey --></label>
+        <name>Big_deals_incomplete_survey</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Big_deals_unblocked_survey --></label>
+        <name>Big_deals_unblocked_survey</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Brand --></label>
+        <name>Brand</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Burning Platform --></label>
+        <name>Burning_Platform</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Burning Platform help --></label>
+        <name>Burning_Platform_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cadena valor procesos --></label>
+        <name>Cadena_valor_procesos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Calendar --></label>
+        <name>Calendar</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Casos exito sectorial --></label>
+        <name>Casos_exito_sectorial</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Categoria --></label>
+        <name>Categoria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Categoria de los servicios --></label>
+        <name>Categoria_de_los_servicios</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clarify the degree of compromise --></label>
+        <name>Clarify_the_degree_of_compromise</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOpportunityList --></label>
+        <name>Client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Client Basics --></label>
+        <name>Client_Basics</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Client Context --></label>
+        <name>Client_Context</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Client&apos;s --></label>
+        <name>Client_s</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Comments --></label>
+        <name>Comments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Commercial Plan --></label>
+        <name>Commercial_Plan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Commercial and engineering responsibles --></label>
+        <name>Commercial_and_engineering_responsibles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Competitor --></label>
+        <name>Competitor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Competitor&apos;s Standing --></label>
+        <name>Competitor_Standing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Completed --></label>
+        <name>Completed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conocimiento del Area --></label>
+        <name>Conocimiento_del_Area</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Conocimiento del Territorio --></label>
+        <name>Conocimiento_del_Territorio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact Influenced By --></label>
+        <name>Contact_Influenced_By</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contact influences over --></label>
+        <name>Contact_influences_over</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contactos Cliente Deciden Influyen --></label>
+        <name>Contactos_Cliente_Deciden_Influyen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contacts from account --></label>
+        <name>Contacts_from_account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contacts from parent account --></label>
+        <name>Contacts_from_parent_account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contexto General --></label>
+        <name>Contexto_General</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ContractError --></label>
+        <name>ContractError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CopyRDM --></label>
+        <name>CopyRDM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Country --></label>
+        <name>Country</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Crear Categoria Servicio --></label>
+        <name>Crear_Categoria_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Created Date --></label>
+        <name>Created_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cronograma de Cuenta --></label>
+        <name>Cronograma_de_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cuales son ingresos anuales --></label>
+        <name>Cuales_son_ingresos_anuales</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cuantos vehiculos parque --></label>
+        <name>Cuantos_vehiculos_parque</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cuentas --></label>
+        <name>Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Current_Account --></label>
+        <name>Current_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom_Report --></label>
+        <name>Custom_Report</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Custom_Report_Msg --></label>
+        <name>Custom_Report_Msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DCM --></label>
+        <name>DCM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DCM_HIGH --></label>
+        <name>DCM_HIGH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DCM_HIGH_1 --></label>
+        <name>DCM_HIGH_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DCM_LOW --></label>
+        <name>DCM_LOW</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DCM_LOW_1 --></label>
+        <name>DCM_LOW_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- De --></label>
+        <name>De</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Del buttom --></label>
+        <name>Del_buttom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete tasks --></label>
+        <name>Delete_tasks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deliberables description --></label>
+        <name>Deliberables_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Descripcion del Cliente --></label>
+        <name>Descripcion_del_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Detail of reach --></label>
+        <name>Detail_of_reach</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Detalle de Cuenta --></label>
+        <name>Detalle_de_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Developer --></label>
+        <name>Developer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Developer help --></label>
+        <name>Developer_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Dispone parque automotor --></label>
+        <name>Dispone_parque_automotor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Double click message --></label>
+        <name>Double_click</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Due_Date --></label>
+        <name>Due_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Economical_data --></label>
+        <name>Economical_data</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Economical information --></label>
+        <name>Economical_information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edificios centrales administrativos --></label>
+        <name>Edificios_centrales_administrativos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Edit Influences --></label>
+        <name>Edit_Influences</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ejes de Trabajo --></label>
+        <name>Ejes_de_Trabajo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Eliminar Marcados --></label>
+        <name>Eliminar_Marcados</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- End user --></label>
+        <name>End_user</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ErrorDeleteTask --></label>
+        <name>ErrorDeleteTask</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Estado del Servicio --></label>
+        <name>Estado_del_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Estimated FCV --></label>
+        <name>Estimated_FCV</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Etapa del Proyecto --></label>
+        <name>Etapa_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Evaluate --></label>
+        <name>Evaluate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Evento Clientes --></label>
+        <name>Evento_Clientes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Evento Relevante de la industria --></label>
+        <name>Evento_Relevante_de_la_industria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Excluir del gráfico --></label>
+        <name>Excluir_del_gr_fico</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Execution --></label>
+        <name>Execution</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Explain reason for high indemnizations --></label>
+        <name>Explain_reason_for_high_indemnizations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Explain strategic reasons for long presale --></label>
+        <name>Explain_strategic_reasons_for_long_presale</name>
+    </customLabels>
+    <customLabels>
+        <label>Exportar a Excel</label>
+        <name>Export_to_Excel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export_to_Word --></label>
+        <name>Export_to_Word</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Extend the period to present the offer to five weeks --></label>
+        <name>Extend_the_period_to_present_the_offer_to_five_weeks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Extend the start date to three weeks --></label>
+        <name>Extend_the_start_date_to_three_weeks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Falta completar --></label>
+        <name>Falta_completar</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fecha --></label>
+        <name>Fecha</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fecha Estimada de Cierre --></label>
+        <name>Fecha_Estimada_de_Cierre</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fecha Vencimiento --></label>
+        <name>Fecha_Vencimiento</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter --></label>
+        <name>Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter Logic --></label>
+        <name>Filter_Logic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filtrar por Cliente --></label>
+        <name>Filtrar_por_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Financial --></label>
+        <name>Financial</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Find out why the client had previous debts --></label>
+        <name>Find_out_why_the_client_had_previous_debts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- From the organization --></label>
+        <name>From_the_organization</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- From the project --></label>
+        <name>From_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- From the technical solution --></label>
+        <name>From_the_technical_solution</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- From third parties --></label>
+        <name>From_third_parties</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Fully use TEF portfolio --></label>
+        <name>Fully_use_TEF_portfolio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- GAP_Growth_Strategy --></label>
+        <name>GAP_Growth_Strategy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- General information --></label>
+        <name>General_information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Gestion de Oportunidades --></label>
+        <name>Gestion_de_Oportunidades</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get SLA definitions --></label>
+        <name>Get_SLA_definitions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get information about the client --></label>
+        <name>Get_information_about_the_client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get reach with maximum possible detail --></label>
+        <name>Get_reach_with_maximum_possible_detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Get technical description with maximum detail --></label>
+        <name>Get_technical_description_with_maximum_detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parent Buying Criteria --></label>
+        <name>Global_Buying_Criteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parent Account Strategic Plan --></label>
+        <name>Global_Strategic_Context</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Global Strategic Initiative --></label>
+        <name>Global_Strategic_Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Greater than --></label>
+        <name>Greater_than</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Hide Filters --></label>
+        <name>Hide_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Hitos Relevantes --></label>
+        <name>Hitos_Relevantes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Identify Client&apos;s key players and their availability --></label>
+        <name>Identify_Client_s_key_players_and_their_availability</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Identify alternative platforms --></label>
+        <name>Identify_alternative_platforms</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Identify decision makers --></label>
+        <name>Identify_decision_makers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Identify key partners for the project --></label>
+        <name>Identify_key_partners_for_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Identify posible negative impacts of project on the client --></label>
+        <name>Identify_posible_negative_impacts_of_project_on_the_client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Importance_to_Client --></label>
+        <name>Importance_to_Client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Incluir al gráfico --></label>
+        <name>Incluir_al_gr_fico</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Indica cant sucursales --></label>
+        <name>Indica_cant_sucursales</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Indica cantidad empleados --></label>
+        <name>Indica_cantidad_empleados</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Indice de actividad --></label>
+        <name>Indice_de_actividad</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Industry Competitive Differenciators --></label>
+        <name>Industry_Competitive_Differenciators</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Industry Offering --></label>
+        <name>Industry_Offering</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Industry Success Stories --></label>
+        <name>Industry_Success_Stories</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Influence --></label>
+        <name>Influence</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Influence Map / Org Chart --></label>
+        <name>Influence_Org</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Influence Same Account --></label>
+        <name>Influence_Same_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Influences Over --></label>
+        <name>Influences_Over</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Iniciativa estrategica --></label>
+        <name>Iniciativa</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Initiative --></label>
+        <name>Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ir Detalle Cuenta --></label>
+        <name>Ir_Detalle_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Justify the high level of penalties --></label>
+        <name>Justify_the_high_level_of_penalties</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Justify the high working liabilities of the project --></label>
+        <name>Justify_the_high_working_liabilities_of_the_project</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- KPI --></label>
+        <name>KPI</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last Modified Date --></label>
+        <name>LastModifiedDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last_Year --></label>
+        <name>Last_Year</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last_Year-1 --></label>
+        <name>Last_Year_1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Last_Year-2 --></label>
+        <name>Last_Year_2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Less than --></label>
+        <name>Less_than</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Linked Opportunities --></label>
+        <name>Linked_Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Merge tasks --></label>
+        <name>Merge_tasks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Metricas analisis mercado --></label>
+        <name>Metricas_analisis_mercado</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Missing field error base --></label>
+        <name>Missing_field_error_base</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Modify RDM --></label>
+        <name>Modify_RDM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Months to go --></label>
+        <name>Months_to_go</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negative --></label>
+        <name>Negative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negative Help --></label>
+        <name>Negative_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negative Relationship --></label>
+        <name>Negative_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negotiate submission period extension --></label>
+        <name>Negotiate_submission_period_extension</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Neutral Relationship --></label>
+        <name>Neutral_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New --></label>
+        <name>New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Contact --></label>
+        <name>New_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Initiative --></label>
+        <name>New_Initiative</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nivel de Desarrollo --></label>
+        <name>Nivel_de_Desarrollo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nivel de Relacion --></label>
+        <name>Nivel_de_Relacion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Eventos Cuentas --></label>
+        <name>No_Eventos_Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No asignado oportunidad --></label>
+        <name>No_asignado_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No hay Datos Cargados --></label>
+        <name>No_hay_Datos_Cargados</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No hay cuentas cargadas --></label>
+        <name>No_hay_cuentas_cargadas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No hay cuentas criterio --></label>
+        <name>No_hay_cuentas_criterio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre Categoria Servicio --></label>
+        <name>Nombre_Categoria_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre de la Cuenta --></label>
+        <name>Nombre_de_la_Cuenta</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre de la oportunidad --></label>
+        <name>Nombre_de_la_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre del Competidor del Cliente --></label>
+        <name>Nombre_del_Competidor_del_Cliente</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre del Proyecto --></label>
+        <name>Nombre_del_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nombre del Servicio --></label>
+        <name>Nombre_del_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Not contain --></label>
+        <name>Not_contain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Notes_&amp;_Attachments --></label>
+        <name>Notes_Attachments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nueva Area --></label>
+        <name>Nueva_Area</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nueva Tecnologia --></label>
+        <name>Nueva_Tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nuevo Contacto --></label>
+        <name>Nuevo_Contacto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nuevo Hito --></label>
+        <name>Nuevo_Hito</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Nuevo Servicio --></label>
+        <name>Nuevo_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Numero de identificacion --></label>
+        <name>Numero_de_la_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OB commercial responsible --></label>
+        <name>OB_commercial_responsible</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Observaciones --></label>
+        <name>Observaciones</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Obtener Cuentas --></label>
+        <name>Obtener_Cuentas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opportunities --></label>
+        <name>Opportunities</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opportunities_Value_Proposition --></label>
+        <name>Opportunities_Value_Proposition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opportunity_Fields --></label>
+        <name>Opportunity_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Opportunity arrival date --></label>
+        <name>Opportunity_arrival_date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Otra tecnologia --></label>
+        <name>Otra_tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Otro --></label>
+        <name>Otro</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Otros --></label>
+        <name>Otros</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Our Relationship --></label>
+        <name>Our_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Our_Standing --></label>
+        <name>Our_Standing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Overall Relationship --></label>
+        <name>Overall_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Own installed base --></label>
+        <name>Own_installed_base</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Pagina --></label>
+        <name>Pagina</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parent_Account --></label>
+        <name>Parent_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parque automotor propio gestionado --></label>
+        <name>Parque_automotor_propio_gestionado</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Parque_de_servicios --></label>
+        <name>Parque_de_servicios</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Perceived_Performance_Client --></label>
+        <name>Perceived_Performance_Client</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Personal Relationship --></label>
+        <name>Personal_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Positive Relationship --></label>
+        <name>Positive_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Potential_New_Business --></label>
+        <name>Potential_New_Business</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Preapare organization to accomplish SLAs --></label>
+        <name>Preapare_organization_to_accomplish_SLAs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Presale_and_offer --></label>
+        <name>Presale_and_offer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previsión Cierre TOP 3 deals --></label>
+        <name>Previsi_n_Cierre_TOP_3_deals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Primera --></label>
+        <name>Primera</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Principal Competidor Solucion --></label>
+        <name>Principal_Competidor_Solucion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Principales players --></label>
+        <name>Principales_players</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Priority --></label>
+        <name>Priority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product / Service --></label>
+        <name>Product_Services</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Project --></label>
+        <name>Project</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Project description --></label>
+        <name>Project_description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Propietario --></label>
+        <name>Propietario</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Proyecto --></label>
+        <name>Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Publicación RFP Comunicaciones --></label>
+        <name>Publicaci_n_RFP_Comunicaciones</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Publicación RFP TI --></label>
+        <name>Publicaci_n_RFP_TI</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RDM --></label>
+        <name>RDM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RDMGeneral --></label>
+        <name>RDMGeneral</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RDM_attitude --></label>
+        <name>RDM_attitude</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RDM_role --></label>
+        <name>RDM_role</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reach --></label>
+        <name>Reach</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Recommendations --></label>
+        <name>Recommendations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reduce bails, study alternative warranties --></label>
+        <name>Reduce_bails_study_alternative_warranties</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Region --></label>
+        <name>Region</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related_PNB --></label>
+        <name>Related_PNB</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Related Value Drivers --></label>
+        <name>Related_Value_Drivers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remove --></label>
+        <name>Remove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Renegociate indemnizations --></label>
+        <name>Renegociate_indemnizations</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reports To --></label>
+        <name>Reports_To</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Responsible --></label>
+        <name>Responsible</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reto --></label>
+        <name>Reto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Risks --></label>
+        <name>Risks</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SCP_Total --></label>
+        <name>SCP_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SCP_noMismoContacto --></label>
+        <name>SCP_noMismoContacto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Seleccionado --></label>
+        <name>Seleccionado</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Seleccionar paises presencia --></label>
+        <name>Seleccionar_paises_presencia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select --></label>
+        <name>Select</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Send --></label>
+        <name>Send</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicio --></label>
+        <name>Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicios --></label>
+        <name>Servicios</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicios Actualmente Competencia --></label>
+        <name>Servicios_Actualmente_Competencia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicios Actualmente Nosotros --></label>
+        <name>Servicios_Actualmente_Nosotros</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicios Planeamos Futuro --></label>
+        <name>Servicios_Planeamos_Futuro</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show Filters --></label>
+        <name>Show_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Si asignado oportunidad --></label>
+        <name>Si_asignado_oportunidad</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Siguiente --></label>
+        <name>Siguiente</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Source --></label>
+        <name>Source</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Statu Quo --></label>
+        <name>Statu_Quo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Statu Quo help --></label>
+        <name>Statu_Quo_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>Status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step1 --></label>
+        <name>Step1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Step2 --></label>
+        <name>Step2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study a way to reduce the times --></label>
+        <name>Study_a_way_to_reduce_the_times</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study a way to reduce third-party dependence below 50% --></label>
+        <name>Study_a_way_to_reduce_third_party_dependence_below_50</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study a way to reduce third-party dependence below 80% --></label>
+        <name>Study_a_way_to_reduce_third_party_dependence_below_80</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study posibility to fit offer with existent products in the portfolio --></label>
+        <name>Study_posibility_to_fit_offer_with_existent_products_in_the_portfolio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study the posibility to fit offer with existent profiles --></label>
+        <name>Study_the_posibility_to_fit_offer_with_existent_profiles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Study the way to substitute key partners --></label>
+        <name>Study_the_way_to_substitute_key_partners</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Subject --></label>
+        <name>Subject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Sucursales crece decrece --></label>
+        <name>Sucursales_crece_decrece</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Suggested approach --></label>
+        <name>Suggested_approach</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Task status --></label>
+        <name>Task_status</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Team for offer and presale --></label>
+        <name>Team_for_offer_and_presale</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Technical --></label>
+        <name>Technical</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Technical help --></label>
+        <name>Technical_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tecnologia --></label>
+        <name>Tecnologia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tecnologias Responden Proyecto --></label>
+        <name>Tecnologias_Responden_Proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tendencias --></label>
+        <name>Tendencias</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tipo de Area --></label>
+        <name>Tipo_de_Area</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tipo de Contacto --></label>
+        <name>Tipo_de_Contacto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Title --></label>
+        <name>Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Todos --></label>
+        <name>Todos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Industry Trend --></label>
+        <name>Trend</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Try to exclude or minimize the human resource requirement --></label>
+        <name>Try_to_exclude_or_minimize_the_human_resource_requirement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- URL Attachment --></label>
+        <name>URL_Attachment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Ultima --></label>
+        <name>Ultima</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unlink --></label>
+        <name>Unlink</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- User --></label>
+        <name>User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- User_Region --></label>
+        <name>User_Region</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value_Arguments --></label>
+        <name>Value_Arguments</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Proposition --></label>
+        <name>Value_Proposition</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vencimiento --></label>
+        <name>Vencimiento</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vencimiento Contrato Activo con Telefónica --></label>
+        <name>Vencimiento_Contrato_Activo_con_Telef_nica</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vencimiento Contrato Activo con la Competencia --></label>
+        <name>Vencimiento_Contrato_Activo_con_la_Competencia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vencimiento Contrato Servicio --></label>
+        <name>Vencimiento_Contrato_Servicio</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Vencimientos Eventos Etc --></label>
+        <name>Vencimientos_Eventos_Etc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Venicmiento Contrato Nosotros --></label>
+        <name>Venicmiento_Contrato_Nosotros</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View Mosaic order by Attitude --></label>
+        <name>View_Mosaic_order_by_Attitude</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- View Org Chart --></label>
+        <name>View_Org_Chart</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- account_past_proven_value --></label>
+        <name>account_past_proven_value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- add --></label>
+        <name>add</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- add buttom --></label>
+        <name>add_buttom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- add_kpi --></label>
+        <name>add_kpi</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Already Evaluated Contacts --></label>
+        <name>already</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- back to contact --></label>
+        <name>back_to_contact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- badFilter --></label>
+        <name>badFilter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- buying cycle --></label>
+        <name>buying_cycle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- checkbox_help --></label>
+        <name>checkbox_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- close --></label>
+        <name>close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- close_without_save --></label>
+        <name>close_without_save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- closest team member --></label>
+        <name>closest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- competition relationship --></label>
+        <name>competition_relationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- contact_to_view --></label>
+        <name>contact_to_view</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- contain --></label>
+        <name>contain</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- controller --></label>
+        <name>controller</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- controller_help --></label>
+        <name>controller_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Client Satisfaction Evolution --></label>
+        <name>csat</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- dblClickToAddCapability --></label>
+        <name>dblClickToAddCapability</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- dblClickToAddValue --></label>
+        <name>dblClickToAddValue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- delete --></label>
+        <name>delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- end with --></label>
+        <name>end_with</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- equals --></label>
+        <name>equals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- eval_criteria --></label>
+        <name>eval_criteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Actividades a realizar durante --></label>
+        <name>falta_Actividades_a_realizar_durante</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta &quot;Calcular el nº de jornadas --></label>
+        <name>falta_Calcular_el_n_de_jornadas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Concretar el número FTEs --></label>
+        <name>falta_Concretar_el_n_mero_FTEs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Concretar el número de FTEs de terceros --></label>
+        <name>falta_Concretar_el_n_mero_de_FTEs_de_terceros</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Cuál es el grado de exigencia --></label>
+        <name>falta_Cu_l_es_el_grado_de_exigencia</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Cuál es el grado de fiabilidad sobre --></label>
+        <name>falta_Cu_l_es_el_grado_de_fiabilidad_sobre</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Cuál es el grado de interrelación --></label>
+        <name>falta_Cu_l_es_el_grado_de_interrelaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Cuál es el impacto del proyecto --></label>
+        <name>falta_Cu_l_es_el_impacto_del_proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Cuál es el nivel de conocimiento --></label>
+        <name>falta_Cu_l_es_el_nivel_de_conocimiento</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Cuál es el plazo de ejecución --></label>
+        <name>falta_Cu_l_es_el_plazo_de_ejecuci_n</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta &quot;¿Cuánta es la facilidad para TEF --></label>
+        <name>falta_Cu_nta_es_la_facilidad_para_TEF</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Cuantificar el importe de las Fianzas --></label>
+        <name>falta_Cuantificar_el_importe_de_las_Fianzas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Detallar el % de la solución --></label>
+        <name>falta_Detallar_el_de_la_soluci_n</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Detallar el importe --></label>
+        <name>falta_Detallar_el_importe</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Duración estimada --></label>
+        <name>falta_Duraci_n_estimada</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Duración total del proyecto --></label>
+        <name>falta_Duraci_n_total_del_proyecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Es el volumen de pasivo laboral máximo significativo respecto --></label>
+        <name>falta_Es_el_volumen_de_pasivo_laboral_m_ximo_significativo_respecto</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Es el volumen de penalización --></label>
+        <name>falta_Es_el_volumen_de_penalizaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Es el volumen de penalización máximo --></label>
+        <name>falta_Es_el_volumen_de_penalizaci_n_m_ximo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta ¿Es significativo el volumen de indemnización --></label>
+        <name>falta_Es_significativo_el_volumen_de_indemnizaci_n</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Existe experiencia en el --></label>
+        <name>falta_Existe_experiencia_en_el</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- falta Nº de personas --></label>
+        <name>falta_N_de_personas</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- filterHelp --></label>
+        <name>filterHelp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- focus --></label>
+        <name>focus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- generation --></label>
+        <name>generation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- gotoCriteria --></label>
+        <name>gotoCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- gotoMosaic --></label>
+        <name>gotoMosaic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- gotoSnapshot --></label>
+        <name>gotoSnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- inSeccion --></label>
+        <name>inSeccion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- influenced by --></label>
+        <name>influenced_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- main competitors --></label>
+        <name>main_competitors</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- modify_influences --></label>
+        <name>modify_influences</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- modify influences btn --></label>
+        <name>modify_influences_btn</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- modify_org --></label>
+        <name>modify_org</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- modify org btn --></label>
+        <name>modify_org_btn</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- mouse over for influence map --></label>
+        <name>mouseover</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- name --></label>
+        <name>name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Net commercial activity with client --></label>
+        <name>net_activity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- no_industry_trends --></label>
+        <name>no_industry_trends</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- not equal to --></label>
+        <name>not_equal_to</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- offer schedule --></label>
+        <name>offer_schedule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- opportunity --></label>
+        <name>opportunity</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- opportunityName --></label>
+        <name>opportunityName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Our expenditures with cliente --></label>
+        <name>our_expenditures</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- people --></label>
+        <name>people</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- popupGeneralMosaic --></label>
+        <name>popupGeneralMosaic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- potential_business --></label>
+        <name>potential_business</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- reported by --></label>
+        <name>reported_by</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- save --></label>
+        <name>save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- saveAndBlock --></label>
+        <name>saveAndBlock</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- saveAndUnblock --></label>
+        <name>saveAndUnblock</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- save changes --></label>
+        <name>save_changes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- save image --></label>
+        <name>save_image</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- save_msg --></label>
+        <name>save_msg</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- select_criteria --></label>
+        <name>select_criteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- share of wallet --></label>
+        <name>share_of_wallet</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- error share region to owner --></label>
+        <name>share_region_to_owner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- show_less --></label>
+        <name>show_less</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- show_more --></label>
+        <name>show_more</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- show_video --></label>
+        <name>show_video</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- snapshot --></label>
+        <name>snapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- solution --></label>
+        <name>solution</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sponsor --></label>
+        <name>sponsor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- sponsor_help --></label>
+        <name>sponsor_help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- start with --></label>
+        <name>start_with</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- strenght --></label>
+        <name>strenght</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- swot analysis --></label>
+        <name>swot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- threats --></label>
+        <name>threats</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Total client ICT expenditure --></label>
+        <name>totalict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Our total revenue from client --></label>
+        <name>totrevenue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_DCMCriteria --></label>
+        <name>tutorial_DCMCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_DCMEvaluateCriteria --></label>
+        <name>tutorial_DCMEvaluateCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_OpportunitySnapshot --></label>
+        <name>tutorial_OpportunitySnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountCustomReport --></label>
+        <name>tutorial_accountCustomReport</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountGrowthStrategy --></label>
+        <name>tutorial_accountGrowthStrategy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountHistoricalBusinessWindow --></label>
+        <name>tutorial_accountHistoricalBusinessWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountIndustryTrends --></label>
+        <name>tutorial_accountIndustryTrends</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountIndustryTrendsWindowNew --></label>
+        <name>tutorial_accountIndustryTrendsWindowNew</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountKPIWindow --></label>
+        <name>tutorial_accountKPIWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountMasterPlan --></label>
+        <name>tutorial_accountMasterPlan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOpportunityList --></label>
+        <name>tutorial_accountOpportunityList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOpportunityListCriteria --></label>
+        <name>tutorial_accountOpportunityListCriteria</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOpportunityListSnapshot --></label>
+        <name>tutorial_accountOpportunityListSnapshot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOrganizationChartWindow --></label>
+        <name>tutorial_accountOrganizationChartWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountOverallRelationshipWindow --></label>
+        <name>tutorial_accountOverallRelationshipWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountPastProvenValueNew --></label>
+        <name>tutorial_accountPastProvenValueNew</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMChart --></label>
+        <name>tutorial_accountRDMChart</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMChartAttitude --></label>
+        <name>tutorial_accountRDMChartAttitude</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMChartAttitude_Opp --></label>
+        <name>tutorial_accountRDMChartAttitude_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMChart_Opp --></label>
+        <name>tutorial_accountRDMChart_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMWindow --></label>
+        <name>tutorial_accountRDMWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountRDMWindow_Opp --></label>
+        <name>tutorial_accountRDMWindow_Opp</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_accountStrategicContextWindow --></label>
+        <name>tutorial_accountStrategicContextWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_adminIndustryTrends --></label>
+        <name>tutorial_adminIndustryTrends</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_adminKPI --></label>
+        <name>tutorial_adminKPI</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_adminProvenValue --></label>
+        <name>tutorial_adminProvenValue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- tutorial_adminRegions --></label>
+        <name>tutorial_adminRegions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- type --></label>
+        <name>type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- unit --></label>
+        <name>unit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- use_notes_and_files --></label>
+        <name>use_notes_and_files</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- value driver sector --></label>
+        <name>value_driver_sector</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- value drivers account --></label>
+        <name>value_drivers_account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- view --></label>
+        <name>view</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- viewCDC --></label>
+        <name>viewCDC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- view influence map --></label>
+        <name>view_influence_map</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- view mosaic --></label>
+        <name>view_mosaic</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- weakness --></label>
+        <name>weakness</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Dollar Budget --></label>
+        <name>Dollar_Budget</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Strategic Client Plan --></label>
+        <name>SCP</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- scp deprecated --></label>
+        <name>Strategic_Client_Plan</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</Translations>

@@ -1,0 +1,20 @@
+<apex:component controller="tutorialController">
+    
+    <apex:attribute name="endText" type="String" assignTo="{!text}" description="Id" required="false"/>
+    
+    <style>
+    	.spanHelpImage {
+    		float:left;
+    		margin: 4px;
+    		width: 20px;
+    		height: 20px;
+    		background: url('/img/help/helpOrbs.gif');
+    		background-size: 55px 20px;
+    		background-repeat: no-repeat;
+    		background-position: -30px 0px;
+    		cursor: pointer; 
+    	}
+    </style>
+    
+
+</apex:component>
